@@ -219,6 +219,7 @@
     }
 
     .grid { display: grid; gap: 16px; }
+    .grid-6 { grid-template-columns: repeat(6, minmax(0, 1fr)); }
     .grid-5 { grid-template-columns: repeat(5, minmax(0, 1fr)); }
     .grid-4 { grid-template-columns: repeat(4, minmax(0, 1fr)); }
     .grid-3 { grid-template-columns: repeat(3, minmax(0, 1fr)); }
@@ -411,14 +412,14 @@
     }
 
     @media (max-width: 1000px) {
-      .grid-5 { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+      .grid-6, .grid-5 { grid-template-columns: repeat(2, minmax(0, 1fr)); }
       .grid-4, .grid-3 { grid-template-columns: repeat(2, minmax(0, 1fr)); }
       .work-map { grid-template-columns: 1fr; }
     }
     @media (max-width: 900px) {
       .page { margin: 0; border-radius: 0; }
       .cover, .content, .report-nav { padding-left: 26px; padding-right: 26px; }
-      .grid-5, .grid-4, .grid-3, .grid-2, .screenshot-grid { grid-template-columns: 1fr; }
+      .grid-6, .grid-5, .grid-4, .grid-3, .grid-2, .screenshot-grid { grid-template-columns: 1fr; }
       .section-head { display: block; }
       .bar-row { grid-template-columns: 1fr; gap: 6px; }
     }
@@ -597,7 +598,7 @@
           </div>
         </div>
 
-        <div class="grid grid-5">
+        <div class="grid grid-6">
           <div class="card metric green">
             <span class="value">210/210</span>
             <span class="label">روابط قديمة أصبحت تعمل</span>
@@ -614,9 +615,14 @@
             <span class="note">13 موضوعا كاملا باللغتين مقابل 4 موضوعات متفق عليها شهريا.</span>
           </div>
           <div class="card metric green">
-            <span class="value">802</span>
+            <span class="value">2.35K</span>
             <span class="label">نقرة من Google</span>
-            <span class="note">إجمالي نقرات Google Search Console خلال يونيو.</span>
+            <span class="note">إجمالي نقرات يونيو حسب إشعار Search Console الرسمي.</span>
+          </div>
+          <div class="card metric green">
+            <span class="value">172K</span>
+            <span class="label">ظهور في نتائج البحث</span>
+            <span class="note">إجمالي ظهور يونيو حسب إشعار Search Console الرسمي.</span>
           </div>
           <div class="card metric green">
             <span class="value">+143</span>
@@ -647,36 +653,31 @@
         <div class="section-head">
           <div>
             <div class="section-kicker">أداء البحث على جوجل</div>
-            <h2>بيانات Search Console لشهر يونيو: 802 نقرة، 60.4 ألف ظهور، ومتوسط موضع 7.74.</h2>
+            <h2>إشعار Search Console الرسمي لشهر يونيو يعرض 2.35 ألف نقرة، و172 ألف ظهور، و260 صفحة حصلت على أول ظهور.</h2>
           </div>
         </div>
-        <div class="grid grid-4">
+        <div class="grid grid-3">
           <div class="card metric">
-            <span class="value">802</span>
+            <span class="value">2.35K</span>
             <span class="label">نقرة من Google</span>
-            <span class="note">إجمالي نقرات Google Search Console خلال يونيو.</span>
+            <span class="note">إجمالي نقرات الويب في يونيو حسب إشعار Search Console.</span>
           </div>
           <div class="card metric">
-            <span class="value">60.4K</span>
+            <span class="value">172K</span>
             <span class="label">ظهور في نتائج البحث</span>
             <span class="note">إجمالي مرات ظهور صفحات الموقع في نتائج Google خلال يونيو.</span>
           </div>
           <div class="card metric green">
-            <span class="value">1.33%</span>
-            <span class="label">متوسط CTR</span>
-            <span class="note">ارتفع قليلا مقارنة بمايو في نفس مصدر القياس.</span>
-          </div>
-          <div class="card metric green">
-            <span class="value">7.74</span>
-            <span class="label">متوسط موضع الكلمات</span>
-            <span class="note">تحسن من 8.66 في مايو إلى 7.74 في يونيو.</span>
+            <span class="value">260</span>
+            <span class="label">صفحة حصلت على أول ظهور</span>
+            <span class="note">تقدير Search Console للصفحات التي بدأت تظهر خلال يونيو.</span>
           </div>
         </div>
-        <p class="data-note">تسجل بيانات Google Search Console لشهر يونيو 802 نقرة، و60,357 ظهورا، وCTR بنسبة 1.33%، ومتوسط موضع 7.74.</p>
+        <p class="data-note">إشعار Search Console الرسمي المرسل في 2 يوليو 2026 يوضح أن أداء يونيو وصل إلى 2.35 ألف نقرة، و172 ألف ظهور، و260 صفحة حصلت على أول ظهور. لذلك تم اعتماد هذه الأرقام في الملخص لأنها تمثل قراءة جوجل الشهرية الرسمية.</p>
         <div class="screenshot-grid">
           <figure class="report-shot tall">
-            <img src="june%20screenshots/CleanShot%202026-07-02%20at%2010.12.37@2x.png" alt="لقطة Site Kit تعرض ملخص الزيارات والظهور خلال آخر 28 يوما" />
-            <figcaption>ملخص Site Kit: يوضح الزيارات والظهور خلال آخر 28 يوما مع مقارنة بالفترة السابقة.</figcaption>
+            <img src="june%20screenshots/gsc-june-performance-notification.png" alt="إشعار Search Console الرسمي لأداء يونيو على موقع taqamisr.com" />
+            <figcaption>إشعار Search Console الرسمي: أداء يونيو على Google Search يعرض 2.35 ألف نقرة، و172 ألف ظهور، و260 صفحة حصلت على أول ظهور.</figcaption>
           </figure>
           <figure class="report-shot">
             <img src="june%20screenshots/CleanShot%202026-07-03%20at%2010.42.02@2x.png" alt="رسم يوضح عدد الكلمات التي ظهرت للموقع شهريا من يناير إلى يونيو 2026" />
@@ -948,22 +949,18 @@
         <span class="section-label normal">عمل شهري معتاد: قراءات فنية</span>
         <div class="section-head">
           <div>
-            <div class="section-kicker">توزيع النقرات والمواضع</div>
-            <h2>تحليل النقرات حسب الجهاز والترتيب في جوجل.</h2>
+            <div class="section-kicker">قراءة فنية للأداء</div>
+            <h2>الأرقام الرسمية من Search Console هي الأساس، مع متابعة ترتيب الصفحات داخل نتائج جوجل.</h2>
           </div>
         </div>
         <div class="grid grid-2">
           <div class="card">
-            <h3>توزيع الأجهزة</h3>
-            <div class="bars">
-              <div class="bar-row"><strong>الموبايل</strong><div class="bar-track"><div class="bar-fill" style="width: 82%;"></div></div><span>658 نقرة</span></div>
-              <div class="bar-row"><strong>سطح المكتب</strong><div class="bar-track"><div class="bar-fill orange" style="width: 17%;"></div></div><span>136 نقرة</span></div>
-              <div class="bar-row"><strong>الأجهزة اللوحية</strong><div class="bar-track"><div class="bar-fill" style="width: 1%;"></div></div><span>8 نقرات</span></div>
-            </div>
-            <p class="data-note">حقق الموبايل نحو 82% من نقرات يونيو، لذلك يجب أن تبقى صفحات المنتجات والتصنيفات سريعة وواضحة وموجهة لاتخاذ الإجراء على الموبايل.</p>
+            <h3>أرقام يونيو الرسمية</h3>
+            <p>إشعار Search Console الشهري يعرض 2.35 ألف نقرة و172 ألف ظهور على الويب، مع 260 صفحة حصلت على أول ظهور خلال يونيو.</p>
+            <p class="data-note">هذه الأرقام هي التي يجب أن تظهر في الملخص التنفيذي لأنها قراءة جوجل الرسمية للشهر بالكامل.</p>
           </div>
           <div class="card">
-            <h3>توزيع المواضع</h3>
+            <h3>توزيع الترتيب في جوجل</h3>
             <div class="bars">
               <div class="bar-row"><strong>المراكز 1-3</strong><div class="bar-track"><div class="bar-fill" style="width: 20%;"></div></div><span>19.9%</span></div>
               <div class="bar-row"><strong>المراكز 4-10</strong><div class="bar-track"><div class="bar-fill orange" style="width: 69%;"></div></div><span>68.8%</span></div>
