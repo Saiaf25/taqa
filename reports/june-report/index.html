@@ -1,0 +1,998 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>تقرير أداء SEO يونيو 2026 | طاقة مصر</title>
+  <style>
+    @font-face {
+      font-family: "Thmanyah Serif Text";
+      src: url("assets/thmanyahseriftext-Regular.woff2") format("woff2");
+      font-weight: 400;
+      font-style: normal;
+      font-display: swap;
+    }
+    @font-face {
+      font-family: "Thmanyah Serif Text";
+      src: url("assets/thmanyahseriftext-Bold.woff2") format("woff2");
+      font-weight: 700;
+      font-style: normal;
+      font-display: swap;
+    }
+    @font-face {
+      font-family: "Thmanyah Serif Text";
+      src: url("assets/thmanyahseriftext-Black.woff2") format("woff2");
+      font-weight: 900;
+      font-style: normal;
+      font-display: swap;
+    }
+
+    :root {
+      --taqa-blue: #005993;
+      --taqa-blue-dark: #003f68;
+      --taqa-orange: #e07826;
+      --ink: #162332;
+      --muted: #627487;
+      --line: #dbe5ec;
+      --paper: #fbfdfe;
+      --soft: #f2f6f8;
+      --green: #217a4b;
+      --green-bg: #e8f4ee;
+      --amber-bg: #fff3e8;
+      --shadow: 0 18px 55px rgba(0, 63, 104, 0.12);
+    }
+
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      background: #eaf1f5;
+      color: var(--ink);
+      font-family: "Thmanyah Serif Text", Georgia, "Times New Roman", serif;
+      line-height: 1.65;
+      direction: rtl;
+      max-width: 100%;
+      overflow-x: clip;
+    }
+    h1, h2, h3, p, li, td, th, a, span { overflow-wrap: anywhere; }
+    a { color: var(--taqa-blue); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    h1, h2, h3, p { margin-top: 0; }
+
+    .page {
+      width: min(100%, 1120px);
+      max-width: 1120px;
+      margin: 28px auto;
+      background: #fff;
+      border-radius: 18px;
+      overflow: clip;
+      box-shadow: var(--shadow);
+    }
+    .cover {
+      position: relative;
+      padding: 54px 62px 46px;
+      color: #f8fbfd;
+      background:
+        linear-gradient(135deg, rgba(0, 89, 147, 0.98), rgba(0, 63, 104, 0.96)),
+        radial-gradient(circle at 15% 18%, rgba(224, 120, 38, 0.28), transparent 32%);
+    }
+    .cover::after {
+      content: "";
+      position: absolute;
+      inset: auto 0 0 0;
+      height: 8px;
+      background: var(--taqa-orange);
+    }
+    .eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      color: #ffd6b7;
+      font-weight: 700;
+      margin-bottom: 18px;
+    }
+    .eyebrow::before {
+      content: "";
+      width: 34px;
+      height: 3px;
+      background: var(--taqa-orange);
+      border-radius: 999px;
+    }
+    h1 {
+      max-width: 820px;
+      font-size: clamp(42px, 6vw, 72px);
+      line-height: 0.98;
+      margin-bottom: 22px;
+      font-weight: 900;
+      letter-spacing: 0;
+    }
+    .cover-copy {
+      max-width: 790px;
+      color: rgba(255,255,255,0.88);
+      font-size: 20px;
+      margin-bottom: 34px;
+    }
+    .cover-meta {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+    .pill {
+      display: inline-flex;
+      align-items: center;
+      min-height: 38px;
+      padding: 7px 14px;
+      border-radius: 999px;
+      background: rgba(255,255,255,0.1);
+      border: 1px solid rgba(255,255,255,0.22);
+      color: rgba(255,255,255,0.92);
+      font-size: 15px;
+      font-weight: 700;
+    }
+    .report-nav {
+      position: sticky;
+      top: 0;
+      z-index: 20;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      padding: 14px 62px;
+      background: rgba(255, 255, 255, 0.97);
+      border-bottom: 1px solid var(--line);
+      box-shadow: 0 12px 24px rgba(0, 63, 104, 0.06);
+    }
+    .report-nav a {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 38px;
+      padding: 7px 12px;
+      border: 1px solid var(--line);
+      border-radius: 999px;
+      background: #f8fbfd;
+      color: var(--taqa-blue-dark);
+      font-size: 14px;
+      font-weight: 900;
+      text-align: center;
+    }
+    .report-nav a:hover {
+      background: var(--taqa-blue);
+      color: #f8fbfd;
+      text-decoration: none;
+    }
+    .content {
+      padding: 46px 62px 60px;
+    }
+    section {
+      margin-bottom: 50px;
+      scroll-margin-top: 100px;
+      max-width: 100%;
+    }
+    .section-head {
+      display: flex;
+      align-items: flex-end;
+      justify-content: space-between;
+      gap: 24px;
+      margin-bottom: 22px;
+    }
+    .section-kicker {
+      color: var(--taqa-orange);
+      font-size: 14px;
+      font-weight: 900;
+      margin-bottom: 4px;
+    }
+    h2 {
+      color: var(--taqa-blue-dark);
+      font-size: 34px;
+      line-height: 1.12;
+      font-weight: 900;
+      margin-bottom: 0;
+    }
+    h3 {
+      color: var(--taqa-blue-dark);
+      font-size: 22px;
+      line-height: 1.2;
+      font-weight: 900;
+      margin-bottom: 10px;
+    }
+    .lead {
+      color: var(--muted);
+      font-size: 18px;
+      max-width: 760px;
+    }
+    .section-label {
+      display: inline-flex;
+      min-height: 34px;
+      align-items: center;
+      padding: 4px 12px;
+      border-radius: 999px;
+      font-size: 14px;
+      font-weight: 900;
+      margin-bottom: 12px;
+    }
+    .section-label.normal { background: #e8f3fa; color: var(--taqa-blue-dark); }
+    .section-label.extra { background: var(--amber-bg); color: #9a4f00; }
+    .section-divider {
+      padding-top: 30px;
+      border-top: 2px solid var(--line);
+    }
+
+    .grid { display: grid; gap: 16px; }
+    .grid-5 { grid-template-columns: repeat(5, minmax(0, 1fr)); }
+    .grid-4 { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+    .grid-3 { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+    .grid-2 { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+    .card, .work-card {
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: #fff;
+      padding: 22px;
+      max-width: 100%;
+    }
+    .metric {
+      min-height: 148px;
+      border-top: 5px solid var(--taqa-blue);
+      background: linear-gradient(180deg, #fff, #f9fbfc);
+    }
+    .metric.orange { border-top-color: var(--taqa-orange); }
+    .metric.green { border-top-color: var(--green); }
+    .metric .value {
+      display: block;
+      color: var(--taqa-blue);
+      font-size: 39px;
+      line-height: 1;
+      font-weight: 900;
+      margin-bottom: 10px;
+    }
+    .metric .label {
+      display: block;
+      color: var(--ink);
+      font-weight: 900;
+      margin-bottom: 6px;
+    }
+    .metric .note {
+      color: var(--muted);
+      font-size: 14px;
+      line-height: 1.45;
+    }
+    .highlight {
+      background: linear-gradient(135deg, #f8fbfd, #fff);
+      border: 1px solid var(--line);
+      border-right: 6px solid var(--taqa-orange);
+      padding: 24px;
+      border-radius: 8px;
+    }
+    .highlight strong { color: var(--taqa-blue-dark); }
+    .work-map {
+      display: grid;
+      grid-template-columns: 1.35fr 1fr;
+      gap: 16px;
+      margin: 18px 0;
+    }
+    .work-card.primary { border-top: 5px solid var(--taqa-blue); }
+    .work-card.extra { border-top: 5px solid var(--taqa-orange); background: #fffaf6; }
+    .work-card ul, .compact-list { margin: 0; padding-right: 18px; }
+    .work-card li, .compact-list li { margin-bottom: 7px; }
+    .status {
+      display: inline-flex;
+      padding: 4px 10px;
+      border-radius: 999px;
+      background: var(--green-bg);
+      color: var(--green);
+      font-size: 13px;
+      font-weight: 900;
+    }
+    .status.amber {
+      color: #9a4f00;
+      background: var(--amber-bg);
+    }
+    .data-note {
+      color: var(--muted);
+      font-size: 14px;
+      background: var(--soft);
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      padding: 14px 16px;
+      margin-top: 14px;
+    }
+    .table-wrap {
+      overflow-x: auto;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: #fff;
+      max-width: 100%;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      min-width: 760px;
+      font-size: 15px;
+    }
+    th, td {
+      padding: 14px 16px;
+      border-bottom: 1px solid var(--line);
+      vertical-align: top;
+      text-align: right;
+    }
+    th {
+      background: var(--taqa-blue);
+      color: #fff;
+      font-weight: 900;
+    }
+    tr:last-child td { border-bottom: 0; }
+    td strong { color: var(--taqa-blue-dark); }
+    .screenshot-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 16px;
+      margin-top: 16px;
+      max-width: 100%;
+    }
+    .report-shot {
+      margin: 0;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: #fff;
+      overflow: hidden;
+    }
+    .report-shot.wide { grid-column: 1 / -1; }
+    .report-shot img {
+      display: block;
+      width: 100%;
+      max-width: 100%;
+      height: auto;
+      background: #fff;
+      border-bottom: 1px solid var(--line);
+    }
+    .report-shot.tall img {
+      max-height: 560px;
+      object-fit: contain;
+    }
+    .report-shot figcaption {
+      padding: 12px 14px;
+      color: var(--muted);
+      font-size: 14px;
+      line-height: 1.45;
+    }
+    .bars {
+      display: grid;
+      gap: 14px;
+      margin-top: 14px;
+    }
+    .bar-row {
+      display: grid;
+      grid-template-columns: 150px 1fr 78px;
+      gap: 14px;
+      align-items: center;
+      font-size: 15px;
+    }
+    .bar-track {
+      height: 14px;
+      background: #edf3f7;
+      border-radius: 999px;
+      overflow: hidden;
+    }
+    .bar-fill {
+      height: 100%;
+      background: linear-gradient(90deg, var(--taqa-blue), #2384bf);
+      border-radius: 999px;
+    }
+    .bar-fill.orange { background: linear-gradient(90deg, var(--taqa-orange), #f2a45c); }
+    .footer {
+      padding-top: 28px;
+      border-top: 1px solid var(--line);
+      color: var(--muted);
+      font-size: 14px;
+    }
+
+    @media (max-width: 1000px) {
+      .grid-5 { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+      .grid-4, .grid-3 { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+      .work-map { grid-template-columns: 1fr; }
+    }
+    @media (max-width: 900px) {
+      .page { margin: 0; border-radius: 0; }
+      .cover, .content, .report-nav { padding-left: 26px; padding-right: 26px; }
+      .grid-5, .grid-4, .grid-3, .grid-2, .screenshot-grid { grid-template-columns: 1fr; }
+      .section-head { display: block; }
+      .bar-row { grid-template-columns: 1fr; gap: 6px; }
+    }
+    @media (max-width: 680px) {
+      html, body {
+        direction: ltr;
+        width: 100%;
+        max-width: 100%;
+        overflow-x: hidden;
+      }
+      body { background: #f2f6f8; }
+      .page {
+        width: 100%;
+        max-width: 100vw;
+        margin: 0;
+        overflow: hidden;
+        direction: ltr;
+      }
+      .cover, .content, .report-nav {
+        direction: ltr;
+        max-width: 100%;
+        padding-right: 20px;
+        padding-left: 20px;
+      }
+      .cover *, .content *, .report-nav a {
+        direction: rtl;
+      }
+      .cover p, .content p, .content li, .content td, .content th, .content h2, .content h3, .content figcaption, .section-kicker, .metric .label, .metric .note {
+        text-align: right;
+      }
+      .cover > *, .content > *, section, .grid, .work-map, .card, .work-card, .highlight, .table-wrap {
+        width: 100%;
+        max-width: 100%;
+      }
+      .cover { padding-top: 34px; padding-bottom: 32px; }
+      .content { padding-top: 32px; padding-bottom: 42px; }
+      h1 {
+        max-width: 100%;
+        font-size: clamp(25px, 7.2vw, 30px);
+        line-height: 1.18;
+        word-break: break-word;
+        text-align: right;
+      }
+      h2 {
+        font-size: clamp(22px, 6.2vw, 27px);
+        line-height: 1.2;
+        word-break: break-word;
+        text-align: right;
+      }
+      h3 { font-size: 21px; }
+      .cover-copy, .lead { font-size: 16px; }
+      .cover-copy { text-align: right; }
+      .cover-meta { gap: 8px; }
+      .cover-meta, .eyebrow { justify-content: flex-start; }
+      .pill {
+        min-height: 34px;
+        padding: 6px 10px;
+        font-size: 13px;
+      }
+      .report-nav { position: static; padding-top: 12px; padding-bottom: 12px; }
+      .report-nav a {
+        flex: 1 1 100%;
+        min-width: 0;
+        min-height: 44px;
+      }
+      .card, .highlight, .work-card { padding: 18px; }
+      .metric { min-height: auto; }
+      .metric .value { font-size: 30px; }
+      .table-wrap { overflow: visible; }
+      table {
+        min-width: 0;
+        display: block;
+        font-size: 14px;
+      }
+      thead {
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        overflow: hidden;
+        clip: rect(0 0 0 0);
+        white-space: nowrap;
+      }
+      tbody, tr, td { display: block; width: 100%; }
+      tr {
+        border-bottom: 1px solid var(--line);
+        padding: 12px 0;
+      }
+      tr:last-child { border-bottom: 0; }
+      td {
+        display: grid;
+        grid-template-columns: minmax(92px, 36%) 1fr;
+        gap: 10px;
+        padding: 8px 14px;
+        border-bottom: 0;
+      }
+      td::before {
+        content: attr(data-label);
+        color: var(--taqa-blue-dark);
+        font-weight: 900;
+      }
+      .report-shot.tall img { max-height: none; }
+    }
+    @media (max-width: 420px) {
+      .cover, .content, .report-nav { padding-left: 16px; padding-right: 16px; }
+      .page { width: 100%; }
+      .report-nav a { flex-basis: 100%; }
+      td { grid-template-columns: 1fr; }
+      td::before { margin-bottom: -4px; }
+    }
+    @media print {
+      body { background: #fff; }
+      .page { box-shadow: none; margin: 0; border-radius: 0; }
+      .report-nav { display: none; }
+      a { color: inherit; }
+      .card, .table-wrap, .highlight, .report-shot { break-inside: avoid; }
+      section { break-inside: avoid; }
+    }
+  </style>
+</head>
+<body>
+  <main class="page">
+    <header class="cover">
+      <div class="eyebrow">تقرير شهري</div>
+      <h1>تقرير أداء SEO يونيو 2026</h1>
+      <p class="cover-copy">
+        ملخص أعمال تحسين محركات البحث SEO لطاقة مصر خلال يونيو، مع فصل العمل الشهري المعتاد عن العمل الاستثنائي الخاص بدمج المتجر القديم داخل الموقع الحالي، وتوضيح أثر ذلك على الأداء والمحتوى والروابط.
+      </p>
+      <div class="cover-meta">
+        <span class="pill">الموقع: taqamisr.com</span>
+        <span class="pill">شهر التقرير: يونيو 2026</span>
+      </div>
+    </header>
+
+    <nav class="report-nav" aria-label="أقسام التقرير">
+      <a href="#summary">ملخص الشهر</a>
+      <a href="#normal-work">العمل الشهري المعتاد</a>
+      <a href="#search-performance">أداء البحث</a>
+      <a href="#content-work">المحتوى والمنتجات</a>
+      <a href="#category-work">التصنيفات</a>
+      <a href="#keywords">الكلمات والصفحات</a>
+      <a href="#technical-readings">قراءات فنية</a>
+      <a href="#migration-work">عمل استثنائي</a>
+      <a href="#summary-close">الخلاصة</a>
+    </nav>
+
+    <div class="content">
+      <section id="summary">
+        <div class="section-head">
+          <div>
+            <div class="section-kicker">أهم الإحصائيات</div>
+            <h2>يونيو كان شهر عودة للعمل على الـ SEO، مع توسع واضح في المحتوى التجاري ومتابعة خاصة لدمج المتجر.</h2>
+          </div>
+        </div>
+        <div class="highlight">
+          <p><strong>سياق الشهر:</strong> جاء عمل يونيو بعد فترة توقف منذ مارس الماضي في نشاط SEO بسبب أعطال الاستضافة المتكررة وطلب طاقة مصر توقف فريق SEO عن العمل خلال فترة عمل المطور على دمج الموقع والستور، لذلك كان التركيز على استعادة انتظام العمل، وحماية الزيارات القائمة، ثم دفع صفحات المنتجات والتصنيفات للأمام. أعطال الهوست والتوقف في تحسين محركات البحث لا يظهر أثرهما دائما في نفس اليوم، لكنهما سببا هبوطا في النتائج وجعلا العودة والاستمرارية في الشهور القادمة ضروريتين، مع متابعة مستمرة قبل أن يظهر أثر التحسينات بالكامل. ونرجو ألا يحدث توقف مشابه مرة أخرى.</p>
+        </div>
+
+        <div class="work-map">
+          <div class="work-card primary">
+            <h3>العمل الشهري المعتاد</h3>
+            <ul>
+              <li>متابعة أداء البحث والكلمات والصفحات التي تجلب نقرات.</li>
+              <li>نشر وإعادة كتابة صفحات المنتجات والتصنيفات.</li>
+              <li>تحسين الروابط الداخلية وربط الصفحات التجارية ببعضها.</li>
+              <li>مراجعة تجربة الموبايل والمواضع في نتائج البحث.</li>
+            </ul>
+          </div>
+          <div class="work-card extra">
+            <h3>عمل استثنائي في يونيو</h3>
+            <ul>
+              <li>متابعة دمج المتجر القديم داخل الموقع الحالي.</li>
+              <li>مراجعة روابط المتجر القديم التي كانت تظهر في البحث.</li>
+              <li>التأكد من أن 210 روابط قديمة أصبحت تصل إلى الصفحات الحالية.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="grid grid-5">
+          <div class="card metric green">
+            <span class="value">210/210</span>
+            <span class="label">روابط قديمة أصبحت تعمل</span>
+            <span class="note">كل روابط المتجر القديم في المراجعة أصبحت تصل إلى الموقع الحالي.</span>
+          </div>
+          <div class="card metric orange">
+            <span class="value">26</span>
+            <span class="label">صفحة منشورة أو معاد كتابتها بالكامل</span>
+            <span class="note">إجمالي الصفحات التي تم نشرها أو إعادة كتابتها بالكامل خلال يونيو.</span>
+          </div>
+          <div class="card metric">
+            <span class="value">225%</span>
+            <span class="label">زيادة عن المتفق عليه</span>
+            <span class="note">13 موضوعا كاملا باللغتين مقابل 4 موضوعات متفق عليها شهريا.</span>
+          </div>
+          <div class="card metric green">
+            <span class="value">802</span>
+            <span class="label">نقرة من Google</span>
+            <span class="note">إجمالي نقرات Google Search Console خلال يونيو.</span>
+          </div>
+          <div class="card metric green">
+            <span class="value">+143</span>
+            <span class="label">باك لينكس حي</span>
+            <span class="note">زيادة الباك لينكس من 1,746 إلى 1,889 خلال يونيو.</span>
+          </div>
+        </div>
+        <div class="screenshot-grid">
+          <figure class="report-shot wide">
+            <img src="june%20screenshots/CleanShot%202026-07-03%20at%2010.43.21@2x.png" alt="لقطة Ahrefs تعرض ملخص الباك لينكس والظهور العضوي لطاقة مصر" />
+            <figcaption>لقطة Ahrefs: توضح مؤشرات الباك لينكس والظهور العضوي التي تدعم أرقام لوحة الإحصائيات.</figcaption>
+          </figure>
+        </div>
+      </section>
+
+      <section id="normal-work" class="section-divider">
+        <span class="section-label normal">العمل الشهري المعتاد</span>
+        <div class="section-head">
+          <div>
+            <h2>هذه هي الأقسام التي تمثل العمل الأساسي المتكرر في SEO: الأداء، المحتوى، التصنيفات، الكلمات، وتجربة الموبايل.</h2>
+          </div>
+        </div>
+        <p class="lead">هذه الأعمال تحتاج استمرار شهري حتى لا يتوقف تراكم النتائج، وحتى تبقى صفحات المنتجات والتصنيفات قابلة للظهور والمنافسة في البحث.</p>
+      </section>
+
+      <section id="search-performance">
+        <span class="section-label normal">عمل شهري معتاد: أداء البحث</span>
+        <div class="section-head">
+          <div>
+            <div class="section-kicker">أداء البحث على جوجل</div>
+            <h2>بيانات Search Console لشهر يونيو: 802 نقرة، 60.4 ألف ظهور، ومتوسط موضع 7.74.</h2>
+          </div>
+        </div>
+        <div class="grid grid-4">
+          <div class="card metric">
+            <span class="value">802</span>
+            <span class="label">نقرة من Google</span>
+            <span class="note">إجمالي نقرات Google Search Console خلال يونيو.</span>
+          </div>
+          <div class="card metric">
+            <span class="value">60.4K</span>
+            <span class="label">ظهور في نتائج البحث</span>
+            <span class="note">إجمالي مرات ظهور صفحات الموقع في نتائج Google خلال يونيو.</span>
+          </div>
+          <div class="card metric green">
+            <span class="value">1.33%</span>
+            <span class="label">متوسط CTR</span>
+            <span class="note">ارتفع قليلا مقارنة بمايو في نفس مصدر القياس.</span>
+          </div>
+          <div class="card metric green">
+            <span class="value">7.74</span>
+            <span class="label">متوسط موضع الكلمات</span>
+            <span class="note">تحسن من 8.66 في مايو إلى 7.74 في يونيو.</span>
+          </div>
+        </div>
+        <p class="data-note">تسجل بيانات Google Search Console لشهر يونيو 802 نقرة، و60,357 ظهورا، وCTR بنسبة 1.33%، ومتوسط موضع 7.74.</p>
+        <div class="screenshot-grid">
+          <figure class="report-shot tall">
+            <img src="june%20screenshots/CleanShot%202026-07-02%20at%2010.12.37@2x.png" alt="لقطة Site Kit تعرض ملخص الزيارات والظهور خلال آخر 28 يوما" />
+            <figcaption>ملخص Site Kit: يوضح الزيارات والظهور خلال آخر 28 يوما مع مقارنة بالفترة السابقة.</figcaption>
+          </figure>
+          <figure class="report-shot">
+            <img src="june%20screenshots/CleanShot%202026-07-03%20at%2010.42.02@2x.png" alt="رسم يوضح عدد الكلمات التي ظهرت للموقع شهريا من يناير إلى يونيو 2026" />
+            <figcaption>عدد الكلمات التي ظهر عليها الموقع شهريا: يونيو يظهر عودة في عدد الكلمات بعد انخفاض مايو.</figcaption>
+          </figure>
+          <figure class="report-shot">
+            <img src="june%20screenshots/CleanShot%202026-07-03%20at%2010.42.08@2x.png" alt="رسم يوضح توزيع الكلمات في المراكز الأولى والمراكز من 4 إلى 10" />
+            <figcaption>توزيع الكلمات في الصفحة الأولى: متابعة الكلمات في المراكز 1-3 والمراكز 4-10 خلال 2026.</figcaption>
+          </figure>
+        </div>
+      </section>
+
+      <section id="content-work">
+        <span class="section-label normal">عمل شهري معتاد: المحتوى والمنتجات</span>
+        <div class="section-head">
+          <div>
+            <div class="section-kicker">المحتوى المنشور</div>
+            <h2>تم تجاوز المتفق عليه شهريا بمحتوى منتجات وتصنيفات واضح.</h2>
+          </div>
+        </div>
+        <div class="grid grid-3">
+          <div class="card">
+            <h3>إجمالي الصفحات</h3>
+            <p>26 صفحة عربية وإنجليزية تم نشرها أو إعادة كتابتها بالكامل خلال يونيو.</p>
+          </div>
+          <div class="card">
+            <h3>إجمالي الموضوعات</h3>
+            <p>13 موضوعا كاملا باللغتين مقابل 4 موضوعات متفق عليها شهريا.</p>
+          </div>
+          <div class="card">
+            <h3>نسبة الزيادة</h3>
+            <p>325% من المتفق عليه شهريا، أي 225% أعلى من المطلوب.</p>
+          </div>
+        </div>
+
+        <div class="table-wrap" style="margin-top:16px;">
+          <table>
+            <thead>
+              <tr>
+                <th>مجال العمل</th>
+                <th>الصفحات / التغطية</th>
+                <th>القيمة التجارية</th>
+                <th>الحالة</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><strong>تحسين صفحات المنتجات</strong></td>
+                <td>سخان مياه غاز Ariston سعة 6 لتر، ومضخة Grundfos CMBE، بالعربية والإنجليزية.</td>
+                <td>تحسين الشرح، إرشاد المشتري، المواصفات، الأسئلة الشائعة، الروابط الداخلية، ووصف الصور.</td>
+                <td><span class="status">منشور</span></td>
+              </tr>
+              <tr>
+                <td><strong>إطلاق منتجات سخانات المياه</strong></td>
+                <td>5 منتجات سخانات مياه جديدة بالعربية والإنجليزية: سخانات كهربائية 7kW و9kW و12kW، وسخانات غاز 16L و20L.</td>
+                <td>إضافة مجموعة منتجات تجارية جديدة تشمل الأسعار، حالة التوفر، التصنيفات، العلامة التجارية، الصور، والروابط الداخلية.</td>
+                <td><span class="status amber">منشور ضمن يونيو</span></td>
+              </tr>
+              <tr>
+                <td><strong>محتوى التصنيفات</strong></td>
+                <td>12 صفحة عربية وإنجليزية تشمل سخانات مياه غاز، دفايات غاز، دفايات إيثانول حيوي، مضخات صرف، مضخات تقليب، مضخات رفع، ومضخات غاطسة.</td>
+                <td>تقوية صفحات التصنيفات التجارية لتستهدف طلب البحث على مستوى المجموعة، وليس فقط أسماء المنتجات الفردية.</td>
+                <td><span class="status">منشور / معاد كتابته</span></td>
+              </tr>
+              <tr>
+                <td><strong>الروابط الداخلية</strong></td>
+                <td>إضافة وتصحيح روابط بين المنتجات، وبين المنتجات والتصنيفات، وبين التصنيفات والمنتجات بالعربية والإنجليزية.</td>
+                <td>تحسين اكتشاف الصفحات، والحفاظ على مسار اللغة الصحيح للمستخدم، وتوضيح العلاقات بين المنتجات والتصنيفات لمحركات البحث.</td>
+                <td><span class="status">تم التحقق</span></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <h3 style="margin-top: 24px;">قائمة الصفحات التي تم نشرها أو إعادة كتابتها بالكامل</h3>
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr>
+                <th>الصفحة</th>
+                <th>الرابط</th>
+                <th>نوع العمل</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td>سخان مياه أريستون الإيطالية سعة 6 لتر</td><td><a href="https://taqamisr.com/ar/product/سخان-مياه-أريستون-الإيطالية-سعة-6-لتر-يع/">فتح الصفحة</a></td><td>إعادة كتابة صفحة منتج كاملة بالعربية</td></tr>
+              <tr><td>6 Liter Ariston Gas Water Heater NG</td><td><a href="https://taqamisr.com/product/6-liter-ariston-gas-water-heater-ng/">Open page</a></td><td>Full English product rewrite</td></tr>
+              <tr><td>مضخة رفع المياه CMBE توفر ضغط مياه ثابت</td><td><a href="https://taqamisr.com/ar/product/مضخة-رفع-المياه-cmbe-توفر-ضغط-مياه-ثابت-لمج/">فتح الصفحة</a></td><td>إعادة كتابة صفحة منتج كاملة بالعربية</td></tr>
+              <tr><td>CMBE Booster Pump Grundfos</td><td><a href="https://taqamisr.com/product/cmbe-booster-pump-grundfos/">Open page</a></td><td>Full English product rewrite</td></tr>
+              <tr><td>سخان كهربائي طومسون 7kW</td><td><a href="https://taqamisr.com/ar/product/سخان-كهربائي-طومسون-7kw/">فتح الصفحة</a></td><td>نشر منتج جديد بالعربية</td></tr>
+              <tr><td>Thomson Instant Electric Water Heater 7kW</td><td><a href="https://taqamisr.com/product/thomson-instant-electric-water-heater-7kw/">Open page</a></td><td>New English product page</td></tr>
+              <tr><td>سخان كهربائي طومسون 9kW</td><td><a href="https://taqamisr.com/ar/product/سخان-كهربائي-طومسون-9kw/">فتح الصفحة</a></td><td>نشر منتج جديد بالعربية</td></tr>
+              <tr><td>Thomson Instant Electric Water Heater 9kW</td><td><a href="https://taqamisr.com/product/thomson-instant-electric-water-heater-9kw/">Open page</a></td><td>New English product page</td></tr>
+              <tr><td>سخان كهربائي طومسون 12kW</td><td><a href="https://taqamisr.com/ar/product/سخان-كهربائي-طومسون-12kw/">فتح الصفحة</a></td><td>نشر منتج جديد بالعربية</td></tr>
+              <tr><td>Thomson Instant Electric Water Heater 12kW</td><td><a href="https://taqamisr.com/product/thomson-instant-electric-water-heater-12kw/">Open page</a></td><td>New English product page</td></tr>
+              <tr><td>سخان مياه غاز طومسون 16 لتر</td><td><a href="https://taqamisr.com/ar/product/سخان-مياه-غاز-طومسون-16-لتر/">فتح الصفحة</a></td><td>نشر منتج جديد بالعربية</td></tr>
+              <tr><td>Thomson Gas Water Heater 16L</td><td><a href="https://taqamisr.com/product/thomson-gas-water-heater-16l/">Open page</a></td><td>New English product page</td></tr>
+              <tr><td>سخان مياه غاز طومسون 20 لتر</td><td><a href="https://taqamisr.com/ar/product/سخان-مياه-غاز-طومسون-20-لتر/">فتح الصفحة</a></td><td>نشر منتج جديد بالعربية</td></tr>
+              <tr><td>Thomson Gas Water Heater 20L</td><td><a href="https://taqamisr.com/product/thomson-gas-water-heater-20l/">Open page</a></td><td>New English product page</td></tr>
+              <tr><td>سخانات ماء غاز</td><td><a href="https://taqamisr.com/ar/product-category/غاز-ar/">فتح الصفحة</a></td><td>إعادة كتابة تصنيف تجاري بالعربية</td></tr>
+              <tr><td>Gas Water Heaters</td><td><a href="https://taqamisr.com/product-category/gas-2/">Open page</a></td><td>Full English category rewrite</td></tr>
+              <tr><td>دفايات لهب تعمل بالغاز</td><td><a href="https://taqamisr.com/ar/product-category/دفايات-اللهب/دفايات-غاز/">فتح الصفحة</a></td><td>إعادة كتابة تصنيف تجاري بالعربية</td></tr>
+              <tr><td>Gas Fireplaces</td><td><a href="https://taqamisr.com/product-category/fireplaces/gas/">Open page</a></td><td>Full English category rewrite</td></tr>
+              <tr><td>دفايات لهب تعمل بالإيثانول الحيوي</td><td><a href="https://taqamisr.com/ar/product-category/دفايات-اللهب/إيثانول-حيوي/">فتح الصفحة</a></td><td>إعادة كتابة تصنيف تجاري بالعربية</td></tr>
+              <tr><td>Bioethanol Fireplaces</td><td><a href="https://taqamisr.com/product-category/bioethanol/">Open page</a></td><td>Full English category rewrite</td></tr>
+              <tr><td>مضخات صرف</td><td><a href="https://taqamisr.com/ar/product-category/صرف/">فتح الصفحة</a></td><td>إعادة كتابة تصنيف تجاري بالعربية</td></tr>
+              <tr><td>Drainage</td><td><a href="https://taqamisr.com/product-category/drainage/">Open page</a></td><td>Full English category rewrite</td></tr>
+              <tr><td>مضخات تقليب</td><td><a href="https://taqamisr.com/ar/product-category/تقليب/">فتح الصفحة</a></td><td>إعادة كتابة تصنيف تجاري بالعربية</td></tr>
+              <tr><td>Circulators</td><td><a href="https://taqamisr.com/product-category/circulators/">Open page</a></td><td>Full English category rewrite</td></tr>
+              <tr><td>Booster Pumps</td><td><a href="https://taqamisr.com/product-category/boosters/">Open page</a></td><td>Full English category rewrite</td></tr>
+              <tr><td>Submersible Pumps</td><td><a href="https://taqamisr.com/product-category/submersible-pumps/">Open page</a></td><td>Full English category rewrite</td></tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="screenshot-grid">
+          <figure class="report-shot">
+            <img src="site-screenshots/product-ariston-6l-ar.png" alt="لقطة مباشرة من صفحة سخان مياه أريستون 6 لتر بعد إعادة الكتابة" />
+            <figcaption>مثال من صفحات المنتجات المعاد كتابتها: صفحة سخان أريستون 6 لتر بعد توسيع المحتوى التجاري.</figcaption>
+          </figure>
+          <figure class="report-shot">
+            <img src="site-screenshots/product-thomson-7kw-ar.png" alt="لقطة مباشرة من صفحة سخان كهربائي طومسون 7 كيلو وات بعد النشر" />
+            <figcaption>مثال من المنتجات الجديدة: صفحة سخان كهربائي طومسون 7 كيلو وات مع السعر والتصنيف والعلامة التجارية.</figcaption>
+          </figure>
+        </div>
+      </section>
+
+      <section id="category-work">
+        <span class="section-label normal">عمل شهري معتاد: التصنيفات التجارية</span>
+        <div class="section-head">
+          <div>
+            <div class="section-kicker">التصنيفات التجارية</div>
+            <h2>تحولت صفحات التصنيفات من قوائم قصيرة إلى صفحات مفيدة للشراء والبحث.</h2>
+          </div>
+        </div>
+        <div class="grid grid-2">
+          <div class="card">
+            <h3>تصنيفات عربية تمت إعادة كتابتها</h3>
+            <ul>
+              <li>سخانات ماء غاز</li>
+              <li>دفايات لهب تعمل بالغاز للمنازل والحدائق</li>
+              <li>دفايات لهب تعمل بالإيثانول الحيوي</li>
+              <li>مضخات صرف</li>
+              <li>مضخات تقليب</li>
+            </ul>
+          </div>
+          <div class="card">
+            <h3>تصنيفات إنجليزية تمت إعادة كتابتها</h3>
+            <ul>
+              <li>Gas water heaters</li>
+              <li>Gas fireplaces</li>
+              <li>Bioethanol fireplaces</li>
+              <li>Booster pumps</li>
+              <li>Submersible pumps</li>
+              <li>Drainage</li>
+              <li>Circulators</li>
+            </ul>
+          </div>
+        </div>
+        <div class="screenshot-grid">
+          <figure class="report-shot">
+            <img src="site-screenshots/category-gas-water-heaters-ar.png" alt="لقطة مباشرة من تصنيف سخانات ماء غاز على موقع طاقة مصر" />
+            <figcaption>مثال عربي: تصنيف سخانات ماء غاز بعد ترتيب المنتجات داخل التصنيف.</figcaption>
+          </figure>
+          <figure class="report-shot">
+            <img src="site-screenshots/category-gas-fireplaces-en.png" alt="Live screenshot of the Gas Fireplaces category on Taqa Misr" />
+            <figcaption>مثال إنجليزي: تصنيف Gas Fireplaces ضمن صفحات التصنيفات التجارية المعاد العمل عليها.</figcaption>
+          </figure>
+        </div>
+      </section>
+
+      <section id="keywords">
+        <span class="section-label normal">عمل شهري معتاد: الكلمات والصفحات</span>
+        <div class="section-head">
+          <div>
+            <div class="section-kicker">الكلمات والصفحات</div>
+            <h2>الكلمات المهمة مرتبطة بصفحات واضحة يمكن متابعتها.</h2>
+          </div>
+        </div>
+        <h3>كلمات جلبت نقرات في بيانات يونيو</h3>
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr>
+                <th>الكلمة المفتاحية</th>
+                <th>الصفحة التي حصلت على الزيارات</th>
+                <th>النقرات</th>
+                <th>الظهور</th>
+                <th>متوسط الموضع</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td><strong>taqa misr</strong></td><td><a href="https://taqamisr.com/">الصفحة الرئيسية</a></td><td>46</td><td>121</td><td>7.14</td></tr>
+              <tr><td><strong>طاقة مصر</strong></td><td><a href="https://taqamisr.com/ar/">الصفحة الرئيسية العربية</a></td><td>33</td><td>93</td><td>4.08</td></tr>
+              <tr><td><strong>شركة طاقة مصر</strong></td><td><a href="https://taqamisr.com/ar/">الصفحة الرئيسية العربية</a></td><td>19</td><td>396</td><td>20.85</td></tr>
+              <tr><td><strong>اتوماتيك مضخة الماء لا تتوقف</strong></td><td><a href="https://taqamisr.com/ar/حل-مشكلة-مضخة-الماء-لا-تتوقف/">مقال حل مشكلة مضخة الماء لا تتوقف</a></td><td>9</td><td>122</td><td>4.54</td></tr>
+              <tr><td><strong>حل مشكلة ضعف ضغط المياه في الطوابق العلوية</strong></td><td><a href="https://taqamisr.com/ar/حل-ضعف-ضغط-المياه-الطوابق-العلوية/">مقال ضعف ضغط المياه</a></td><td>6</td><td>225</td><td>4.36</td></tr>
+              <tr><td><strong>taqamisr</strong></td><td><a href="https://taqamisr.com/domestic-water-pumps/">Domestic Water Pumps</a></td><td>5</td><td>5</td><td>1.00</td></tr>
+              <tr><td><strong>كيفية تركيب مضخة الماء في الخزان</strong></td><td><a href="https://taqamisr.com/ar/كيفية-تركيب-مضخة-الماء/">مقال تركيب مضخة الماء</a></td><td>5</td><td>443</td><td>5.00</td></tr>
+              <tr><td><strong>electric fireplace egypt</strong></td><td><a href="https://taqamisr.com/product-category/fireplaces/">Fireplaces</a></td><td>4</td><td>25</td><td>4.12</td></tr>
+              <tr><td><strong>تدفئة مركزية</strong></td><td><a href="https://taqamisr.com/ar/التدفئة-المركزية/">صفحة التدفئة المركزية</a></td><td>3</td><td>483</td><td>5.91</td></tr>
+            </tbody>
+          </table>
+        </div>
+
+        <h3 style="margin-top: 24px;">كلمات تحسنت في الترتيب مع الصفحة المرتبطة بها</h3>
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr>
+                <th>الكلمة المفتاحية</th>
+                <th>الصفحة المرتبة</th>
+                <th>موضع يونيو</th>
+                <th>الموضع السابق</th>
+                <th>الحركة</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td><strong>دفاية غاز</strong></td><td><a href="https://taqamisr.com/ar/product-category/دفايات-اللهب/دفايات-غاز/">دفايات لهب تعمل بالغاز</a></td><td>#1</td><td>#2</td><td>صعود مركز واحد</td></tr>
+              <tr><td><strong>دفاية حمام</strong></td><td><a href="https://taqamisr.com/ar/دفايات-الحمام-الكهربائية/">دفايات الحمام الكهربائية</a></td><td>#1</td><td>#2</td><td>صعود مركز واحد</td></tr>
+              <tr><td><strong>التدفئة المركزية</strong></td><td><a href="https://taqamisr.com/ar/التدفئة-المركزية/">صفحة التدفئة المركزية</a></td><td>#1</td><td>#3</td><td>صعود مركزين</td></tr>
+              <tr><td><strong>سخان اريستون</strong></td><td><a href="https://taqamisr.com/ar/العلامة-التجارية/أريستون/">صفحة علامة أريستون</a></td><td>#10</td><td>#25</td><td>صعود 15 مركزا</td></tr>
+              <tr><td><strong>مضخة مياه</strong></td><td><a href="https://taqamisr.com/ar/product-category/مضخات-المياه/">تصنيف مضخات المياه</a></td><td>#7</td><td>#26</td><td>صعود 19 مركزا</td></tr>
+              <tr><td><strong>heating system</strong></td><td><a href="https://taqamisr.com/central-space-heating/">Central Space Heating</a></td><td>#1</td><td>#4</td><td>صعود 3 مراكز</td></tr>
+              <tr><td><strong>towel warmer</strong></td><td><a href="https://taqamisr.com/electric-towel-radiators/">Electric Towel Radiators</a></td><td>#1</td><td>#2</td><td>صعود مركز واحد</td></tr>
+              <tr><td><strong>كيفية زيادة ضغط الماء في المواسير</strong></td><td><a href="https://taqamisr.com/ar/حل-ضعف-ضغط-المياه-الطوابق-العلوية/">مقال ضعف ضغط المياه</a></td><td>#2</td><td>#3</td><td>صعود مركز واحد</td></tr>
+              <tr><td><strong>مميزات وعيوب سخان غاز اريستون 6 لتر</strong></td><td><a href="https://taqamisr.com/ar/product/سخان-مياه-أريستون-الإيطالية-سعة-6-لتر-يع/">صفحة سخان أريستون 6 لتر</a></td><td>#8</td><td>لم يكن ظاهرا</td><td>دخول جديد للصفحة الأولى</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="screenshot-grid">
+          <figure class="report-shot wide">
+            <img src="june%20screenshots/CleanShot%202026-07-03%20at%2010.43.06@2x.png" alt="لقطة Ahrefs تعرض اتجاه الظهور والزيارات العضوية خلال آخر عامين" />
+            <figcaption>لقطة Ahrefs: اتجاه الظهور والزيارات العضوية بعد فترة التوقف والعودة للعمل في يونيو.</figcaption>
+          </figure>
+        </div>
+      </section>
+
+      <section id="technical-readings">
+        <span class="section-label normal">عمل شهري معتاد: قراءات فنية</span>
+        <div class="section-head">
+          <div>
+            <div class="section-kicker">توزيع النقرات والمواضع</div>
+            <h2>تحليل النقرات حسب الجهاز والموضع في نتائج البحث.</h2>
+          </div>
+        </div>
+        <div class="grid grid-2">
+          <div class="card">
+            <h3>توزيع الأجهزة</h3>
+            <div class="bars">
+              <div class="bar-row"><strong>الموبايل</strong><div class="bar-track"><div class="bar-fill" style="width: 82%;"></div></div><span>658 نقرة</span></div>
+              <div class="bar-row"><strong>سطح المكتب</strong><div class="bar-track"><div class="bar-fill orange" style="width: 17%;"></div></div><span>136 نقرة</span></div>
+              <div class="bar-row"><strong>الأجهزة اللوحية</strong><div class="bar-track"><div class="bar-fill" style="width: 1%;"></div></div><span>8 نقرات</span></div>
+            </div>
+            <p class="data-note">حقق الموبايل نحو 82% من نقرات يونيو، لذلك يجب أن تبقى صفحات المنتجات والتصنيفات سريعة وواضحة وموجهة لاتخاذ الإجراء على الموبايل.</p>
+          </div>
+          <div class="card">
+            <h3>توزيع المواضع</h3>
+            <div class="bars">
+              <div class="bar-row"><strong>المراكز 1-3</strong><div class="bar-track"><div class="bar-fill" style="width: 20%;"></div></div><span>19.9%</span></div>
+              <div class="bar-row"><strong>المراكز 4-10</strong><div class="bar-track"><div class="bar-fill orange" style="width: 69%;"></div></div><span>68.8%</span></div>
+              <div class="bar-row"><strong>المراكز 11+</strong><div class="bar-track"><div class="bar-fill" style="width: 11%;"></div></div><span>11.3%</span></div>
+            </div>
+            <p class="data-note">معظم النقرات في عرض توزيع المواضع جاءت من نتائج الصفحة الأولى. الفرصة التالية هي رفع مزيد من الصفحات التجارية من الصفحة الثانية إلى المراكز 4-10، ثم دفع الصفحات القوية نحو أول ثلاثة مراكز.</p>
+          </div>
+        </div>
+      </section>
+
+      <section id="migration-work" class="section-divider">
+        <span class="section-label extra">عمل استثنائي مؤقت: دمج المتجر القديم داخل الموقع</span>
+        <div class="section-head">
+          <div>
+            <div class="section-kicker">دمج الموقع والستور</div>
+            <h2>تمت حماية الصفحات التي كانت تظهر من روابط المتجر القديم أثناء دمج المتجر داخل الموقع.</h2>
+          </div>
+        </div>
+        <div class="highlight">
+          <p><strong>لماذا كان هذا العمل مهما؟</strong> عند نقل المتجر من نطاق فرعي منفصل إلى داخل الموقع الحالي، قد تستمر نتائج Google في عرض روابط المتجر القديم لفترة. هذا طبيعي في أي موقع بعد تغيير هيكله، لكنه يصبح خطرا إذا ضغط المستخدم على نتيجة قديمة ولم يصل إلى صفحة المنتج أو التصنيف الحالية.</p>
+          <p>لذلك كان دور المتابعة هو حماية الزيارات التي لديها نية شراء: مراجعة الروابط القديمة، والتأكد من وصولها إلى الصفحات الحالية، ومراقبة أن دمج الموقع والستور لا يؤدي إلى فقدان صفحات كانت تظهر فعلا في البحث.</p>
+        </div>
+        <div class="grid grid-3" style="margin-top:16px;">
+          <div class="card metric green">
+            <span class="value">210</span>
+            <span class="label">رابطا قديما تمت مراجعته</span>
+            <span class="note">تمت مراجعة روابط من خرائط المتجر القديم.</span>
+          </div>
+          <div class="card metric green">
+            <span class="value">210</span>
+            <span class="label">رابطا أصبح يوجه للصفحة الحالية</span>
+            <span class="note">تم التأكد من وصول الروابط إلى الصفحات الحالية بعد المعالجة.</span>
+          </div>
+          <div class="card metric orange">
+            <span class="value">مرة واحدة</span>
+            <span class="label">طبيعة العمل</span>
+            <span class="note">هذا عمل مرتبط بظرف دمج المتجر، وليس جزءا من العمل الشهري المعتاد.</span>
+          </div>
+        </div>
+        <div class="grid grid-2" style="margin-top:16px;">
+          <div class="card">
+            <h3>ما الذي كان يمكن أن يحدث؟</h3>
+            <ul class="compact-list">
+              <li>روابط قديمة للمنتجات والتصنيفات كانت ما زالت تظهر في نتائج البحث.</li>
+              <li>بعض الروابط القديمة لم تكن تصل إلى صفحة المنتج أو التصنيف الحالي.</li>
+              <li>الخطر كان فقدان زيارات لها نية شراء أو تصفح منتجات.</li>
+            </ul>
+          </div>
+          <div class="card">
+            <h3>ما الذي تم تأمينه؟</h3>
+            <ul class="compact-list">
+              <li>210 من 210 روابط قديمة تم التأكد أنها تصل للصفحات الحالية.</li>
+              <li>أصبحت روابط المنتجات العربية والإنجليزية تصل إلى الصفحات الحالية.</li>
+              <li>تم توحيد روابط التصنيفات والعلامات التجارية داخل هيكل الموقع الحالي.</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section id="summary-close">
+        <div class="highlight">
+          <h2>الخلاصة</h2>
+          <p>يونيو كان شهر عودة وتنظيم: عاد العمل الشهري المعتاد على SEO، وتم توسيع صفحات المنتجات والتصنيفات بأكثر من المتفق عليه، وفي الوقت نفسه تمت متابعة العمل الاستثنائي الخاص بدمج المتجر القديم داخل الموقع الحالي وحماية الروابط القديمة.</p>
+          <p>الأولوية التالية هي الاستمرار دون توقف: متابعة أداء صفحات المنتجات والتصنيفات، تحسين الصفحات التي بدأت تدخل الصفحة الأولى، ومراقبة أثر دمج المتجر حتى تستقر إشارات البحث بالكامل.</p>
+        </div>
+      </section>
+
+      <footer class="footer">
+        <p><strong>أعد هذا التقرير لطاقة مصر.</strong> يلخص التقرير تقدم تحسين محركات البحث في يونيو 2026، ويفصل بين العمل الشهري المعتاد والعمل الاستثنائي المرتبط بدمج المتجر القديم داخل الموقع الحالي.</p>
+      </footer>
+    </div>
+  </main>
+
+  <script>
+    document.querySelectorAll(".table-wrap table").forEach(function(table) {
+      var headers = Array.from(table.querySelectorAll("thead th")).map(function(th) {
+        return th.textContent.trim();
+      });
+      table.querySelectorAll("tbody tr").forEach(function(row) {
+        Array.from(row.children).forEach(function(cell, index) {
+          cell.setAttribute("data-label", headers[index] || "");
+        });
+      });
+    });
+  </script>
+</body>
+</html>
