@@ -40,6 +40,7 @@
       --green-bg: #e8f4ee;
       --amber-bg: #fff3e8;
       --shadow: 0 18px 55px rgba(0, 63, 104, 0.12);
+      --table-sticky-top: 0px;
     }
 
     * { box-sizing: border-box; }
@@ -321,6 +322,30 @@
     }
     tr:last-child td { border-bottom: 0; }
     td strong { color: var(--taqa-blue-dark); }
+    .floating-table-head {
+      position: fixed;
+      top: var(--table-sticky-top);
+      left: 0;
+      width: 0;
+      overflow: hidden;
+      display: none;
+      z-index: 18;
+      border: 1px solid var(--line);
+      border-bottom: 0;
+      border-radius: 8px 8px 0 0;
+      background: var(--taqa-blue);
+      box-shadow: 0 12px 20px rgba(0, 63, 104, 0.16);
+      pointer-events: none;
+    }
+    .floating-table-head table {
+      min-width: 0;
+      margin: 0;
+      border-collapse: collapse;
+      table-layout: fixed;
+    }
+    .floating-table-head th {
+      white-space: normal;
+    }
     .screenshot-grid {
       display: grid;
       grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -476,6 +501,7 @@
         clip: rect(0 0 0 0);
         white-space: nowrap;
       }
+      .floating-table-head { display: none !important; }
       tbody, tr, td { display: block; width: 100%; }
       tr {
         border-bottom: 1px solid var(--line);
@@ -1012,6 +1038,13 @@
   </main>
 
   <script>
+    function updateTableStickyTop() {
+      var nav = document.querySelector(".report-nav");
+      var navIsSticky = nav && window.getComputedStyle(nav).position === "sticky";
+      var top = navIsSticky ? nav.getBoundingClientRect().height : 0;
+      document.documentElement.style.setProperty("--table-sticky-top", top + "px");
+    }
+
     document.querySelectorAll(".table-wrap table").forEach(function(table) {
       var headers = Array.from(table.querySelectorAll("thead th")).map(function(th) {
         return th.textContent.trim();
@@ -1021,6 +1054,84 @@
           cell.setAttribute("data-label", headers[index] || "");
         });
       });
+    });
+
+    var floatingTableHead = document.createElement("div");
+    floatingTableHead.className = "floating-table-head";
+    floatingTableHead.setAttribute("aria-hidden", "true");
+    document.body.appendChild(floatingTableHead);
+
+    function hideFloatingTableHeader() {
+      floatingTableHead.style.display = "none";
+      floatingTableHead.removeAttribute("data-table-index");
+    }
+
+    function renderFloatingTableHeader(table, wrap, index) {
+      var sourceCells = Array.from(table.querySelectorAll("thead th"));
+      if (!sourceCells.length) {
+        hideFloatingTableHeader();
+        return;
+      }
+
+      var wrapRect = wrap.getBoundingClientRect();
+      var tableRect = table.getBoundingClientRect();
+      var cloneTable = document.createElement("table");
+      var cloneHead = document.createElement("thead");
+      var cloneRow = document.createElement("tr");
+
+      cloneTable.style.width = tableRect.width + "px";
+      cloneTable.style.transform = "translateX(" + (-wrap.scrollLeft) + "px)";
+
+      sourceCells.forEach(function(cell) {
+        var cloneCell = document.createElement("th");
+        cloneCell.textContent = cell.textContent;
+        cloneCell.style.width = cell.getBoundingClientRect().width + "px";
+        cloneRow.appendChild(cloneCell);
+      });
+
+      cloneHead.appendChild(cloneRow);
+      cloneTable.appendChild(cloneHead);
+      floatingTableHead.replaceChildren(cloneTable);
+      floatingTableHead.style.left = wrapRect.left + "px";
+      floatingTableHead.style.width = wrapRect.width + "px";
+      floatingTableHead.style.display = "block";
+      floatingTableHead.setAttribute("data-table-index", index);
+    }
+
+    function updateFloatingTableHeader() {
+      updateTableStickyTop();
+      if (window.matchMedia("(max-width: 680px)").matches) {
+        hideFloatingTableHeader();
+        return;
+      }
+
+      var stickyTop = parseFloat(getComputedStyle(document.documentElement).getPropertyValue("--table-sticky-top")) || 0;
+      var active = null;
+      document.querySelectorAll(".table-wrap").forEach(function(wrap, index) {
+        if (active) return;
+        var table = wrap.querySelector("table");
+        var tableHead = table && table.querySelector("thead");
+        if (!tableHead) return;
+        var wrapRect = wrap.getBoundingClientRect();
+        var headHeight = tableHead.getBoundingClientRect().height;
+        if (wrapRect.top <= stickyTop && wrapRect.bottom > stickyTop + headHeight) {
+          active = { table: table, wrap: wrap, index: index };
+        }
+      });
+
+      if (!active) {
+        hideFloatingTableHeader();
+        return;
+      }
+
+      renderFloatingTableHeader(active.table, active.wrap, active.index);
+    }
+
+    updateFloatingTableHeader();
+    window.addEventListener("scroll", updateFloatingTableHeader, { passive: true });
+    window.addEventListener("resize", updateFloatingTableHeader);
+    document.querySelectorAll(".table-wrap").forEach(function(wrap) {
+      wrap.addEventListener("scroll", updateFloatingTableHeader, { passive: true });
     });
   </script>
 </body>
