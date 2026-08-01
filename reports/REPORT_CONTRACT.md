@@ -50,4 +50,10 @@ This file is the canonical contract for every monthly Taqa Misr SEO report.
 6. Additional store or temporary work
 7. Next focus
 
+## Publishing
+
+- Push completed Taqa Misr reports directly to `main`; do not stop at a feature branch or pull-request link.
+- Wait for the GitHub Pages workflow triggered by the `main` push and require a successful deployment.
+- Verify and return the exact live report URL, not the repository tree, branch URL, or reports root.
+
 The validator must pass before the report is presented as complete.
