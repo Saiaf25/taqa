@@ -16,8 +16,8 @@ This file is the canonical contract for every monthly Taqa Misr SEO report.
 
 ## Data ownership
 
-- Total search-query or keyword coverage must come from the Google Search Console-derived query-distribution dataset and its reviewed dashboard screenshot, never from Ahrefs. In the July 2026 report this is 5,461 versus 4,712 in June.
-- Never present the Ahrefs organic-keyword estimate (`117` in July 2026) as the site's total search-query or keyword coverage in this or any future Taqa Misr report. Use Ahrefs for ranking positions, ranking movement, and link metrics, not for this total-coverage KPI.
+- Total search-query or keyword coverage and every positional bucket in that distribution must come from the same Google Search Console-derived query-distribution dataset and its reviewed dashboard screenshot, never from Ahrefs. In July 2026 this is 5,461 total, 1,815 in positions 1–3, and 2,098 in positions 4–10.
+- Never present the Ahrefs organic-keyword estimate (`117`) or its top-three estimate (`50`) as the site's total search-query coverage or any bucket within that coverage in this or any future Taqa Misr report. Use Ahrefs for individual keyword rankings, ranking movement, and link metrics, not for these distribution KPIs.
 - Google rankings and ranking movement come from Ahrefs first.
 - When Ahrefs has no position for an exact keyword, use Google Search Console as the fallback and identify the source in that row.
 - If an exact priority keyword is not tracked in Ahrefs, label that limitation neutrally in the result rather than presenting the Google Search Console average-position change as an Ahrefs ranking result.

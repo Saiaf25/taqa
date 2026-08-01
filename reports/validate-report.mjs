@@ -126,8 +126,11 @@ const summaryBlock = html.match(/<section id="summary">([\s\S]*?)<\/section>/u)?
 if (!/<span class="metric-label">كلمات مفتاحية بحثية مرصودة<\/span>[\s\S]*?<bdi dir="rtl">5,461<\/bdi>[\s\S]*?<span class="metric-note neutral">Google Search Console<\/span>/u.test(summaryBlock)) {
   failures.push("Executive search-coverage KPI must be 5,461 and sourced from Google Search Console");
 }
-if (summaryBlock.includes("كلمات عضوية") || /<bdi dir="rtl">117<\/bdi>[\s\S]*?Ahrefs/u.test(summaryBlock)) {
-  failures.push("Ahrefs organic-keyword estimates must not be used as executive search coverage");
+if (!/<span class="metric-label">كلمات ضمن أول 3<\/span>[\s\S]*?<bdi dir="rtl">1,815<\/bdi>[\s\S]*?<span class="metric-note neutral">Google Search Console<\/span>/u.test(summaryBlock)) {
+  failures.push("Executive top-three coverage KPI must be 1,815 and sourced from Google Search Console");
+}
+if (summaryBlock.includes("كلمات عضوية") || summaryBlock.includes("Ahrefs") || /<bdi dir="rtl">(?:117|50)<\/bdi>/u.test(summaryBlock)) {
+  failures.push("Ahrefs organic-keyword and top-three estimates must not be used as executive search-distribution coverage");
 }
 
 const positionBlock = html.match(/<div data-report-block="positions">([\s\S]*?)<h3 style="margin-top:24px;">الصفحات الأعلى/u)?.[1] ?? "";
