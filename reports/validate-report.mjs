@@ -47,13 +47,17 @@ requireText("عروض منشورة");
 requireText("على صفحات المنتجات والفئات");
 requireText("أبرز 20 كلمة مفتاحية بحثية تحسنا");
 requireText("تعرض القائمة أكبر التحركات الصاعدة في Ahrefs بين 30 يونيو و31 يوليو.");
+requireText("أولويات المرحلة التالية");
+requireText("تسخين المياه والتدفئة المركزية:");
+requireText("استكمال كتابة وتحسين الأوصاف العربية والإنجليزية لجميع المنتجات المتبقية");
+requireText("تقوية الروابط بين الأدلة وصفحات الفئات والمنتجات");
 requireText('.bar-value, .rtl-number { direction:rtl');
 requireText("CleanShot%202026-08-01%20at%2015.09.28%402x.png");
 requireText("CleanShot%202026-08-01%20at%2015.07.17%402x.png");
 requireText("CleanShot%202026-08-01%20at%2015.06.48%402x.png");
 requireText("CleanShot%202026-08-01%20at%2015.08.29%402x.png");
 
-for (const text of ["استعلامات", "الموضع", "حدود القراءة", "مصادر ومنهجية", "تأخر المعالجة", "SEOstack", "Italtherm City Class FR System", "Italtherm Time Power", "2,625", "202,465", "نقرات البحث: يونيو مقابل يوليو", "نقرات يوليو حسب الجهاز", "اتسعت قاعدة الكلمات المرصودة", "اتجاه أداء الكلمات المفتاحية البحثية", "كل المحتوى المنجز خلال يوليو في قسم واحد.", "تراجع 4.9 مركز", "ltr-number", 'dir="ltr"', "direction: ltr;"]) forbidText(text);
+for (const text of ["استعلامات", "الموضع", "حدود القراءة", "مصادر ومنهجية", "تأخر المعالجة", "SEOstack", "Italtherm City Class FR System", "Italtherm Time Power", "2,625", "202,465", "نقرات البحث: يونيو مقابل يوليو", "نقرات يوليو حسب الجهاز", "اتسعت قاعدة الكلمات المرصودة", "اتجاه أداء الكلمات المفتاحية البحثية", "كل المحتوى المنجز خلال يوليو في قسم واحد.", "تراجع 4.9 مركز", "تحويل اتساع الظهور إلى نقرات أكثر", "ltr-number", 'dir="ltr"', "direction: ltr;"]) forbidText(text);
 
 const sectionOrder = ["summary", "technical-readings", "search-performance", "keywords", "content-work", "extra-work", "summary-close"];
 let cursor = -1;

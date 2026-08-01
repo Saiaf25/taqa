@@ -50,6 +50,13 @@ This file is the canonical contract for every monthly Taqa Misr SEO report.
 6. Additional store or temporary work
 7. Next focus
 
+## Next-focus priorities
+
+- Make the closing priorities specific to the account strategy; do not use generic instructions such as converting visibility into clicks or moving all positions 4–10 into the top three.
+- Lead with the water-heating and central-heating keyword clusters in Arabic and English, distinguishing terms close to the top three from terms that need ranking recovery.
+- Make completion of the remaining Arabic and English product descriptions a standing priority, starting with products related to water heating and central heating.
+- Connect informational guides, category pages, and product pages through relevant internal links so research journeys lead clearly to suitable products.
+
 ## Publishing
 
 - Push completed Taqa Misr reports directly to `main`; do not stop at a feature branch or pull-request link.
