@@ -1,4 +1,4 @@
-name: Refine Taqa Misr email signature
+name: Tighten TAQA logo alignment
 
 on:
   push:
@@ -9,23 +9,41 @@ permissions:
   contents: write
 
 jobs:
-  refine:
+  crop-logo:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
         with:
           ref: main
-      - name: Install image tools
-        run: python3 -m pip install --quiet pillow cairosvg
-      - name: Apply signature refinement
+      - name: Install Pillow
+        run: python3 -m pip install --quiet pillow
+      - name: Crop invisible logo margins
         run: |
-          sed -i "s#https://raw.githubusercontent.com/simple-icons/simple-icons/develop/icons/linkedin.svg#https://raw.githubusercontent.com/FortAwesome/Font-Awesome/6.x/svgs/brands/linkedin-in.svg#" .github/refine_email_signature.py
-          python3 .github/refine_email_signature.py
-      - name: Commit refined signature
+          python3 <<'PY'
+          from PIL import Image, ImageChops
+          p = 'email-signature/assets/taqa-logo.png'
+          logo = Image.open(p).convert('RGBA')
+          before = logo.size
+          flat = Image.new('RGB', logo.size, (255, 255, 255))
+          flat.paste(logo.convert('RGB'), (0, 0), logo.getchannel('A'))
+          white = Image.new('RGB', flat.size, (255, 255, 255))
+          diff = ImageChops.difference(flat, white).convert('L')
+          diff = diff.point(lambda px: 255 if px > 12 else 0)
+          bbox = diff.getbbox()
+          print('Detected visible-pixel bbox:', bbox, 'from', before)
+          if bbox:
+              l, t, r, b = bbox
+              pad = 1
+              bbox = (max(0, l-pad), max(0, t-pad), min(logo.width, r+pad), min(logo.height, b+pad))
+              logo = logo.crop(bbox)
+              logo.save(p, optimize=True)
+          print('Final TAQA logo size:', logo.size)
+          PY
+      - name: Commit tighter logo
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add email-signature/index.html email-signature/assets
+          git add email-signature/assets/taqa-logo.png
           git diff --cached --quiet && exit 0
-          git commit -m "Refine email signature logos alignment and Zoho copy"
+          git commit -m "Tighten TAQA logo alignment"
           git push origin main
