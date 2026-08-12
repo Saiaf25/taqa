@@ -1,0 +1,44 @@
+name: Fix Taqa Misr logo
+
+on:
+  push:
+    paths:
+      - '.github/workflows/fix-taqa-logo.yml'
+
+permissions:
+  contents: write
+
+jobs:
+  fix-logo:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+
+      - name: Download official English Taqa Misr logo
+        run: |
+          python3 - <<'PY'
+          from urllib.request import Request, urlopen
+          from pathlib import Path
+
+          url = 'https://taqamisr.com/wp-content/uploads/2023/05/logo-english-digital-01-scaled-300x97.png'
+          req = Request(url, headers={'User-Agent': 'Mozilla/5.0', 'Accept': 'image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8'})
+          with urlopen(req, timeout=30) as r:
+              data = r.read()
+              ctype = r.headers.get('Content-Type', '')
+          if not data.startswith(b'\x89PNG'):
+              raise SystemExit(f'Expected PNG, got {ctype}, first bytes={data[:20]!r}')
+          out = Path('email-signature/assets/taqa-logo.png')
+          out.write_bytes(data)
+          print(f'Downloaded official logo: {len(data)} bytes')
+          PY
+
+      - name: Commit official logo
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add email-signature/assets/taqa-logo.png
+          git diff --cached --quiet && exit 0
+          git commit -m "Replace signature logo with official Taqa Misr logo"
+          git push origin main
