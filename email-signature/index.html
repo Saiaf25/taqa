@@ -194,8 +194,11 @@
                 </td>
               </tr>
               <tr>
-                <td style="width:22px;padding:0 5px 8px 0;vertical-align:top;color:#20a464;font-size:16px;">●</td>
-                <td style="padding:0 0 8px 0;vertical-align:top;">
+                <td style="width:54px;padding:0 7px 8px 0;vertical-align:middle;white-space:nowrap;">
+                  <a id="outWhatsAppLink" href="https://wa.me/201012345678" target="_blank" title="WhatsApp" style="display:inline-block;margin:0 5px 0 0;text-decoration:none;border:0;vertical-align:middle;"><img src="https://saiaf25.github.io/taqa/email-signature/assets/whatsapp.png" width="20" height="20" alt="WhatsApp" style="display:block;width:20px;height:20px;border:0;outline:none;"></a>
+                  <a id="outMobileIconLink" href="tel:+201012345678" title="Mobile" style="display:inline-block;text-decoration:none;border:0;vertical-align:middle;"><img src="https://saiaf25.github.io/taqa/email-signature/assets/mobile.png" width="20" height="20" alt="Mobile" style="display:block;width:20px;height:20px;border:0;outline:none;"></a>
+                </td>
+                <td style="padding:0 0 8px 0;vertical-align:middle;">
                   <a id="outMobileLink" href="tel:+201012345678" style="color:#003ca6;text-decoration:none;"><span id="outMobile">(+20) 10 1234 5678</span></a>
                 </td>
               </tr>
@@ -210,17 +213,14 @@
                 <td colspan="2" style="padding:0;">Support: <a href="tel:+201210104800" style="color:#003ca6;text-decoration:none;">(+20) 12 1010 4800</a></td>
               </tr>
               <tr>
-                <td colspan="2" style="padding:0;">Phone: <a href="tel:+20222614715" style="color:#003ca6;text-decoration:none;">(+20) 2 2261 4715</a></td>
-              </tr>
-              <tr>
                 <td colspan="2" style="padding:0 0 7px 0;">WhatsApp: <a href="https://wa.me/201276101072" style="color:#003ca6;text-decoration:none;">(+20) 12 7610 1072</a></td>
               </tr>
               <tr>
-                <td colspan="2" style="padding:0 0 5px 0;white-space:nowrap;">
-                  <a href="https://facebook.com/taqamisr" style="display:inline-block;margin:0 5px 0 0;padding:2px 6px;background:#005994;color:#ffffff;text-decoration:none;font-size:11px;font-weight:bold;">Facebook</a>
-                  <a href="https://instagram.com/taqamisr" style="display:inline-block;margin:0 5px 0 0;padding:2px 6px;background:#005994;color:#ffffff;text-decoration:none;font-size:11px;font-weight:bold;">Instagram</a>
-                  <a href="https://www.youtube.com/taqamisr" style="display:inline-block;margin:0 5px 0 0;padding:2px 6px;background:#005994;color:#ffffff;text-decoration:none;font-size:11px;font-weight:bold;">YouTube</a>
-                  <a href="https://www.linkedin.com/company/taqamisr" style="display:inline-block;margin:0;padding:2px 6px;background:#005994;color:#ffffff;text-decoration:none;font-size:11px;font-weight:bold;">LinkedIn</a>
+                <td colspan="2" style="padding:0 0 7px 0;white-space:nowrap;">
+                  <a href="https://facebook.com/taqamisr" target="_blank" title="Facebook" style="display:inline-block;margin:0 7px 0 0;text-decoration:none;border:0;"><img src="https://saiaf25.github.io/taqa/email-signature/assets/facebook.png" width="22" height="22" alt="Facebook" style="display:block;width:22px;height:22px;border:0;outline:none;"></a>
+                  <a href="https://instagram.com/taqamisr" target="_blank" title="Instagram" style="display:inline-block;margin:0 7px 0 0;text-decoration:none;border:0;"><img src="https://saiaf25.github.io/taqa/email-signature/assets/instagram.png" width="22" height="22" alt="Instagram" style="display:block;width:22px;height:22px;border:0;outline:none;"></a>
+                  <a href="https://www.youtube.com/taqamisr" target="_blank" title="YouTube" style="display:inline-block;margin:0 7px 0 0;text-decoration:none;border:0;"><img src="https://saiaf25.github.io/taqa/email-signature/assets/youtube.png" width="22" height="22" alt="YouTube" style="display:block;width:22px;height:22px;border:0;outline:none;"></a>
+                  <a href="https://www.linkedin.com/company/taqamisr" target="_blank" title="LinkedIn" style="display:inline-block;text-decoration:none;border:0;"><img src="https://saiaf25.github.io/taqa/email-signature/assets/linkedin.png" width="22" height="22" alt="LinkedIn" style="display:block;width:22px;height:22px;border:0;outline:none;"></a>
                 </td>
               </tr>
               <tr>
@@ -288,6 +288,8 @@
         document.getElementById('outTitle').textContent = title;
         document.getElementById('outMobile').textContent = mobile;
         document.getElementById('outMobileLink').href = `tel:${phoneDigits}`;
+        document.getElementById('outMobileIconLink').href = `tel:${phoneDigits}`;
+        document.getElementById('outWhatsAppLink').href = `https://wa.me/${phoneDigits.replace(/^\+/, '')}`;
         document.getElementById('outEmail').textContent = email;
         document.getElementById('outEmailLink').href = `mailto:${email}`;
         result.textContent = '';
