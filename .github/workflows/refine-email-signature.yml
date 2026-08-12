@@ -18,7 +18,9 @@ jobs:
       - name: Install image tools
         run: python3 -m pip install --quiet pillow cairosvg
       - name: Apply signature refinement
-        run: python3 .github/refine_email_signature.py
+        run: |
+          sed -i "s#https://www.instagram.com/favicon.ico#https://www.instagram.com/static/images/ico/favicon-200.png/ab6eff595bb1.png#" .github/refine_email_signature.py
+          python3 .github/refine_email_signature.py
       - name: Commit refined signature
         run: |
           git config user.name "github-actions[bot]"
