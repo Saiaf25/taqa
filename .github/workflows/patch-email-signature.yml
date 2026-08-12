@@ -1,0 +1,106 @@
+name: Patch email signature icons
+
+on:
+  push:
+    paths:
+      - '.github/workflows/patch-email-signature.yml'
+
+permissions:
+  contents: write
+
+jobs:
+  patch:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+
+      - name: Update email signature
+        run: |
+          python3 <<'PY'
+          from pathlib import Path
+
+          path = Path('email-signature/index.html')
+          text = path.read_text(encoding='utf-8')
+
+          facebook = 'iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAABCklEQVR42mOUKP/0n2EIAyaGIQ5GPTDqgVEPjHpg1AOjHhj1wEACFloaLi3AxBBiyMJgrsjMoCbGxCDAxcjAxcrIwMiIqu74vb8MQbO+DS4PFLuwMeQ7sjOwMg/BGCh3Y2cocGIbmnlAToiJIduebehmYh8dFponG5omIQNZ3K4/evcvQ/WmHwwP3v5j+PlnkHpAkIsRp9z0Q78Ybr78N7iTEDueIPn8k/q9V0ZK+8RmCswMGzO4KHKEx5RvDBef/B1tSox6YNQDA5GJ0cGmTC4GU3nsdYH/jG8Mpx78HY2BUQ+MemDUA6MeGPXAqAdGPTDqgVEPjHpg1AODs0MzGgOjHhj1wKgHSAIA7CMyvi4YVXYAAAAASUVORK5CYII='
+          instagram = 'iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAADWklEQVR42tWZQWsTURCAZx79HaJHrwpNG5K0IkgvMQdv+ifaQ2pIDKUEiyhS9FaKJ/EqotKmgvTQNNv0J/gX9Opx33pIk+y+nZn33iZZ3IFCoC+b721m5pu3wb8v70ZaI0Rajf8iRb7W7P9w+lpbrkGvQ3LddI3leqrI8CEgqCLDa1Q3GygofIgKVJHhNTIpVBR4MoWKBB+CgpWs8Hc+fIFFR1DreMFrRMA/z9ciH/jbx19h2TFY33eCD1EB/m6WIxf4W0ffIe84Xz0Q4TUqUP8rPADAg+u2CK/RqAEubaj49ezpwgu2EuylPkeCZ0xsz/llwEfMjdoKmiw80UbT3SYv+Oqoy6YSB6+TJra3ymXBR5ESa6FxuU3ChzMT05IyY5mS+ll6JW6Cgh8XsWDY1AY84O+fHabeP6x0RUn119/AVtAkN0DBJ0ysHYrKBf5e/x17F8uDHgAAXJR6rKS+lQ9BI0Ljcjv1DZjw02FOO+blPPDxqI66VsOSKWSsm4mMyVG+BrLDu0oqlUIEfDiuAfe+7ANPDWZmq3x0tQsn5bdkn6eLOAmvpQMN3YXQaR03VZ6vHhDFSUuKWxeHt56JpTbKdRvbSPxj7XVifX24Q0qKHSlkEytxBqL6vMsmzYKl0sPs83QRiyZW1jGCkpRtk1S3cZFUuohFEysvE8cNK22Sa5UuknI1sZLGA+rumuMBt0mpz7Mp5LnJRApRkmJFFtv0sNL1kpRp2E8bR6SkbJtMdCHOsFJ6SN8CJykTXjKstC6eTivSeODSYSKt4KLUIyVli4+bx6xhORPH4cNkDaCjiZWzpLLCc9+ACR+rAXQ0sfKSVFZ4ysQUvEa8OQ8wh5EskprMNvXhTur9XMFSkuK6UBx+fB4QTlJZJDWB+lx5zx4DbfA2E0/gSRPPKynpAO4KL5k4Dp8ysdnng1oncZFKsJcLfOv0SeJzX9RPSPiEibkDuBm1606u8LMOlIafppD09GCwvp+64MNRKzf49uM+Cx8CxkSW4YlZHiHBz1LI8tzGV1KLilbjTITXqACvNncjn19G8rjztrSZpZ0CDDZake/POtxgNm9I3YaC14iAw2o78oVfRMFys40PfAjMmbgo8KSJiwSf+p24aPCJ80AR4acpVFR4jQr+AV1dXndNhlmnAAAAAElFTkSuQmCC'
+          youtube = 'iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAAwElEQVR42u2YSw6AIAxEKfH+V65bE8VP6HSombd28YaxoLQmhBBCCB729kFvzQlyNh2AIf4liK0s/iZIryI/8urVh7hXWf2RX3wD7rwGwlbfHRrk6ImdgYQ28EMMbiNvFwKFyN1GAW1wzoHAINyDLCAE/ySebGPjf6FZ4QYm5XkNBIhzAgSK579CAPmcBkDiOQ2A5U8B7MMtxaM4UP7o2Suu+u0rFNZC0s3E/37qV27hyuu/N3MrBFl9HoUQQohpdu+IMjbYAGmUAAAAAElFTkSuQmCC'
+          linkedin = 'iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAABOElEQVR42mPkSjv0n2EIAyaGIQ5GPTDqgVEPjHpg1AOjHhj1wKgHRj0w6oFRD5ANWMjV+Gm6DQMzEyOc79h5geHUvc+jMTDqgaEGGId6p55mmRib/LP3vxhKvWQZ3LSFGCT42Rg+ff/DcPDmB4bWLY8Ybj7/Rl8PkApctAQZ8t1kGHjYmeFiIrysDMEmogxuOkIMjp0XGK4/+zZ480C1rzyK45EBLwczQ0eI0uDPxJP2PGVQrzjFoFp+kmHLxbcoco6aAgzcODw4KDyw5+p7hsrV9xievP/J8OzDL4bK1fdQ5JmZGBnkhTkGrwdWnnqFwn/6/heGGm52psHrgcfvfqLwf/39h1mmMw7iPPDzD6qD/1Op9hltSox6YNQDo63R0RgY9cCoB0Y9MOqBUQ+MemDUA6MeGCgAAIUjUlbL5pIeAAAAAElFTkSuQmCC'
+          whatsapp = 'iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAABZUlEQVR42u2ZSxKCMAyGScaryAqvJWfCa8kKDlNXzjidPpImJcEhS630+9O8qMNwma2B9gPv72eordkfL3AlgALdSwxYQGuKQS/wrc8FD+CS00CP8Jz90CM8Z1/0Ck/dHz3DUzjQO3yN59Zrw21akp+P69x/lKh5PwU3rnMWOmctYuLyChrwEpOKQOvYljoEPSSoRARwKw91s1xo5PKnNYy6nEAJKP5OWpXwSPh4jUZJRc3GxQGSwn95XSTxoSGU85x2hz1VGb0EXALOJiCVsNpDHtVU3we2aSFXo5JgTkVD7jWGxqxUW0N5hngWKnnpyHASJbFV88oKaAmjlIjewtTfyCxPQq0PcEbk2hqOQ5puJSwtDnOkLPIK/9+jRKzWalSoRQVyfrRNi4mQUkiTYj2EEKxKaC0fxQJ6CqEUE/DqfWolbBqnPYCTTuDX+wDAvobsDU8SEINrd26zf+olYrx2ehP7ACm2wZV2euAHAAAAAElFTkSuQmCC'
+          mobile = 'iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAAlElEQVR42u2YwRGAIAwEgaFJe7Ace6BM/TqOH02OwLD7J2Th8klKAGuTTae343TrpO25n4Bn40aRMnuEylCv/6N+jcqu16PUyMtjIjT9DAzG9DNAhBBAAAEEEEAAAQQQQAABBBBAAAEE1hSo0ur3hZXHAqzrDzy3baIlMDMQTTZHQ8GHeSnK4urmF42QKk7qnwV45wLDJiEbVNlaRwAAAABJRU5ErkJggg=='
+
+          old_mobile = '''              <tr>
+                <td style="width:22px;padding:0 5px 8px 0;vertical-align:top;color:#20a464;font-size:16px;">●</td>
+                <td style="padding:0 0 8px 0;vertical-align:top;">
+                  <a id="outMobileLink" href="tel:+201012345678" style="color:#003ca6;text-decoration:none;"><span id="outMobile">(+20) 10 1234 5678</span></a>
+                </td>
+              </tr>'''
+
+          new_mobile = f'''              <tr>
+                <td style="width:54px;padding:0 7px 8px 0;vertical-align:middle;white-space:nowrap;">
+                  <a id="outWhatsAppLink" href="https://wa.me/201012345678" target="_blank" style="display:inline-block;margin:0 5px 0 0;text-decoration:none;border:0;vertical-align:middle;"><img src="data:image/png;base64,{whatsapp}" width="20" height="20" alt="WhatsApp" style="display:block;width:20px;height:20px;border:0;"></a>
+                  <a id="outMobileIconLink" href="tel:+201012345678" style="display:inline-block;text-decoration:none;border:0;vertical-align:middle;"><img src="data:image/png;base64,{mobile}" width="20" height="20" alt="Mobile" style="display:block;width:20px;height:20px;border:0;"></a>
+                </td>
+                <td style="padding:0 0 8px 0;vertical-align:middle;">
+                  <a id="outMobileLink" href="tel:+201012345678" style="color:#003ca6;text-decoration:none;"><span id="outMobile">(+20) 10 1234 5678</span></a>
+                </td>
+              </tr>'''
+
+          old_phone = '''              <tr>
+                <td colspan="2" style="padding:0;">Phone: <a href="tel:+20222614715" style="color:#003ca6;text-decoration:none;">(+20) 2 2261 4715</a></td>
+              </tr>
+'''
+
+          old_social = '''              <tr>
+                <td colspan="2" style="padding:0 0 5px 0;white-space:nowrap;">
+                  <a href="https://facebook.com/taqamisr" style="display:inline-block;margin:0 5px 0 0;padding:2px 6px;background:#005994;color:#ffffff;text-decoration:none;font-size:11px;font-weight:bold;">Facebook</a>
+                  <a href="https://instagram.com/taqamisr" style="display:inline-block;margin:0 5px 0 0;padding:2px 6px;background:#005994;color:#ffffff;text-decoration:none;font-size:11px;font-weight:bold;">Instagram</a>
+                  <a href="https://www.youtube.com/taqamisr" style="display:inline-block;margin:0 5px 0 0;padding:2px 6px;background:#005994;color:#ffffff;text-decoration:none;font-size:11px;font-weight:bold;">YouTube</a>
+                  <a href="https://www.linkedin.com/company/taqamisr" style="display:inline-block;margin:0;padding:2px 6px;background:#005994;color:#ffffff;text-decoration:none;font-size:11px;font-weight:bold;">LinkedIn</a>
+                </td>
+              </tr>'''
+
+          new_social = f'''              <tr>
+                <td colspan="2" style="padding:0 0 7px 0;white-space:nowrap;">
+                  <a href="https://facebook.com/taqamisr" target="_blank" title="Facebook" style="display:inline-block;margin:0 7px 0 0;text-decoration:none;border:0;"><img src="data:image/png;base64,{facebook}" width="22" height="22" alt="Facebook" style="display:block;width:22px;height:22px;border:0;"></a>
+                  <a href="https://instagram.com/taqamisr" target="_blank" title="Instagram" style="display:inline-block;margin:0 7px 0 0;text-decoration:none;border:0;"><img src="data:image/png;base64,{instagram}" width="22" height="22" alt="Instagram" style="display:block;width:22px;height:22px;border:0;"></a>
+                  <a href="https://www.youtube.com/taqamisr" target="_blank" title="YouTube" style="display:inline-block;margin:0 7px 0 0;text-decoration:none;border:0;"><img src="data:image/png;base64,{youtube}" width="22" height="22" alt="YouTube" style="display:block;width:22px;height:22px;border:0;"></a>
+                  <a href="https://www.linkedin.com/company/taqamisr" target="_blank" title="LinkedIn" style="display:inline-block;text-decoration:none;border:0;"><img src="data:image/png;base64,{linkedin}" width="22" height="22" alt="LinkedIn" style="display:block;width:22px;height:22px;border:0;"></a>
+                </td>
+              </tr>'''
+
+          old_js = '''        document.getElementById('outMobile').textContent = mobile;
+        document.getElementById('outMobileLink').href = `tel:${phoneDigits}`;
+        document.getElementById('outEmail').textContent = email;'''
+
+          new_js = '''        document.getElementById('outMobile').textContent = mobile;
+        document.getElementById('outMobileLink').href = `tel:${phoneDigits}`;
+        document.getElementById('outMobileIconLink').href = `tel:${phoneDigits}`;
+        document.getElementById('outWhatsAppLink').href = `https://wa.me/${phoneDigits.replace(/^\\+/, '')}`;
+        document.getElementById('outEmail').textContent = email;'''
+
+          replacements = [
+              (old_mobile, new_mobile, 'personal mobile row'),
+              (old_phone, '', '4715 phone row'),
+              (old_social, new_social, 'social icons row'),
+              (old_js, new_js, 'dynamic phone links'),
+          ]
+
+          for old, new, label in replacements:
+              if old not in text:
+                  raise SystemExit(f'Could not find expected {label}')
+              text = text.replace(old, new, 1)
+
+          path.write_text(text, encoding='utf-8')
+          PY
+
+      - name: Commit patch
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add email-signature/index.html
+          git diff --cached --quiet && exit 0
+          git commit -m "Update email signature contact and social icons"
+          git push origin main
