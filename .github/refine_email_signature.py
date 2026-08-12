@@ -18,38 +18,22 @@ def fetch(url):
         return r.read()
 
 
-def favicon_to_png(name, url):
-    data = fetch(url)
-    image = Image.open(BytesIO(data))
-    best = None
-    n = getattr(image, 'n_frames', 1)
-    for i in range(n):
-        try:
-            image.seek(i)
-        except EOFError:
-            break
-        frame = image.convert('RGBA').copy()
-        if best is None or frame.width * frame.height > best.width * best.height:
-            best = frame
-    if best is None:
-        raise RuntimeError(f'No image frame for {name}')
-    side = max(best.size)
-    canvas = Image.new('RGBA', (side, side), (0, 0, 0, 0))
-    canvas.alpha_composite(best, ((side - best.width) // 2, (side - best.height) // 2))
-    canvas = canvas.resize((64, 64), Image.Resampling.LANCZOS)
-    canvas.save(assets / f'{name}.png', optimize=True)
-    print(f'official {name}: {url} -> {best.size}')
+def brand_svg_to_png(name, url, color):
+    svg = fetch(url).decode('utf-8')
+    svg = svg.replace('<svg ', f'<svg fill="{color}" ', 1)
+    cairosvg.svg2png(bytestring=svg.encode('utf-8'), write_to=str(assets / f'{name}.png'), output_width=64, output_height=64)
+    print(f'brand {name}: {url} {color}')
 
 
-official_icons = {
-    'facebook': 'https://www.facebook.com/favicon.ico',
-    'instagram': 'https://www.instagram.com/favicon.ico',
-    'youtube': 'https://www.youtube.com/favicon.ico',
-    'linkedin': 'https://www.linkedin.com/favicon.ico',
-    'whatsapp': 'https://www.whatsapp.com/favicon.ico',
+brand_icons = {
+    'facebook': ('https://raw.githubusercontent.com/simple-icons/simple-icons/develop/icons/facebook.svg', '#0866FF'),
+    'instagram': ('https://raw.githubusercontent.com/simple-icons/simple-icons/develop/icons/instagram.svg', '#E4405F'),
+    'youtube': ('https://raw.githubusercontent.com/simple-icons/simple-icons/develop/icons/youtube.svg', '#FF0000'),
+    'linkedin': ('https://raw.githubusercontent.com/simple-icons/simple-icons/develop/icons/linkedin.svg', '#0A66C2'),
+    'whatsapp': ('https://raw.githubusercontent.com/simple-icons/simple-icons/develop/icons/whatsapp.svg', '#25D366'),
 }
-for name, url in official_icons.items():
-    favicon_to_png(name, url)
+for name, (url, color) in brand_icons.items():
+    brand_svg_to_png(name, url, color)
 
 # Phone handset icon: only indicates a normal phone call, not a brand mark.
 phone_svg = fetch('https://raw.githubusercontent.com/FortAwesome/Font-Awesome/6.x/svgs/solid/phone.svg')
