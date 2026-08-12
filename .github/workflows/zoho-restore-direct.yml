@@ -1,0 +1,21 @@
+name: zoho-restore-direct
+on:
+  push:
+    paths:
+      - '.github/workflows/zoho-restore-direct.yml'
+permissions:
+  contents: write
+jobs:
+  restore:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+      - run: python3 .github/restore_zoho_copy.py
+      - run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add email-signature/index.html
+          git commit -m "Restore original Zoho copy technique"
+          git push origin main
