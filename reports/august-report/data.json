@@ -980,5 +980,97 @@
       "Grundfos",
       "grundfos"
     ]
+  ],
+  "rankingOverrides": [
+    {
+      "keyword": "booster pump",
+      "source": "Google Search Console",
+      "position_prev": 5.6,
+      "position": 6,
+      "aggregation": "Impression-weighted mean of daily GSC positions, rounded to one decimal",
+      "comparisonFrom": "2026-07-01",
+      "comparisonTo": "2026-07-31",
+      "from": "2026-08-01",
+      "to": "2026-08-31",
+      "days": [
+        31,
+        31
+      ]
+    },
+    {
+      "keyword": "تدفئة مركزية",
+      "source": "Google Search Console",
+      "position_prev": 5.1,
+      "position": 4.7,
+      "aggregation": "Impression-weighted mean of daily GSC positions, rounded to one decimal",
+      "comparisonFrom": "2026-07-01",
+      "comparisonTo": "2026-07-31",
+      "from": "2026-08-01",
+      "to": "2026-08-31",
+      "days": [
+        31,
+        31
+      ]
+    },
+    {
+      "keyword": "water pump",
+      "source": "Google Search Console",
+      "position_prev": 6.2,
+      "position": 10.3,
+      "aggregation": "Impression-weighted mean of daily GSC positions, rounded to one decimal",
+      "comparisonFrom": "2026-07-01",
+      "comparisonTo": "2026-07-31",
+      "from": "2026-08-01",
+      "to": "2026-08-31",
+      "days": [
+        31,
+        31
+      ]
+    },
+    {
+      "keyword": "مضخات المياه",
+      "source": "Google Search Console",
+      "position_prev": 16.4,
+      "position": 20.5,
+      "aggregation": "Impression-weighted mean of daily GSC positions, rounded to one decimal",
+      "comparisonFrom": "2026-07-01",
+      "comparisonTo": "2026-07-31",
+      "from": "2026-08-01",
+      "to": "2026-08-31",
+      "days": [
+        16,
+        7
+      ]
+    },
+    {
+      "keyword": "radiators central heating",
+      "source": "Google Search Console",
+      "position_prev": 11.8,
+      "position": 13.4,
+      "aggregation": "Impression-weighted mean of daily GSC positions, rounded to one decimal",
+      "comparisonFrom": "2026-07-01",
+      "comparisonTo": "2026-07-31",
+      "from": "2026-08-01",
+      "to": "2026-08-31",
+      "days": [
+        6,
+        4
+      ]
+    },
+    {
+      "keyword": "تدفئه مركزيه",
+      "source": "Google Search Console",
+      "position_prev": 7,
+      "position": 7,
+      "aggregation": "Impression-weighted mean of daily GSC positions, rounded to one decimal",
+      "comparisonFrom": "2026-07-01",
+      "comparisonTo": "2026-07-31",
+      "from": "2026-08-01",
+      "to": "2026-08-31",
+      "days": [
+        16,
+        17
+      ]
+    }
   ]
 }
