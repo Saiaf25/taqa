@@ -64,3 +64,15 @@ This file is the canonical contract for every monthly Taqa Misr SEO report.
 - Verify and return the exact live report URL, not the repository tree, branch URL, or reports root.
 
 The validator must pass before the report is presented as complete.
+
+## August 2026 locked evidence and adaptations
+
+- Preserve July's seven-section flow and font assets. Report period: 1–31 August versus 1–31 July; prepared 5 September 2026.
+- Use refreshed, same-period GSC comparisons: August 2,550 clicks / 203,341 impressions; July 2,703 / 209,456. Do not alter the archived July report to reconcile later data refreshes.
+- The supplied September 5 distribution screenshot is the source for August coverage: 5,313 total, 1,741 top three, 2,105 positions 4–10; its July baseline is 5,694 / 1,909 / 2,174. Exclude its partial September bar from the monthly comparison.
+- Last-28/30-day screenshots and undated country screenshots must not become calendar-August KPIs. Verify exact dates through live GSC.
+- August Ahrefs Rank Tracker: Egypt / desktop, last available crawl August 28 compared with July 31. Keep 22 verified upward movers first, followed by the exact client-priority list and related terms requiring attention. Use GSC monthly averages only for exact phrases absent in Ahrefs; zero-impression missing positions are unavailable, never rank zero.
+- August core content: four product-description pairs (Atlantic Combi O'Pro 100, Nardi instant electric 7/8 kW, Electron gas 10 L, Nardi gas 16 L), counted as 4 Arabic + 4 English pieces. Additional: three published bilingual article pairs and 20 refreshed brand pages, counted as 26 localized pages. Verify publication status and current permalinks; stale draft records are not final-state evidence.
+- Merchant Center account 5505125981: distinguish the August 28 recovery record (104 approved, 6 pending) from the September 5 status (110 approved, no rejected/limited/pending; 61 Arabic + 49 English listings). Listings are not unique product models. August product traffic: 186 impressions / 1 click. Never label the overview's combined store-and-product traffic as product-listing clicks or claim sales uplift from approval alone.
+- Lead with verified wins, report material declines proportionately, and do not infer their cause. Record the outstanding client approval requested August 12 and followed up August 15 as blocking execution of the landing-page improvement, not as a proven cause of lost traffic.
+- Validation command remains `node reports/validate-report.mjs reports/august-report/index.html`; it dispatches to the August assertions without weakening July's archived checks.

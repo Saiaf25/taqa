@@ -4,6 +4,11 @@ import { resolve } from "node:path";
 const target = resolve(process.argv[2] ?? "");
 if (!process.argv[2]) throw new Error("Usage: node reports/validate-report.mjs <report.html>");
 const html = readFileSync(target, "utf8");
+if (html.includes('data-report-period="2026-08"')) {
+  const { validateAugust } = await import('./validate-august.mjs');
+  validateAugust(html, target);
+  process.exit(0);
+}
 const failures = [];
 
 const requireText = (text) => {

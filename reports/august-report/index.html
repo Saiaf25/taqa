@@ -1,0 +1,741 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta name="robots" content="noindex">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>تقرير أداء SEO أغسطس 2026 | طاقة مصر</title>
+  <style>
+    @font-face {
+      font-family: "Thmanyah Serif Text";
+      src: url("assets/thmanyahseriftext-Regular.woff2") format("woff2");
+      font-weight: 400;
+      font-style: normal;
+      font-display: swap;
+    }
+    @font-face {
+      font-family: "Thmanyah Serif Text";
+      src: url("assets/thmanyahseriftext-Bold.woff2") format("woff2");
+      font-weight: 700;
+      font-style: normal;
+      font-display: swap;
+    }
+    @font-face {
+      font-family: "Thmanyah Serif Text";
+      src: url("assets/thmanyahseriftext-Black.woff2") format("woff2");
+      font-weight: 900;
+      font-style: normal;
+      font-display: swap;
+    }
+
+    :root {
+      --taqa-blue: #005993;
+      --taqa-blue-dark: #003f68;
+      --taqa-orange: #e07826;
+      --ink: #162332;
+      --muted: #627487;
+      --line: #dbe5ec;
+      --paper: #fbfdfe;
+      --soft: #f2f6f8;
+      --green: #217a4b;
+      --green-bg: #e8f4ee;
+      --amber-bg: #fff3e8;
+      --shadow: 0 18px 55px rgba(0, 63, 104, 0.12);
+      --table-sticky-top: 0px;
+    }
+
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      background: #eaf1f5;
+      color: var(--ink);
+      font-family: "Thmanyah Serif Text", Georgia, "Times New Roman", serif;
+      line-height: 1.65;
+      direction: rtl;
+      max-width: 100%;
+      overflow-x: clip;
+    }
+    h1, h2, h3, p, li, td, th, a, span { overflow-wrap: anywhere; }
+    a { color: var(--taqa-blue); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    h1, h2, h3, p { margin-top: 0; }
+
+    .page {
+      width: min(100%, 1120px);
+      max-width: 1120px;
+      margin: 28px auto;
+      background: #fff;
+      border-radius: 18px;
+      overflow: clip;
+      box-shadow: var(--shadow);
+    }
+    .cover {
+      position: relative;
+      padding: 54px 62px 46px;
+      color: #f8fbfd;
+      background:
+        linear-gradient(135deg, rgba(0, 89, 147, 0.98), rgba(0, 63, 104, 0.96)),
+        radial-gradient(circle at 15% 18%, rgba(224, 120, 38, 0.28), transparent 32%);
+    }
+    .cover::after {
+      content: "";
+      position: absolute;
+      inset: auto 0 0 0;
+      height: 8px;
+      background: var(--taqa-orange);
+    }
+    .eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      color: #ffd6b7;
+      font-weight: 700;
+      margin-bottom: 18px;
+    }
+    .eyebrow::before {
+      content: "";
+      width: 34px;
+      height: 3px;
+      background: var(--taqa-orange);
+      border-radius: 999px;
+    }
+    h1 {
+      max-width: 820px;
+      font-size: clamp(42px, 6vw, 72px);
+      line-height: 0.98;
+      margin-bottom: 22px;
+      font-weight: 900;
+      letter-spacing: 0;
+    }
+    .cover-copy {
+      max-width: 790px;
+      color: rgba(255,255,255,0.88);
+      font-size: 20px;
+      margin-bottom: 34px;
+    }
+    .cover-meta {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+    .pill {
+      display: inline-flex;
+      align-items: center;
+      min-height: 38px;
+      padding: 7px 14px;
+      border-radius: 999px;
+      background: rgba(255,255,255,0.1);
+      border: 1px solid rgba(255,255,255,0.22);
+      color: rgba(255,255,255,0.92);
+      font-size: 15px;
+      font-weight: 700;
+    }
+    .report-nav {
+      position: sticky;
+      top: 0;
+      z-index: 20;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      padding: 14px 62px;
+      background: rgba(255, 255, 255, 0.97);
+      border-bottom: 1px solid var(--line);
+      box-shadow: 0 12px 24px rgba(0, 63, 104, 0.06);
+    }
+    .report-nav a {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 38px;
+      padding: 7px 12px;
+      border: 1px solid var(--line);
+      border-radius: 999px;
+      background: #f8fbfd;
+      color: var(--taqa-blue-dark);
+      font-size: 14px;
+      font-weight: 900;
+      text-align: center;
+    }
+    .report-nav a:hover {
+      background: var(--taqa-blue);
+      color: #f8fbfd;
+      text-decoration: none;
+    }
+    .content {
+      padding: 46px 62px 60px;
+    }
+    section {
+      margin-bottom: 50px;
+      scroll-margin-top: 100px;
+      max-width: 100%;
+    }
+    .section-head {
+      display: flex;
+      align-items: flex-end;
+      justify-content: space-between;
+      gap: 24px;
+      margin-bottom: 22px;
+    }
+    .section-kicker {
+      color: var(--taqa-orange);
+      font-size: 14px;
+      font-weight: 900;
+      margin-bottom: 4px;
+    }
+    h2 {
+      color: var(--taqa-blue-dark);
+      font-size: 34px;
+      line-height: 1.12;
+      font-weight: 900;
+      margin-bottom: 0;
+    }
+    h3 {
+      color: var(--taqa-blue-dark);
+      font-size: 22px;
+      line-height: 1.2;
+      font-weight: 900;
+      margin-bottom: 10px;
+    }
+    .lead {
+      color: var(--muted);
+      font-size: 18px;
+      max-width: 760px;
+    }
+    .section-label {
+      display: inline-flex;
+      min-height: 34px;
+      align-items: center;
+      padding: 4px 12px;
+      border-radius: 999px;
+      font-size: 14px;
+      font-weight: 900;
+      margin-bottom: 12px;
+    }
+    .section-label.normal { background: #e8f3fa; color: var(--taqa-blue-dark); }
+    .section-label.extra { background: var(--amber-bg); color: #9a4f00; }
+    .section-divider {
+      padding-top: 30px;
+      border-top: 2px solid var(--line);
+    }
+
+    .grid { display: grid; gap: 16px; }
+    .grid-6 { grid-template-columns: repeat(6, minmax(0, 1fr)); }
+    .grid-5 { grid-template-columns: repeat(5, minmax(0, 1fr)); }
+    .grid-4 { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+    .grid-3 { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+    .grid-2 { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+    .card, .work-card {
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: #fff;
+      padding: 22px;
+      max-width: 100%;
+    }
+    .metric {
+      min-height: 148px;
+      border-top: 5px solid var(--taqa-blue);
+      background: linear-gradient(180deg, #fff, #f9fbfc);
+    }
+    .metric.orange { border-top-color: var(--taqa-orange); }
+    .metric.green { border-top-color: var(--green); }
+    .metric .value {
+      display: block;
+      color: var(--taqa-blue);
+      font-size: 39px;
+      line-height: 1;
+      font-weight: 900;
+      margin-bottom: 10px;
+    }
+    .metric .label {
+      display: block;
+      color: var(--ink);
+      font-weight: 900;
+      margin-bottom: 6px;
+    }
+    .metric .note {
+      color: var(--muted);
+      font-size: 14px;
+      line-height: 1.45;
+    }
+    .highlight {
+      background: linear-gradient(135deg, #f8fbfd, #fff);
+      border: 1px solid var(--line);
+      border-right: 6px solid var(--taqa-orange);
+      padding: 24px;
+      border-radius: 8px;
+    }
+    .highlight strong { color: var(--taqa-blue-dark); }
+    .work-map {
+      display: grid;
+      grid-template-columns: 1.35fr 1fr;
+      gap: 16px;
+      margin: 18px 0;
+    }
+    .work-card.primary { border-top: 5px solid var(--taqa-blue); }
+    .work-card.extra { border-top: 5px solid var(--taqa-orange); background: #fffaf6; }
+    .work-card ul, .compact-list { margin: 0; padding-right: 18px; }
+    .work-card li, .compact-list li { margin-bottom: 7px; }
+    .status {
+      display: inline-flex;
+      padding: 4px 10px;
+      border-radius: 999px;
+      background: var(--green-bg);
+      color: var(--green);
+      font-size: 13px;
+      font-weight: 900;
+    }
+    .status.amber {
+      color: #9a4f00;
+      background: var(--amber-bg);
+    }
+    .data-note {
+      color: var(--muted);
+      font-size: 14px;
+      background: var(--soft);
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      padding: 14px 16px;
+      margin-top: 14px;
+    }
+    .table-wrap {
+      overflow-x: auto;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: #fff;
+      max-width: 100%;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      min-width: 760px;
+      font-size: 15px;
+    }
+    th, td {
+      padding: 14px 16px;
+      border-bottom: 1px solid var(--line);
+      vertical-align: top;
+      text-align: right;
+    }
+    th {
+      background: var(--taqa-blue);
+      color: #fff;
+      font-weight: 900;
+    }
+    tr:last-child td { border-bottom: 0; }
+    td strong { color: var(--taqa-blue-dark); }
+    .floating-table-head {
+      position: fixed;
+      top: var(--table-sticky-top);
+      left: 0;
+      width: 0;
+      overflow: hidden;
+      display: none;
+      z-index: 18;
+      border: 1px solid var(--line);
+      border-bottom: 0;
+      border-radius: 8px 8px 0 0;
+      background: var(--taqa-blue);
+      box-shadow: 0 12px 20px rgba(0, 63, 104, 0.16);
+      pointer-events: none;
+    }
+    .floating-table-head table {
+      min-width: 0;
+      margin: 0;
+      border-collapse: collapse;
+      table-layout: fixed;
+    }
+    .floating-table-head th {
+      white-space: normal;
+    }
+    .screenshot-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 16px;
+      margin-top: 16px;
+      max-width: 100%;
+    }
+    .report-shot {
+      margin: 0;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: #fff;
+      overflow: hidden;
+    }
+    .report-shot.wide { grid-column: 1 / -1; }
+    .report-shot img {
+      display: block;
+      width: 100%;
+      max-width: 100%;
+      height: auto;
+      background: #fff;
+      border-bottom: 1px solid var(--line);
+    }
+    .report-shot.tall img {
+      max-height: 560px;
+      object-fit: contain;
+    }
+    .report-shot figcaption {
+      padding: 12px 14px;
+      color: var(--muted);
+      font-size: 14px;
+      line-height: 1.45;
+    }
+    .bars {
+      display: grid;
+      gap: 14px;
+      margin-top: 14px;
+    }
+    .bar-row {
+      display: grid;
+      grid-template-columns: 150px 1fr 78px;
+      gap: 14px;
+      align-items: center;
+      font-size: 15px;
+    }
+    .bar-track {
+      height: 14px;
+      background: #edf3f7;
+      border-radius: 999px;
+      overflow: hidden;
+    }
+    .bar-fill {
+      height: 100%;
+      background: linear-gradient(90deg, var(--taqa-blue), #2384bf);
+      border-radius: 999px;
+    }
+    .bar-fill.orange { background: linear-gradient(90deg, var(--taqa-orange), #f2a45c); }
+    .footer {
+      padding-top: 28px;
+      border-top: 1px solid var(--line);
+      color: var(--muted);
+      font-size: 14px;
+    }
+
+    @media (max-width: 1000px) {
+      .grid-6, .grid-5 { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+      .grid-4, .grid-3 { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+      .work-map { grid-template-columns: 1fr; }
+    }
+    @media (max-width: 900px) {
+      .page { margin: 0; border-radius: 0; }
+      .cover, .content, .report-nav { padding-left: 26px; padding-right: 26px; }
+      .grid-6, .grid-5, .grid-4, .grid-3, .grid-2, .screenshot-grid { grid-template-columns: 1fr; }
+      .section-head { display: block; }
+      .bar-row { grid-template-columns: 1fr; gap: 6px; }
+    }
+    @media (max-width: 680px) {
+      html, body {
+        direction: rtl;
+        width: 100%;
+        max-width: 100%;
+        overflow-x: hidden;
+      }
+      body { background: #f2f6f8; }
+      .page {
+        width: 100%;
+        max-width: 100vw;
+        margin: 0;
+        overflow: hidden;
+        direction: rtl;
+      }
+      .cover, .content, .report-nav {
+        direction: rtl;
+        max-width: 100%;
+        padding-right: 20px;
+        padding-left: 20px;
+      }
+      .cover *, .content *, .report-nav a {
+        direction: rtl;
+      }
+      .cover p, .content p, .content li, .content td, .content th, .content h2, .content h3, .content figcaption, .section-kicker, .metric .label, .metric .note {
+        text-align: right;
+      }
+      .cover > *, .content > *, section, .grid, .work-map, .card, .work-card, .highlight, .table-wrap {
+        width: 100%;
+        max-width: 100%;
+      }
+      .cover { padding-top: 34px; padding-bottom: 32px; }
+      .content { padding-top: 32px; padding-bottom: 42px; }
+      h1 {
+        max-width: 100%;
+        font-size: clamp(25px, 7.2vw, 30px);
+        line-height: 1.18;
+        word-break: break-word;
+        text-align: right;
+      }
+      h2 {
+        font-size: clamp(22px, 6.2vw, 27px);
+        line-height: 1.2;
+        word-break: break-word;
+        text-align: right;
+      }
+      h3 { font-size: 21px; }
+      .cover-copy, .lead { font-size: 16px; }
+      .cover-copy { text-align: right; }
+      .cover-meta { gap: 8px; }
+      .cover-meta, .eyebrow { justify-content: flex-start; }
+      .pill {
+        min-height: 34px;
+        padding: 6px 10px;
+        font-size: 13px;
+      }
+      .report-nav { position: static; padding-top: 12px; padding-bottom: 12px; }
+      .report-nav a {
+        flex: 1 1 100%;
+        min-width: 0;
+        min-height: 44px;
+      }
+      .card, .highlight, .work-card { padding: 18px; }
+      .metric { min-height: auto; }
+      .metric .value { font-size: 30px; }
+      .table-wrap { overflow: visible; }
+      table {
+        min-width: 0;
+        display: block;
+        font-size: 14px;
+      }
+      thead {
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        overflow: hidden;
+        clip: rect(0 0 0 0);
+        white-space: nowrap;
+      }
+      .floating-table-head { display: none !important; }
+      tbody, tr, td { display: block; width: 100%; }
+      tr {
+        border-bottom: 1px solid var(--line);
+        padding: 12px 0;
+      }
+      tr:last-child { border-bottom: 0; }
+      td {
+        display: grid;
+        grid-template-columns: minmax(92px, 36%) 1fr;
+        gap: 10px;
+        padding: 8px 14px;
+        border-bottom: 0;
+      }
+      td::before {
+        content: attr(data-label);
+        color: var(--taqa-blue-dark);
+        font-weight: 900;
+      }
+      .report-shot.tall img { max-height: none; }
+    }
+    @media (max-width: 420px) {
+      .cover, .content, .report-nav { padding-left: 16px; padding-right: 16px; }
+      .page { width: 100%; }
+      .report-nav a { flex-basis: 100%; }
+      td { grid-template-columns: 1fr; }
+      td::before { margin-bottom: -4px; }
+    }
+    @media print {
+      body { background: #fff; }
+      .page { box-shadow: none; margin: 0; border-radius: 0; }
+      .report-nav { display: none; }
+      a { color: inherit; }
+      .card, .table-wrap, .highlight, .report-shot { break-inside: avoid; }
+      section { break-inside: avoid; }
+    }
+    :root {
+      --type-display:clamp(2.75rem, 6vw, 4.5rem);
+      --type-section:clamp(1.75rem, 3.2vw, 2.25rem);
+      --type-subheading:1.375rem;
+      --type-body-lg:1.125rem;
+      --type-body:1rem;
+      --type-label:.875rem;
+      --type-caption:.8125rem;
+    }
+    html { -webkit-font-smoothing:antialiased; -moz-osx-font-smoothing:grayscale; }
+    body { font-size:var(--type-body); line-height:1.6; text-rendering:optimizeLegibility; font-synthesis:none; }
+    h1 { max-width:18ch; font-size:var(--type-display); line-height:1.04; text-wrap:balance; }
+    h2 { max-width:30ch; font-size:var(--type-section); line-height:1.14; text-wrap:balance; }
+    h3 { font-size:var(--type-subheading); line-height:1.25; font-weight:700; text-wrap:balance; }
+    p, li { line-height:1.6; }
+    .cover-copy { max-width:62ch; font-size:var(--type-body-lg); line-height:1.55; text-wrap:pretty; }
+    .eyebrow, .pill, .report-nav a, .section-label, .section-kicker { font-weight:700; }
+    .report-nav a { font-size:var(--type-label); line-height:1.3; }
+    .section-label { font-size:var(--type-caption); line-height:1.35; white-space:nowrap; }
+    .section-kicker { font-size:var(--type-label); line-height:1.4; }
+    .lead, .highlight p, .summary-points { max-width:68ch; text-wrap:pretty; }
+    .lead { font-size:var(--type-body-lg); line-height:1.6; }
+    .highlight p, .summary-points { font-size:1.0625rem; }
+    a { text-underline-position:from-font; text-decoration-thickness:from-font; text-decoration-skip-ink:auto; }
+    .summary-points { display:grid; gap:10px; margin:0; padding:0; list-style:none; }
+    .summary-points li { position:relative; padding-inline-start:22px; }
+    .summary-points li::before { content:""; position:absolute; inset-inline-start:0; top:.72em; width:8px; height:8px; border-radius:50%; background:var(--taqa-orange); }
+    .bar-value, .rtl-number { direction:rtl; unicode-bidi:isolate; display:inline-block; font-variant-numeric:tabular-nums; }
+    .summary-metrics { display:grid; grid-template-columns:repeat(3, minmax(0, 1fr)); gap:14px; margin-top:16px; }
+    .summary-metric { direction:rtl; text-align:start; display:grid; align-content:start; gap:7px; min-height:132px; padding:20px; border:1px solid var(--line); border-radius:12px; background:#fff; box-shadow:0 7px 24px rgba(16, 52, 72, .07); }
+    .summary-metric.green { border-top:3px solid var(--green); }
+    .summary-metric.orange { border-top:3px solid var(--taqa-orange); }
+    .summary-metric .metric-label { color:var(--muted); font-size:var(--type-label); line-height:1.35; font-weight:700; }
+    .summary-metric .metric-value { display:flex; justify-content:flex-start; color:var(--taqa-blue-dark); font-size:clamp(30px, 3vw, 42px); line-height:1; font-weight:900; }
+    .summary-metric .metric-value bdi { direction:rtl; unicode-bidi:isolate; font-variant-numeric:tabular-nums; }
+    .summary-metric .metric-note { font-size:var(--type-label); line-height:1.4; font-weight:700; }
+    .summary-metric .metric-note.positive { color:var(--green); }
+    .summary-metric .metric-note.neutral { color:var(--muted); }
+    .content-subsection { margin-top:18px; }
+    .content-subsection + .content-subsection { margin-top:24px; padding-top:24px; border-top:1px solid var(--line); }
+    .content-subsection h3 { margin:0 0 12px; color:var(--taqa-blue-dark); font-size:var(--type-subheading); }
+    .keyword-result { font-weight:700; }
+    .keyword-up { color:var(--green); }
+    .keyword-down { color:#9a4f00; }
+    .keyword-flat { color:var(--muted); }
+    .link-pair { display:flex; flex-wrap:wrap; gap:7px; }
+    .link-pair a { display:inline-flex; padding:3px 8px; border-radius:999px; background:#e8f3fa; font-weight:700; }
+    .source-note { max-width:68ch; margin:12px 0 0; color:var(--muted); font-size:var(--type-label); line-height:1.5; font-weight:400; text-wrap:pretty; }
+    .metric .value { font-size:clamp(2rem, 4vw, 2.625rem); line-height:1; }
+    .metric .label { font-size:var(--type-body); line-height:1.35; font-weight:700; }
+    .metric .note { font-size:var(--type-label); line-height:1.5; font-weight:400; }
+    table { font-size:.9375rem; line-height:1.5; }
+    th { font-weight:700; }
+    td strong { font-weight:700; }
+    .compact-table table { font-size:var(--type-label); }
+    .compact-table th, .compact-table td { padding:12px 13px; }
+    .report-shot figcaption { display:grid; gap:4px; padding:14px 16px 16px; text-align:start; }
+    .figure-title { color:var(--taqa-blue-dark); font-size:var(--type-label); line-height:1.4; font-weight:700; }
+    .figure-comment { max-width:68ch; color:var(--muted); font-size:var(--type-caption); line-height:1.55; text-wrap:pretty; }
+    .status { font-size:var(--type-caption); font-weight:700; }
+    .footer { font-size:var(--type-label); line-height:1.55; }
+    @media (max-width:900px) { .summary-metrics { grid-template-columns:repeat(2, minmax(0, 1fr)); } }
+    @media (max-width:680px) {
+      .summary-points { padding-right:0; }
+      .summary-metrics { grid-template-columns:1fr; }
+      .summary-metric { min-height:auto; }
+      h1 { font-size:clamp(2rem, 9vw, 2.625rem); line-height:1.1; }
+      h2 { font-size:clamp(1.625rem, 7vw, 2rem); line-height:1.16; }
+      h3 { font-size:1.25rem; }
+      .cover-copy, .lead { font-size:var(--type-body); }
+      .section-head, .section-head h2, h2, h3 { text-align:start; }
+    }
+
+  
+.summary-metric .metric-note.negative{color:#9a4f00}
+.metric .value{display:block;text-align:start;direction:rtl}
+.figure-comment{font-size:1rem}
+.approval-block{margin-top:24px;padding:22px;border:1px solid var(--line);border-radius:10px;background:#f8fbfd}
+.approval-block h3{margin-top:0}
+.priority-list{display:grid;gap:14px;padding-inline-start:22px}
+.source-note{margin-bottom:16px}
+</style>
+</head>
+<body data-report-period="2026-08"><main class="page"><header class="cover"><div class="eyebrow">تقرير شهري</div><h1>تقرير أداء SEO أغسطس 2026</h1><p class="cover-copy">تقدم كلمات التدفئة وتسخين المياه، وتطوير المحتوى، واستعادة جاهزية المنتجات في Google Merchant Center بعد انتقال المتجر.</p><div class="cover-meta"><span class="pill">الموقع: taqamisr.com</span><span class="pill">الفترة: 1–31 أغسطس 2026</span><span class="pill">تاريخ الإعداد: 5 سبتمبر 2026</span></div></header><nav class="report-nav" aria-label="أقسام التقرير"><a href="#summary">ملخص أغسطس</a><a href="#technical-readings">القراءات الفنية</a><a href="#search-performance">أداء البحث</a><a href="#keywords">الكلمات والصفحات</a><a href="#content-work">المحتوى</a><a href="#extra-work">أعمال المتجر</a><a href="#summary-close">الأولويات التالية</a></nav><div class="content">
+<section id="summary"><span class="section-label normal">الملخص التنفيذي</span><div class="section-head"><div><div class="section-kicker">أهم نتائج الشهر</div><h2>تقدم في كلمات التدفئة ومحتوى أقوى للمتجر.</h2></div></div>
+<div class="highlight"><ul class="summary-points"><li>وصلت كلمات مهمة في التدفئة إلى النتائج الثلاث الأولى، وتقدمت عبارات مرتبطة بالمياه الساخنة وسخانات أريستون.</li><li>أنجزنا أوصاف المنتجات الأساسية، ونشرنا أدلة شراء إضافية، وطوّرنا صفحات العلامات التجارية بالعربية والإنجليزية.</li><li>أعدنا ربط كتالوج المتجر بـ Google Merchant Center بعد الانتقال، مع إتاحة المنتجات باللغتين للسوق المصري.</li><li>تراجع إجمالي أداء البحث بدرجة محدودة مقارنة بيوليو؛ وتبقى موافقة طاقة مصر على تحسين صفحة التسخين المركزي للمياه الخطوة المطلوبة لبدء تنفيذها.</li></ul></div>
+<div class="summary-metrics" aria-label="مؤشرات الملخص التنفيذي">
+<article class="summary-metric orange" data-summary-metric dir="rtl"><span class="metric-label">نقرات Google</span><strong class="metric-value"><bdi dir="rtl">2,550</bdi></strong><span class="metric-note negative">انخفاض <bdi class="rtl-number" dir="rtl">5.66</bdi>% عن يوليو</span></article>
+<article class="summary-metric orange" data-summary-metric dir="rtl"><span class="metric-label">مرات الظهور</span><strong class="metric-value"><bdi dir="rtl">203,341</bdi></strong><span class="metric-note negative">انخفاض <bdi class="rtl-number" dir="rtl">2.92</bdi>% عن يوليو</span></article>
+<article class="summary-metric " data-summary-metric dir="rtl"><span class="metric-label">كلمات ضمن أول 3</span><strong class="metric-value"><bdi dir="rtl">1,741</bdi></strong><span class="metric-note neutral">Google Search Console</span></article>
+<article class="summary-metric " data-summary-metric dir="rtl"><span class="metric-label">كلمات مفتاحية بحثية مرصودة</span><strong class="metric-value"><bdi dir="rtl">5,313</bdi></strong><span class="metric-note neutral">Google Search Console</span></article>
+<article class="summary-metric green" data-summary-metric dir="rtl"><span class="metric-label">قطع محتوى أساسية</span><strong class="metric-value"><bdi dir="rtl">8</bdi></strong><span class="metric-note positive">4 عربية + 4 إنجليزية</span></article>
+<article class="summary-metric green" data-summary-metric dir="rtl"><span class="metric-label">صفحات محتوى إضافية</span><strong class="metric-value"><bdi dir="rtl">26</bdi></strong><span class="metric-note positive">6 صفحات مقالات + 20 صفحة علامة تجارية</span></article>
+</div></section>
+<section id="technical-readings"><span class="section-label normal">قراءات الأداء الفني</span><div class="section-head"><div><div class="section-kicker">روابط الموقع وتوزيع البحث</div><h2>مواقع أكثر تشير إلى طاقة مصر، مع تراجع محدود في تغطية البحث.</h2></div></div>
+<div class="grid grid-2"><div class="card metric green"><span class="value rtl-number" dir="rtl">273</span><span class="label">نطاقات الإحالة</span><span class="note">يوليو: <bdi class="rtl-number" dir="rtl">253</bdi> · <span class="keyword-result keyword-up" data-movement="positive">زيادة <bdi class="rtl-number" dir="rtl">20</bdi> نطاقا</span></span></div><div class="card metric orange"><span class="value rtl-number" dir="rtl">1,307</span><span class="label">الروابط الخارجية الحية</span><span class="note">يوليو: <bdi class="rtl-number" dir="rtl">1,678</bdi> · <span class="keyword-result keyword-down" data-movement="negative">انخفاض <bdi class="rtl-number" dir="rtl">371</bdi> رابطا</span></span></div></div>
+<p class="source-note">Ahrefs · مقارنة 31 يوليو و31 أغسطس 2026.</p>
+<p class="lead">زاد تنوع المواقع التي تشير إلى طاقة مصر، بينما انخفض إجمالي الروابط الحية. لا يعني ارتفاع عدد المواقع وحده أن جودة جميع الروابط تحسنت.</p>
+<div class="screenshot-grid"><figure class="report-shot wide"><a href="assets/search-distribution.png" target="_blank" rel="noopener" aria-label="تكبير الصورة"><img loading="lazy" src="assets/search-distribution.png" alt="توزيع الكلمات المفتاحية البحثية حسب الترتيب في جوجل"></a><figcaption><strong class="figure-title">توزيع الكلمات المفتاحية البحثية حسب الترتيب في جوجل</strong><span class="figure-comment">بين يوليو وأغسطس، انخفضت التغطية بمقدار 381 كلمة؛ منها 168 كلمة ضمن أول 3 و69 كلمة في المراكز 4–10. المقارنة تخص الشهرين الكاملين، ولا تشمل سبتمبر الجزئي الظاهر في الرسم.</span></figcaption></figure></div></section>
+<section id="search-performance"><span class="section-label normal">أداء البحث في Google</span><div class="section-head"><div><div class="section-kicker">1–31 أغسطس مقابل 1–31 يوليو</div><h2>الكمبيوتر ينمو، والهاتف يحتاج إلى استعادة النقرات.</h2></div></div>
+<p class="lead">ارتفعت نقرات الكمبيوتر بنسبة <span class="keyword-up"><bdi class="rtl-number" dir="rtl">13.47</bdi>%</span>، بينما انخفضت نقرات الهاتف بنسبة <span class="keyword-down"><bdi class="rtl-number" dir="rtl">9.13</bdi>%</span>. الهاتف ما زال المصدر الأكبر للزيارات، لذلك يستحق الأولوية عند تحسين صفحات الخدمة وتجربة القراءة.</p>
+<div class="table-wrap "><table><thead><tr><th>الجهاز</th><th>نقرات يوليو</th><th>نقرات أغسطس</th><th>التغير</th><th>ظهور أغسطس</th></tr></thead><tbody><tr ><td data-label="الجهاز">الهاتف</td><td data-label="نقرات يوليو"><bdi class="rtl-number" dir="rtl">2,224</bdi></td><td data-label="نقرات أغسطس"><bdi class="rtl-number" dir="rtl">2,021</bdi></td><td data-label="التغير"><span class="keyword-result keyword-down" data-movement="negative">انخفاض <bdi class="rtl-number" dir="rtl">203</bdi> نقرة</span></td><td data-label="ظهور أغسطس"><bdi class="rtl-number" dir="rtl">161,263</bdi></td></tr>
+<tr ><td data-label="الجهاز">الكمبيوتر</td><td data-label="نقرات يوليو"><bdi class="rtl-number" dir="rtl">438</bdi></td><td data-label="نقرات أغسطس"><bdi class="rtl-number" dir="rtl">497</bdi></td><td data-label="التغير"><span class="keyword-result keyword-up" data-movement="positive">زيادة <bdi class="rtl-number" dir="rtl">59</bdi> نقرة</span></td><td data-label="ظهور أغسطس"><bdi class="rtl-number" dir="rtl">40,464</bdi></td></tr>
+<tr ><td data-label="الجهاز">الجهاز اللوحي</td><td data-label="نقرات يوليو"><bdi class="rtl-number" dir="rtl">41</bdi></td><td data-label="نقرات أغسطس"><bdi class="rtl-number" dir="rtl">32</bdi></td><td data-label="التغير"><span class="keyword-result keyword-down" data-movement="negative">انخفاض <bdi class="rtl-number" dir="rtl">9</bdi> نقرة</span></td><td data-label="ظهور أغسطس"><bdi class="rtl-number" dir="rtl">1,614</bdi></td></tr></tbody></table></div>
+<p class="source-note">Google Search Console · نسبة النقر إلى الظهور: <bdi class="rtl-number" dir="rtl">1.25</bdi>% في أغسطس مقابل <bdi class="rtl-number" dir="rtl">1.29</bdi>% في يوليو.</p>
+<div class="screenshot-grid"><figure class="report-shot wide"><a href="assets/gsc-comparison.png" target="_blank" rel="noopener" aria-label="تكبير الصورة"><img loading="lazy" src="assets/gsc-comparison.png" alt="اتجاه النقرات ومرات الظهور"></a><figcaption><strong class="figure-title">اتجاه النقرات ومرات الظهور</strong><span class="figure-comment">المقارنة اليومية تُظهر تفاوت الأداء خلال الشهر، لا انخفاضا مستمرا في كل الأيام. إجمالي النقرات أقل من يوليو، مع بقاء حجم الظهور قريبا من مستواه.</span></figcaption></figure></div></section>
+<section id="keywords"><span class="section-label normal">الكلمات والصفحات</span><div class="section-head"><div><div class="section-kicker">تسخين المياه والتدفئة أولا</div><h2>مكاسب واضحة في كلمات مهمة، وفرص محددة للتحسين.</h2></div></div>
+<div data-report-block="positions"><p class="source-note">الترتيب في جوجل: Ahrefs أولا · مصر، الكمبيوتر · آخر رصد أغسطس: 28 أغسطس، مقارنة بـ31 يوليو. عند غياب الكلمة يُستخدم متوسط Google Search Console للشهر الكامل.</p>
+<div data-keyword-subsection="top-movers"><h3>أبرز 22 كلمة مفتاحية بحثية تحسنا</h3><div class="table-wrap compact-table"><table><thead><tr><th>الكلمة المفتاحية البحثية</th><th>الصفحة المرتبطة</th><th>المصدر</th><th>الترتيب في جوجل — يوليو</th><th>الترتيب في جوجل — أغسطس</th><th>النتيجة</th></tr></thead><tbody><tr data-top-mover="true" data-keyword="دفاية مركزية"><td data-label="الكلمة المفتاحية البحثية"><strong>دفاية مركزية</strong></td><td data-label="الصفحة المرتبطة"><a href="https://taqamisr.com/ar/%D8%A7%D9%84%D8%AA%D8%AF%D9%81%D8%A6%D8%A9-%D8%A7%D9%84%D9%85%D8%B1%D9%83%D8%B2%D9%8A%D8%A9/" target="_blank" rel="noopener">التدفئة المركزية</a></td><td data-label="المصدر"><strong>Ahrefs</strong></td><td data-label="الترتيب في جوجل — يوليو"><bdi class="rtl-number" dir="rtl">20</bdi></td><td data-label="الترتيب في جوجل — أغسطس"><bdi class="rtl-number" dir="rtl">3</bdi></td><td data-label="النتيجة"><span class="keyword-result keyword-up" data-movement="positive">تحسن 17 مركز</span></td></tr>
+<tr data-top-mover="true" data-keyword="electric fireplace"><td data-label="الكلمة المفتاحية البحثية"><strong>electric fireplace</strong></td><td data-label="الصفحة المرتبطة"><a href="https://taqamisr.com/fireplaces/" target="_blank" rel="noopener">الدفايات — EN</a></td><td data-label="المصدر"><strong>Ahrefs</strong></td><td data-label="الترتيب في جوجل — يوليو"><bdi class="rtl-number" dir="rtl">13</bdi></td><td data-label="الترتيب في جوجل — أغسطس"><bdi class="rtl-number" dir="rtl">3</bdi></td><td data-label="النتيجة"><span class="keyword-result keyword-up" data-movement="positive">تحسن 10 مركز</span></td></tr>
+<tr data-top-mover="true" data-keyword="submersible pumps"><td data-label="الكلمة المفتاحية البحثية"><strong>submersible pumps</strong></td><td data-label="الصفحة المرتبطة"><a href="https://taqamisr.com/domestic-water-pumps/" target="_blank" rel="noopener">المضخات — EN</a></td><td data-label="المصدر"><strong>Ahrefs</strong></td><td data-label="الترتيب في جوجل — يوليو"><bdi class="rtl-number" dir="rtl">15</bdi></td><td data-label="الترتيب في جوجل — أغسطس"><bdi class="rtl-number" dir="rtl">5</bdi></td><td data-label="النتيجة"><span class="keyword-result keyword-up" data-movement="positive">تحسن 10 مركز</span></td></tr>
+<tr data-top-mover="true" data-keyword="grundfos egypt"><td data-label="الكلمة المفتاحية البحثية"><strong>grundfos egypt</strong></td><td data-label="الصفحة المرتبطة"><a href="https://taqamisr.com/brand/grundfos/" target="_blank" rel="noopener">Grundfos — EN</a></td><td data-label="المصدر"><strong>Ahrefs</strong></td><td data-label="الترتيب في جوجل — يوليو"><bdi class="rtl-number" dir="rtl">17</bdi></td><td data-label="الترتيب في جوجل — أغسطس"><bdi class="rtl-number" dir="rtl">8</bdi></td><td data-label="النتيجة"><span class="keyword-result keyword-up" data-movement="positive">تحسن 9 مركز</span></td></tr>
+<tr data-top-mover="true" data-keyword="electric fireplaces"><td data-label="الكلمة المفتاحية البحثية"><strong>electric fireplaces</strong></td><td data-label="الصفحة المرتبطة"><a href="https://taqamisr.com/fireplaces/" target="_blank" rel="noopener">الدفايات — EN</a></td><td data-label="المصدر"><strong>Ahrefs</strong></td><td data-label="الترتيب في جوجل — يوليو"><bdi class="rtl-number" dir="rtl">10</bdi></td><td data-label="الترتيب في جوجل — أغسطس"><bdi class="rtl-number" dir="rtl">3</bdi></td><td data-label="النتيجة"><span class="keyword-result keyword-up" data-movement="positive">تحسن 7 مركز</span></td></tr>
+<tr data-top-mover="true" data-keyword="مياه ساخنة مركزية"><td data-label="الكلمة المفتاحية البحثية"><strong>مياه ساخنة مركزية</strong></td><td data-label="الصفحة المرتبطة"><a href="https://taqamisr.com/ar/%D8%AA%D8%B3%D8%AE%D9%8A%D9%86-%D9%85%D8%B1%D9%83%D8%B2%D9%8A-%D9%84%D9%84%D9%85%D9%8A%D8%A7%D9%87/" target="_blank" rel="noopener">التسخين المركزي للمياه</a></td><td data-label="المصدر"><strong>Ahrefs</strong></td><td data-label="الترتيب في جوجل — يوليو"><bdi class="rtl-number" dir="rtl">12</bdi></td><td data-label="الترتيب في جوجل — أغسطس"><bdi class="rtl-number" dir="rtl">6</bdi></td><td data-label="النتيجة"><span class="keyword-result keyword-up" data-movement="positive">تحسن 6 مركز</span></td></tr>
+<tr data-top-mover="true" data-keyword="مضخات مياه صغيرة"><td data-label="الكلمة المفتاحية البحثية"><strong>مضخات مياه صغيرة</strong></td><td data-label="الصفحة المرتبطة"><a href="https://taqamisr.com/ar/product-category/%D9%85%D8%B6%D8%AE%D8%A7%D8%AA-%D8%A7%D9%84%D9%85%D9%8A%D8%A7%D9%87/" target="_blank" rel="noopener">مضخات المياه</a></td><td data-label="المصدر"><strong>Ahrefs</strong></td><td data-label="الترتيب في جوجل — يوليو"><bdi class="rtl-number" dir="rtl">15</bdi></td><td data-label="الترتيب في جوجل — أغسطس"><bdi class="rtl-number" dir="rtl">10</bdi></td><td data-label="النتيجة"><span class="keyword-result keyword-up" data-movement="positive">تحسن 5 مركز</span></td></tr>
+<tr data-top-mover="true" data-keyword="سخان اريستون غاز 10 لتر"><td data-label="الكلمة المفتاحية البحثية"><strong>سخان اريستون غاز 10 لتر</strong></td><td data-label="الصفحة المرتبطة"><a href="https://taqamisr.com/ar/product/%D8%B3%D8%AE%D8%A7%D9%86-%D9%85%D9%8A%D8%A7%D9%87-%D8%A3%D8%B1%D9%8A%D8%B3%D8%AA%D9%88%D9%86-%D8%A7%D9%84%D8%A5%D9%8A%D8%B7%D8%A7%D9%84%D9%8A%D8%A9-%D8%B3%D8%B9%D8%A9-10-%D9%84%D8%AA%D8%B1-%D9%8A/" target="_blank" rel="noopener">أريستون 10 لتر</a></td><td data-label="المصدر"><strong>Ahrefs</strong></td><td data-label="الترتيب في جوجل — يوليو"><bdi class="rtl-number" dir="rtl">26</bdi></td><td data-label="الترتيب في جوجل — أغسطس"><bdi class="rtl-number" dir="rtl">21</bdi></td><td data-label="النتيجة"><span class="keyword-result keyword-up" data-movement="positive">تحسن 5 مركز</span></td></tr>
+<tr data-top-mover="true" data-keyword="water pump egypt"><td data-label="الكلمة المفتاحية البحثية"><strong>water pump egypt</strong></td><td data-label="الصفحة المرتبطة"><a href="https://taqamisr.com/domestic-water-pumps/" target="_blank" rel="noopener">المضخات — EN</a></td><td data-label="المصدر"><strong>Ahrefs</strong></td><td data-label="الترتيب في جوجل — يوليو"><bdi class="rtl-number" dir="rtl">24</bdi></td><td data-label="الترتيب في جوجل — أغسطس"><bdi class="rtl-number" dir="rtl">19</bdi></td><td data-label="النتيجة"><span class="keyword-result keyword-up" data-movement="positive">تحسن 5 مركز</span></td></tr>
+<tr data-top-mover="true" data-keyword="fireplace egypt"><td data-label="الكلمة المفتاحية البحثية"><strong>fireplace egypt</strong></td><td data-label="الصفحة المرتبطة"><a href="https://taqamisr.com/fireplaces/" target="_blank" rel="noopener">الدفايات — EN</a></td><td data-label="المصدر"><strong>Ahrefs</strong></td><td data-label="الترتيب في جوجل — يوليو"><bdi class="rtl-number" dir="rtl">11</bdi></td><td data-label="الترتيب في جوجل — أغسطس"><bdi class="rtl-number" dir="rtl">7</bdi></td><td data-label="النتيجة"><span class="keyword-result keyword-up" data-movement="positive">تحسن 4 مركز</span></td></tr>
+<tr data-top-mover="true" data-keyword="fireplace"><td data-label="الكلمة المفتاحية البحثية"><strong>fireplace</strong></td><td data-label="الصفحة المرتبطة"><a href="https://taqamisr.com/fireplaces/" target="_blank" rel="noopener">الدفايات — EN</a></td><td data-label="المصدر"><strong>Ahrefs</strong></td><td data-label="الترتيب في جوجل — يوليو"><bdi class="rtl-number" dir="rtl">6</bdi></td><td data-label="الترتيب في جوجل — أغسطس"><bdi class="rtl-number" dir="rtl">3</bdi></td><td data-label="النتيجة"><span class="keyword-result keyword-up" data-movement="positive">تحسن 3 مركز</span></td></tr>
+<tr data-top-mover="true" data-keyword="central heater"><td data-label="الكلمة المفتاحية البحثية"><strong>central heater</strong></td><td data-label="الصفحة المرتبطة"><a href="https://taqamisr.com/central-space-heating/" target="_blank" rel="noopener">التدفئة المركزية — EN</a></td><td data-label="المصدر"><strong>Ahrefs</strong></td><td data-label="الترتيب في جوجل — يوليو"><bdi class="rtl-number" dir="rtl">5</bdi></td><td data-label="الترتيب في جوجل — أغسطس"><bdi class="rtl-number" dir="rtl">2</bdi></td><td data-label="النتيجة"><span class="keyword-result keyword-up" data-movement="positive">تحسن 3 مركز</span></td></tr>
+<tr data-top-mover="true" data-keyword="سخان غاز اريستون 10 لتر"><td data-label="الكلمة المفتاحية البحثية"><strong>سخان غاز اريستون 10 لتر</strong></td><td data-label="الصفحة المرتبطة"><a href="https://taqamisr.com/ar/product/%D8%B3%D8%AE%D8%A7%D9%86-%D9%85%D9%8A%D8%A7%D9%87-%D8%A3%D8%B1%D9%8A%D8%B3%D8%AA%D9%88%D9%86-%D8%A7%D9%84%D8%A5%D9%8A%D8%B7%D8%A7%D9%84%D9%8A%D8%A9-%D8%B3%D8%B9%D8%A9-10-%D9%84%D8%AA%D8%B1-%D9%8A/" target="_blank" rel="noopener">أريستون 10 لتر</a></td><td data-label="المصدر"><strong>Ahrefs</strong></td><td data-label="الترتيب في جوجل — يوليو"><bdi class="rtl-number" dir="rtl">22</bdi></td><td data-label="الترتيب في جوجل — أغسطس"><bdi class="rtl-number" dir="rtl">19</bdi></td><td data-label="النتيجة"><span class="keyword-result keyword-up" data-movement="positive">تحسن 3 مركز</span></td></tr>
+<tr data-top-mover="true" data-keyword="radiators central"><td data-label="الكلمة المفتاحية البحثية"><strong>radiators central</strong></td><td data-label="الصفحة المرتبطة"><a href="https://taqamisr.com/product-category/electric-towel-radiators/" target="_blank" rel="noopener">الرادياتير — EN</a></td><td data-label="المصدر"><strong>Ahrefs</strong></td><td data-label="الترتيب في جوجل — يوليو"><bdi class="rtl-number" dir="rtl">13</bdi></td><td data-label="الترتيب في جوجل — أغسطس"><bdi class="rtl-number" dir="rtl">10</bdi></td><td data-label="النتيجة"><span class="keyword-result keyword-up" data-movement="positive">تحسن 3 مركز</span></td></tr>
+<tr data-top-mover="true" data-keyword="دفاية غاز"><td data-label="الكلمة المفتاحية البحثية"><strong>دفاية غاز</strong></td><td data-label="الصفحة المرتبطة"><a href="https://taqamisr.com/ar/product-category/%D8%AF%D9%81%D8%A7%D9%8A%D8%A7%D8%AA-%D8%A7%D9%84%D9%84%D9%87%D8%A8/%D8%AF%D9%81%D8%A7%D9%8A%D8%A7%D8%AA-%D8%BA%D8%A7%D8%B2/" target="_blank" rel="noopener">دفايات الغاز</a></td><td data-label="المصدر"><strong>Ahrefs</strong></td><td data-label="الترتيب في جوجل — يوليو"><bdi class="rtl-number" dir="rtl">3</bdi></td><td data-label="الترتيب في جوجل — أغسطس"><bdi class="rtl-number" dir="rtl">1</bdi></td><td data-label="النتيجة"><span class="keyword-result keyword-up" data-movement="positive">تحسن 2 مركز</span></td></tr>
+<tr data-top-mover="true" data-keyword="دفايه غاز"><td data-label="الكلمة المفتاحية البحثية"><strong>دفايه غاز</strong></td><td data-label="الصفحة المرتبطة"><a href="https://taqamisr.com/ar/product-category/%D8%AF%D9%81%D8%A7%D9%8A%D8%A7%D8%AA-%D8%A7%D9%84%D9%84%D9%87%D8%A8/%D8%AF%D9%81%D8%A7%D9%8A%D8%A7%D8%AA-%D8%BA%D8%A7%D8%B2/" target="_blank" rel="noopener">دفايات الغاز</a></td><td data-label="المصدر"><strong>Ahrefs</strong></td><td data-label="الترتيب في جوجل — يوليو"><bdi class="rtl-number" dir="rtl">3</bdi></td><td data-label="الترتيب في جوجل — أغسطس"><bdi class="rtl-number" dir="rtl">1</bdi></td><td data-label="النتيجة"><span class="keyword-result keyword-up" data-movement="positive">تحسن 2 مركز</span></td></tr>
+<tr data-top-mover="true" data-keyword="مضخة مياه غاطسة"><td data-label="الكلمة المفتاحية البحثية"><strong>مضخة مياه غاطسة</strong></td><td data-label="الصفحة المرتبطة"><a href="https://taqamisr.com/ar/product-category/%D9%85%D8%B6%D8%AE%D8%A7%D8%AA-%D8%A7%D9%84%D9%85%D9%8A%D8%A7%D9%87/" target="_blank" rel="noopener">مضخات المياه</a></td><td data-label="المصدر"><strong>Ahrefs</strong></td><td data-label="الترتيب في جوجل — يوليو"><bdi class="rtl-number" dir="rtl">15</bdi></td><td data-label="الترتيب في جوجل — أغسطس"><bdi class="rtl-number" dir="rtl">13</bdi></td><td data-label="النتيجة"><span class="keyword-result keyword-up" data-movement="positive">تحسن 2 مركز</span></td></tr>
+<tr data-top-mover="true" data-keyword="التدفئة المركزية"><td data-label="الكلمة المفتاحية البحثية"><strong>التدفئة المركزية</strong></td><td data-label="الصفحة المرتبطة"><a href="https://taqamisr.com/ar/%D8%A7%D9%84%D8%AA%D8%AF%D9%81%D8%A6%D8%A9-%D8%A7%D9%84%D9%85%D8%B1%D9%83%D8%B2%D9%8A%D8%A9/" target="_blank" rel="noopener">التدفئة المركزية</a></td><td data-label="المصدر"><strong>Ahrefs</strong></td><td data-label="الترتيب في جوجل — يوليو"><bdi class="rtl-number" dir="rtl">3</bdi></td><td data-label="الترتيب في جوجل — أغسطس"><bdi class="rtl-number" dir="rtl">2</bdi></td><td data-label="النتيجة"><span class="keyword-result keyword-up" data-movement="positive">تحسن 1 مركز</span></td></tr>
+<tr data-top-mover="true" data-keyword="دفايات غاز"><td data-label="الكلمة المفتاحية البحثية"><strong>دفايات غاز</strong></td><td data-label="الصفحة المرتبطة"><a href="https://taqamisr.com/ar/product-category/%D8%AF%D9%81%D8%A7%D9%8A%D8%A7%D8%AA-%D8%A7%D9%84%D9%84%D9%87%D8%A8/%D8%AF%D9%81%D8%A7%D9%8A%D8%A7%D8%AA-%D8%BA%D8%A7%D8%B2/" target="_blank" rel="noopener">دفايات الغاز</a></td><td data-label="المصدر"><strong>Ahrefs</strong></td><td data-label="الترتيب في جوجل — يوليو"><bdi class="rtl-number" dir="rtl">3</bdi></td><td data-label="الترتيب في جوجل — أغسطس"><bdi class="rtl-number" dir="rtl">2</bdi></td><td data-label="النتيجة"><span class="keyword-result keyword-up" data-movement="positive">تحسن 1 مركز</span></td></tr>
+<tr data-top-mover="true" data-keyword="fireplaces"><td data-label="الكلمة المفتاحية البحثية"><strong>fireplaces</strong></td><td data-label="الصفحة المرتبطة"><a href="https://taqamisr.com/fireplaces/" target="_blank" rel="noopener">الدفايات — EN</a></td><td data-label="المصدر"><strong>Ahrefs</strong></td><td data-label="الترتيب في جوجل — يوليو"><bdi class="rtl-number" dir="rtl">2</bdi></td><td data-label="الترتيب في جوجل — أغسطس"><bdi class="rtl-number" dir="rtl">1</bdi></td><td data-label="النتيجة"><span class="keyword-result keyword-up" data-movement="positive">تحسن 1 مركز</span></td></tr>
+<tr data-top-mover="true" data-keyword="تسخين مياه مركزي"><td data-label="الكلمة المفتاحية البحثية"><strong>تسخين مياه مركزي</strong></td><td data-label="الصفحة المرتبطة"><a href="https://taqamisr.com/ar/%D8%AA%D8%B3%D8%AE%D9%8A%D9%86-%D9%85%D8%B1%D9%83%D8%B2%D9%8A-%D9%84%D9%84%D9%85%D9%8A%D8%A7%D9%87/" target="_blank" rel="noopener">التسخين المركزي للمياه</a></td><td data-label="المصدر"><strong>Ahrefs</strong></td><td data-label="الترتيب في جوجل — يوليو"><bdi class="rtl-number" dir="rtl">3</bdi></td><td data-label="الترتيب في جوجل — أغسطس"><bdi class="rtl-number" dir="rtl">2</bdi></td><td data-label="النتيجة"><span class="keyword-result keyword-up" data-movement="positive">تحسن 1 مركز</span></td></tr>
+<tr data-top-mover="true" data-keyword="taqa gas"><td data-label="الكلمة المفتاحية البحثية"><strong>taqa gas</strong></td><td data-label="الصفحة المرتبطة"><a href="https://taqamisr.com/" target="_blank" rel="noopener">الرئيسية</a></td><td data-label="المصدر"><strong>Ahrefs</strong></td><td data-label="الترتيب في جوجل — يوليو"><bdi class="rtl-number" dir="rtl">22</bdi></td><td data-label="الترتيب في جوجل — أغسطس"><bdi class="rtl-number" dir="rtl">21</bdi></td><td data-label="النتيجة"><span class="keyword-result keyword-up" data-movement="positive">تحسن 1 مركز</span></td></tr></tbody></table></div></div>
+<div data-keyword-subsection="priority"><h3>متابعة الكلمات ذات الأولوية</h3><div class="table-wrap compact-table"><table><thead><tr><th>الكلمة المفتاحية البحثية</th><th>الصفحة المرتبطة</th><th>المصدر</th><th>الترتيب في جوجل — يوليو</th><th>الترتيب في جوجل — أغسطس</th><th>النتيجة</th></tr></thead><tbody><tr data-priority-keyword="غلايات مركزية"><td data-label="الكلمة المفتاحية البحثية"><strong>غلايات مركزية</strong></td><td data-label="الصفحة المرتبطة"><a href="https://taqamisr.com/ar/%D8%AA%D8%B3%D8%AE%D9%8A%D9%86-%D9%85%D8%B1%D9%83%D8%B2%D9%8A-%D9%84%D9%84%D9%85%D9%8A%D8%A7%D9%87/" target="_blank" rel="noopener">التسخين المركزي للمياه</a></td><td data-label="المصدر"><strong>Ahrefs</strong></td><td data-label="الترتيب في جوجل — يوليو"><bdi class="rtl-number" dir="rtl">2</bdi></td><td data-label="الترتيب في جوجل — أغسطس"><bdi class="rtl-number" dir="rtl">2</bdi></td><td data-label="النتيجة"><span class="keyword-result keyword-flat" data-movement="neutral">دون تغيير</span></td></tr>
+<tr data-priority-keyword="غلاية مركزية"><td data-label="الكلمة المفتاحية البحثية"><strong>غلاية مركزية</strong></td><td data-label="الصفحة المرتبطة"><a href="https://taqamisr.com/ar/%D8%AA%D8%B3%D8%AE%D9%8A%D9%86-%D9%85%D8%B1%D9%83%D8%B2%D9%8A-%D9%84%D9%84%D9%85%D9%8A%D8%A7%D9%87/" target="_blank" rel="noopener">التسخين المركزي للمياه</a></td><td data-label="المصدر"><strong>Google Search Console</strong></td><td data-label="الترتيب في جوجل — يوليو"><bdi class="rtl-number" dir="rtl">3.5</bdi></td><td data-label="الترتيب في جوجل — أغسطس"><bdi class="rtl-number" dir="rtl">2.6</bdi></td><td data-label="النتيجة"><span class="keyword-result keyword-up" data-movement="positive">تحسن 0.9 مركز</span></td></tr>
+<tr data-priority-keyword="غلايات تسخين مركزي"><td data-label="الكلمة المفتاحية البحثية"><strong>غلايات تسخين مركزي</strong></td><td data-label="الصفحة المرتبطة"><a href="https://taqamisr.com/ar/%D8%AA%D8%B3%D8%AE%D9%8A%D9%86-%D9%85%D8%B1%D9%83%D8%B2%D9%8A-%D9%84%D9%84%D9%85%D9%8A%D8%A7%D9%87/" target="_blank" rel="noopener">التسخين المركزي للمياه</a></td><td data-label="المصدر"><strong>Google Search Console</strong></td><td data-label="الترتيب في جوجل — يوليو"><bdi class="rtl-number" dir="rtl">—</bdi></td><td data-label="الترتيب في جوجل — أغسطس"><bdi class="rtl-number" dir="rtl">—</bdi></td><td data-label="النتيجة"><span class="keyword-result keyword-flat" data-movement="neutral">لا تتوفر بيانات ترتيب</span></td></tr>
+<tr data-priority-keyword="غلاية تسخين مركزي"><td data-label="الكلمة المفتاحية البحثية"><strong>غلاية تسخين مركزي</strong></td><td data-label="الصفحة المرتبطة"><a href="https://taqamisr.com/ar/%D8%AA%D8%B3%D8%AE%D9%8A%D9%86-%D9%85%D8%B1%D9%83%D8%B2%D9%8A-%D9%84%D9%84%D9%85%D9%8A%D8%A7%D9%87/" target="_blank" rel="noopener">التسخين المركزي للمياه</a></td><td data-label="المصدر"><strong>Ahrefs</strong></td><td data-label="الترتيب في جوجل — يوليو"><bdi class="rtl-number" dir="rtl">1</bdi></td><td data-label="الترتيب في جوجل — أغسطس"><bdi class="rtl-number" dir="rtl">1</bdi></td><td data-label="النتيجة"><span class="keyword-result keyword-flat" data-movement="neutral">دون تغيير</span></td></tr>
+<tr data-priority-keyword="غلاية مياه مركزي"><td data-label="الكلمة المفتاحية البحثية"><strong>غلاية مياه مركزي</strong></td><td data-label="الصفحة المرتبطة"><a href="https://taqamisr.com/ar/%D8%AA%D8%B3%D8%AE%D9%8A%D9%86-%D9%85%D8%B1%D9%83%D8%B2%D9%8A-%D9%84%D9%84%D9%85%D9%8A%D8%A7%D9%87/" target="_blank" rel="noopener">التسخين المركزي للمياه</a></td><td data-label="المصدر"><strong>Google Search Console</strong></td><td data-label="الترتيب في جوجل — يوليو"><bdi class="rtl-number" dir="rtl">—</bdi></td><td data-label="الترتيب في جوجل — أغسطس"><bdi class="rtl-number" dir="rtl">—</bdi></td><td data-label="النتيجة"><span class="keyword-result keyword-flat" data-movement="neutral">لا تتوفر بيانات ترتيب</span></td></tr>
+<tr data-priority-keyword="تدفئة تحت البلاط"><td data-label="الكلمة المفتاحية البحثية"><strong>تدفئة تحت البلاط</strong></td><td data-label="الصفحة المرتبطة"><a href="https://taqamisr.com/underfloor-heating-egypt-guide/" target="_blank" rel="noopener">التدفئة الأرضية — EN</a></td><td data-label="المصدر"><strong>Google Search Console</strong></td><td data-label="الترتيب في جوجل — يوليو"><bdi class="rtl-number" dir="rtl">12.9</bdi></td><td data-label="الترتيب في جوجل — أغسطس"><bdi class="rtl-number" dir="rtl">10.9</bdi></td><td data-label="النتيجة"><span class="keyword-result keyword-up" data-movement="positive">تحسن 2 مركز</span></td></tr>
+<tr data-priority-keyword="التسخين المركزي"><td data-label="الكلمة المفتاحية البحثية"><strong>التسخين المركزي</strong></td><td data-label="الصفحة المرتبطة"><a href="https://taqamisr.com/ar/%D8%AA%D8%B3%D8%AE%D9%8A%D9%86-%D9%85%D8%B1%D9%83%D8%B2%D9%8A-%D9%84%D9%84%D9%85%D9%8A%D8%A7%D9%87/" target="_blank" rel="noopener">التسخين المركزي للمياه</a></td><td data-label="المصدر"><strong>Google Search Console</strong></td><td data-label="الترتيب في جوجل — يوليو"><bdi class="rtl-number" dir="rtl">—</bdi></td><td data-label="الترتيب في جوجل — أغسطس"><bdi class="rtl-number" dir="rtl">—</bdi></td><td data-label="النتيجة"><span class="keyword-result keyword-flat" data-movement="neutral">لا تتوفر بيانات ترتيب</span></td></tr>
+<tr data-priority-keyword="تدفئة مركزية"><td data-label="الكلمة المفتاحية البحثية"><strong>تدفئة مركزية</strong></td><td data-label="الصفحة المرتبطة"><a href="https://taqamisr.com/ar/%D8%A7%D9%84%D8%AA%D8%AF%D9%81%D8%A6%D8%A9-%D8%A7%D9%84%D9%85%D8%B1%D9%83%D8%B2%D9%8A%D8%A9/" target="_blank" rel="noopener">التدفئة المركزية</a></td><td data-label="المصدر"><strong>Ahrefs</strong></td><td data-label="الترتيب في جوجل — يوليو"><bdi class="rtl-number" dir="rtl">1</bdi></td><td data-label="الترتيب في جوجل — أغسطس"><bdi class="rtl-number" dir="rtl">2</bdi></td><td data-label="النتيجة"><span class="keyword-result keyword-down" data-movement="negative">تراجع 1 مركز</span></td></tr>
+<tr data-priority-keyword="central heating"><td data-label="الكلمة المفتاحية البحثية"><strong>central heating</strong></td><td data-label="الصفحة المرتبطة"><a href="https://taqamisr.com/central-space-heating/" target="_blank" rel="noopener">التدفئة المركزية — EN</a></td><td data-label="المصدر"><strong>Ahrefs</strong></td><td data-label="الترتيب في جوجل — يوليو"><bdi class="rtl-number" dir="rtl">3</bdi></td><td data-label="الترتيب في جوجل — أغسطس"><bdi class="rtl-number" dir="rtl">3</bdi></td><td data-label="النتيجة"><span class="keyword-result keyword-flat" data-movement="neutral">دون تغيير</span></td></tr>
+<tr data-priority-keyword="central water heating"><td data-label="الكلمة المفتاحية البحثية"><strong>central water heating</strong></td><td data-label="الصفحة المرتبطة"><a href="https://taqamisr.com/central-water-heating/" target="_blank" rel="noopener">تسخين المياه — EN</a></td><td data-label="المصدر"><strong>Google Search Console</strong></td><td data-label="الترتيب في جوجل — يوليو"><bdi class="rtl-number" dir="rtl">24.2</bdi></td><td data-label="الترتيب في جوجل — أغسطس"><bdi class="rtl-number" dir="rtl">23.6</bdi></td><td data-label="النتيجة"><span class="keyword-result keyword-up" data-movement="positive">تحسن 0.6 مركز</span></td></tr>
+<tr data-priority-keyword="radiator"><td data-label="الكلمة المفتاحية البحثية"><strong>radiator</strong></td><td data-label="الصفحة المرتبطة"><a href="https://taqamisr.com/product-category/electric-towel-radiators/" target="_blank" rel="noopener">الرادياتير — EN</a></td><td data-label="المصدر"><strong>Google Search Console</strong></td><td data-label="الترتيب في جوجل — يوليو"><bdi class="rtl-number" dir="rtl">5.8</bdi></td><td data-label="الترتيب في جوجل — أغسطس"><bdi class="rtl-number" dir="rtl">—</bdi></td><td data-label="النتيجة"><span class="keyword-result keyword-down" data-movement="negative">لم تُرصد في أغسطس</span></td></tr>
+<tr data-priority-keyword="central poilar"><td data-label="الكلمة المفتاحية البحثية"><strong>central poilar</strong></td><td data-label="الصفحة المرتبطة"><a href="https://taqamisr.com/central-space-heating/" target="_blank" rel="noopener">التدفئة المركزية — EN</a></td><td data-label="المصدر"><strong>Google Search Console</strong></td><td data-label="الترتيب في جوجل — يوليو"><bdi class="rtl-number" dir="rtl">—</bdi></td><td data-label="الترتيب في جوجل — أغسطس"><bdi class="rtl-number" dir="rtl">—</bdi></td><td data-label="النتيجة"><span class="keyword-result keyword-flat" data-movement="neutral">لا تتوفر بيانات ترتيب</span></td></tr></tbody></table></div></div>
+<div data-keyword-subsection="related"><h3>كلمات مرتبطة تحتاج إلى متابعة</h3><div class="table-wrap compact-table"><table><thead><tr><th>الكلمة المفتاحية البحثية</th><th>الصفحة المرتبطة</th><th>المصدر</th><th>الترتيب في جوجل — يوليو</th><th>الترتيب في جوجل — أغسطس</th><th>النتيجة</th></tr></thead><tbody><tr data-related-keyword="تدفئه مركزيه"><td data-label="الكلمة المفتاحية البحثية"><strong>تدفئه مركزيه</strong></td><td data-label="الصفحة المرتبطة"><a href="https://taqamisr.com/ar/%D8%A7%D9%84%D8%AA%D8%AF%D9%81%D8%A6%D8%A9-%D8%A7%D9%84%D9%85%D8%B1%D9%83%D8%B2%D9%8A%D8%A9/" target="_blank" rel="noopener">التدفئة المركزية</a></td><td data-label="المصدر"><strong>Ahrefs</strong></td><td data-label="الترتيب في جوجل — يوليو"><bdi class="rtl-number" dir="rtl">1</bdi></td><td data-label="الترتيب في جوجل — أغسطس"><bdi class="rtl-number" dir="rtl">4</bdi></td><td data-label="النتيجة"><span class="keyword-result keyword-down" data-movement="negative">تراجع 3 مركز</span></td></tr>
+<tr data-related-keyword="radiators central heating"><td data-label="الكلمة المفتاحية البحثية"><strong>radiators central heating</strong></td><td data-label="الصفحة المرتبطة"><a href="https://taqamisr.com/central-space-heating/" target="_blank" rel="noopener">التدفئة المركزية — EN</a></td><td data-label="المصدر"><strong>Ahrefs</strong></td><td data-label="الترتيب في جوجل — يوليو"><bdi class="rtl-number" dir="rtl">7</bdi></td><td data-label="الترتيب في جوجل — أغسطس"><bdi class="rtl-number" dir="rtl">9</bdi></td><td data-label="النتيجة"><span class="keyword-result keyword-down" data-movement="negative">تراجع 2 مركز</span></td></tr>
+<tr data-related-keyword="underfloor heating"><td data-label="الكلمة المفتاحية البحثية"><strong>underfloor heating</strong></td><td data-label="الصفحة المرتبطة"><a href="https://taqamisr.com/underfloor-heating-egypt-guide/" target="_blank" rel="noopener">التدفئة الأرضية — EN</a></td><td data-label="المصدر"><strong>Ahrefs</strong></td><td data-label="الترتيب في جوجل — يوليو"><bdi class="rtl-number" dir="rtl">23</bdi></td><td data-label="الترتيب في جوجل — أغسطس"><bdi class="rtl-number" dir="rtl">23</bdi></td><td data-label="النتيجة"><span class="keyword-result keyword-flat" data-movement="neutral">دون تغيير</span></td></tr>
+<tr data-related-keyword="مضخات المياه"><td data-label="الكلمة المفتاحية البحثية"><strong>مضخات المياه</strong></td><td data-label="الصفحة المرتبطة"><a href="https://taqamisr.com/ar/product-category/%D9%85%D8%B6%D8%AE%D8%A7%D8%AA-%D8%A7%D9%84%D9%85%D9%8A%D8%A7%D9%87/" target="_blank" rel="noopener">مضخات المياه</a></td><td data-label="المصدر"><strong>Ahrefs</strong></td><td data-label="الترتيب في جوجل — يوليو"><bdi class="rtl-number" dir="rtl">2</bdi></td><td data-label="الترتيب في جوجل — أغسطس"><bdi class="rtl-number" dir="rtl">25</bdi></td><td data-label="النتيجة"><span class="keyword-result keyword-down" data-movement="negative">تراجع 23 مركز</span></td></tr>
+<tr data-related-keyword="water pump"><td data-label="الكلمة المفتاحية البحثية"><strong>water pump</strong></td><td data-label="الصفحة المرتبطة"><a href="https://taqamisr.com/domestic-water-pumps/" target="_blank" rel="noopener">المضخات — EN</a></td><td data-label="المصدر"><strong>Ahrefs</strong></td><td data-label="الترتيب في جوجل — يوليو"><bdi class="rtl-number" dir="rtl">5</bdi></td><td data-label="الترتيب في جوجل — أغسطس"><bdi class="rtl-number" dir="rtl">11</bdi></td><td data-label="النتيجة"><span class="keyword-result keyword-down" data-movement="negative">تراجع 6 مركز</span></td></tr>
+<tr data-related-keyword="booster pump"><td data-label="الكلمة المفتاحية البحثية"><strong>booster pump</strong></td><td data-label="الصفحة المرتبطة"><a href="https://taqamisr.com/domestic-water-pumps/" target="_blank" rel="noopener">المضخات — EN</a></td><td data-label="المصدر"><strong>Ahrefs</strong></td><td data-label="الترتيب في جوجل — يوليو"><bdi class="rtl-number" dir="rtl">1</bdi></td><td data-label="الترتيب في جوجل — أغسطس"><bdi class="rtl-number" dir="rtl">4</bdi></td><td data-label="النتيجة"><span class="keyword-result keyword-down" data-movement="negative">تراجع 3 مركز</span></td></tr></tbody></table></div></div>
+</div><!-- positions:end -->
+<h3 style="margin-top:24px;">الصفحات الأعلى في نقرات أغسطس</h3>
+<div class="table-wrap "><table><thead><tr><th>الصفحة</th><th>نقرات يوليو</th><th>نقرات أغسطس</th><th>التغير</th><th>ظهور أغسطس</th></tr></thead><tbody><tr ><td data-label="الصفحة"><a href="https://taqamisr.com/home-water-pump-wont-stop-running-how-to-fix-it/" target="_blank" rel="noopener">مضخة المياه لا تتوقف — EN</a></td><td data-label="نقرات يوليو"><bdi class="rtl-number" dir="rtl">815</bdi></td><td data-label="نقرات أغسطس"><bdi class="rtl-number" dir="rtl">703</bdi></td><td data-label="التغير"><span class="keyword-result keyword-down" data-movement="negative">انخفاض <bdi class="rtl-number" dir="rtl">112</bdi> نقرة</span></td><td data-label="ظهور أغسطس"><bdi class="rtl-number" dir="rtl">61,405</bdi></td></tr>
+<tr ><td data-label="الصفحة"><a href="https://taqamisr.com/ar/%D8%AD%D9%84-%D8%B6%D8%B9%D9%81-%D8%B6%D8%BA%D8%B7-%D8%A7%D9%84%D9%85%D9%8A%D8%A7%D9%87-%D8%A7%D9%84%D8%B7%D9%88%D8%A7%D8%A8%D9%82-%D8%A7%D9%84%D8%B9%D9%84%D9%88%D9%8A%D8%A9/" target="_blank" rel="noopener">حل ضعف ضغط المياه — AR</a></td><td data-label="نقرات يوليو"><bdi class="rtl-number" dir="rtl">305</bdi></td><td data-label="نقرات أغسطس"><bdi class="rtl-number" dir="rtl">231</bdi></td><td data-label="التغير"><span class="keyword-result keyword-down" data-movement="negative">انخفاض <bdi class="rtl-number" dir="rtl">74</bdi> نقرة</span></td><td data-label="ظهور أغسطس"><bdi class="rtl-number" dir="rtl">20,543</bdi></td></tr>
+<tr ><td data-label="الصفحة"><a href="https://taqamisr.com/ar/%D8%AD%D9%84-%D9%85%D8%B4%D9%83%D9%84%D8%A9-%D9%85%D8%B6%D8%AE%D8%A9-%D8%A7%D9%84%D9%85%D8%A7%D8%A1-%D9%84%D8%A7-%D8%AA%D8%AA%D9%88%D9%82%D9%81/" target="_blank" rel="noopener">مضخة المياه لا تتوقف — AR</a></td><td data-label="نقرات يوليو"><bdi class="rtl-number" dir="rtl">199</bdi></td><td data-label="نقرات أغسطس"><bdi class="rtl-number" dir="rtl">212</bdi></td><td data-label="التغير"><span class="keyword-result keyword-up" data-movement="positive">زيادة <bdi class="rtl-number" dir="rtl">13</bdi> نقرة</span></td><td data-label="ظهور أغسطس"><bdi class="rtl-number" dir="rtl">23,216</bdi></td></tr>
+<tr ><td data-label="الصفحة"><a href="https://taqamisr.com/ar/" target="_blank" rel="noopener">الرئيسية — AR</a></td><td data-label="نقرات يوليو"><bdi class="rtl-number" dir="rtl">111</bdi></td><td data-label="نقرات أغسطس"><bdi class="rtl-number" dir="rtl">112</bdi></td><td data-label="التغير"><span class="keyword-result keyword-up" data-movement="positive">زيادة <bdi class="rtl-number" dir="rtl">1</bdi> نقرة</span></td><td data-label="ظهور أغسطس"><bdi class="rtl-number" dir="rtl">2,881</bdi></td></tr>
+<tr ><td data-label="الصفحة"><a href="https://taqamisr.com/ar/%D9%83%D9%8A%D9%81%D9%8A%D8%A9-%D8%AA%D8%B1%D9%83%D9%8A%D8%A8-%D9%85%D8%B6%D8%AE%D8%A9-%D8%A7%D9%84%D9%85%D8%A7%D8%A1/" target="_blank" rel="noopener">تركيب مضخة المياه — AR</a></td><td data-label="نقرات يوليو"><bdi class="rtl-number" dir="rtl">108</bdi></td><td data-label="نقرات أغسطس"><bdi class="rtl-number" dir="rtl">80</bdi></td><td data-label="التغير"><span class="keyword-result keyword-down" data-movement="negative">انخفاض <bdi class="rtl-number" dir="rtl">28</bdi> نقرة</span></td><td data-label="ظهور أغسطس"><bdi class="rtl-number" dir="rtl">13,797</bdi></td></tr>
+<tr ><td data-label="الصفحة"><a href="https://taqamisr.com/" target="_blank" rel="noopener">الرئيسية — EN</a></td><td data-label="نقرات يوليو"><bdi class="rtl-number" dir="rtl">64</bdi></td><td data-label="نقرات أغسطس"><bdi class="rtl-number" dir="rtl">79</bdi></td><td data-label="التغير"><span class="keyword-result keyword-up" data-movement="positive">زيادة <bdi class="rtl-number" dir="rtl">15</bdi> نقرة</span></td><td data-label="ظهور أغسطس"><bdi class="rtl-number" dir="rtl">1,367</bdi></td></tr>
+<tr ><td data-label="الصفحة"><a href="https://taqamisr.com/ar/%D8%B5%D9%8A%D8%A7%D9%86%D8%A9-%D9%88%D8%AA%D8%B5%D9%84%D9%8A%D8%AD-%D9%85%D8%B6%D8%AE%D8%A9-%D8%A7%D9%84%D9%85%D8%A7%D8%A1-%D8%A7%D9%84%D9%85%D9%86%D8%B2%D9%84%D9%8A%D8%A9/" target="_blank" rel="noopener">صيانة مضخة المياه — AR</a></td><td data-label="نقرات يوليو"><bdi class="rtl-number" dir="rtl">94</bdi></td><td data-label="نقرات أغسطس"><bdi class="rtl-number" dir="rtl">77</bdi></td><td data-label="التغير"><span class="keyword-result keyword-down" data-movement="negative">انخفاض <bdi class="rtl-number" dir="rtl">17</bdi> نقرة</span></td><td data-label="ظهور أغسطس"><bdi class="rtl-number" dir="rtl">10,197</bdi></td></tr>
+<tr ><td data-label="الصفحة"><a href="https://taqamisr.com/ar/brand/%D8%AC%D8%B1%D8%A7%D9%86%D8%AF%D9%81%D9%88%D8%B3/" target="_blank" rel="noopener">جراندفوس — AR</a></td><td data-label="نقرات يوليو"><bdi class="rtl-number" dir="rtl">95</bdi></td><td data-label="نقرات أغسطس"><bdi class="rtl-number" dir="rtl">77</bdi></td><td data-label="التغير"><span class="keyword-result keyword-down" data-movement="negative">انخفاض <bdi class="rtl-number" dir="rtl">18</bdi> نقرة</span></td><td data-label="ظهور أغسطس"><bdi class="rtl-number" dir="rtl">3,226</bdi></td></tr>
+<tr ><td data-label="الصفحة"><a href="https://taqamisr.com/ar/product-category/%D9%85%D8%B6%D8%AE%D8%A7%D8%AA-%D8%BA%D8%A7%D8%B7%D8%B3%D8%A9/" target="_blank" rel="noopener">المضخات الغاطسة — AR</a></td><td data-label="نقرات يوليو"><bdi class="rtl-number" dir="rtl">40</bdi></td><td data-label="نقرات أغسطس"><bdi class="rtl-number" dir="rtl">39</bdi></td><td data-label="التغير"><span class="keyword-result keyword-down" data-movement="negative">انخفاض <bdi class="rtl-number" dir="rtl">1</bdi> نقرة</span></td><td data-label="ظهور أغسطس"><bdi class="rtl-number" dir="rtl">3,147</bdi></td></tr>
+<tr ><td data-label="الصفحة"><a href="https://taqamisr.com/ar/%D8%A7%D8%AA%D8%B5%D9%84-%D8%A8%D9%86%D8%A7/" target="_blank" rel="noopener">اتصل بنا — AR</a></td><td data-label="نقرات يوليو"><bdi class="rtl-number" dir="rtl">50</bdi></td><td data-label="نقرات أغسطس"><bdi class="rtl-number" dir="rtl">39</bdi></td><td data-label="التغير"><span class="keyword-result keyword-down" data-movement="negative">انخفاض <bdi class="rtl-number" dir="rtl">11</bdi> نقرة</span></td><td data-label="ظهور أغسطس"><bdi class="rtl-number" dir="rtl">1,212</bdi></td></tr></tbody></table></div>
+<p class="source-note">Google Search Console · صفحات البحث الأعلى نقرا خلال أغسطس، مقارنة بيوليو.</p></section>
+<section id="content-work"><span class="section-label normal">المحتوى المنشور</span><div class="section-head"><div><div class="section-kicker">النشر والتحسين بالعربية والإنجليزية</div><h2>المحتوى الأساسي والإضافي خلال أغسطس.</h2></div></div>
+<div data-report-block="content"><div class="content-subsection" data-content-scope="main"><h3>المحتوى الأساسي</h3><p>أعدنا كتابة أوصاف سخانات المياه التالية، مع عناوين أوضح، ومواصفات وأسئلة شائعة، وروابط إلى المنتجات والخدمات ذات الصلة.</p>
+<div class="table-wrap "><table><thead><tr><th>المحتوى الأساسي</th><th>اللغة</th><th>الصفحة</th><th>الحالة</th></tr></thead><tbody><tr data-scope="main" data-language="ar"><td data-label="المحتوى الأساسي"><strong>أتلانتيك كومبي أوبرو 100 لتر</strong></td><td data-label="اللغة">العربية</td><td data-label="الصفحة"><a href="https://taqamisr.com/ar/product/%D8%B3%D8%AE%D8%A7%D9%86-%D9%85%D9%8A%D8%A7%D9%87-%D9%83%D9%88%D9%85%D8%A8%D9%8A-%D8%A7%D9%88%D8%A8%D8%B1%D9%88-100-%D9%85%D9%86-%D8%A7%D8%AA%D9%84%D8%A7%D9%86%D8%AA%D9%8A%D9%83/" target="_blank" rel="noopener">فتح الصفحة</a></td><td data-label="الحالة"><span class="status">مُحدّث ومنشور</span></td></tr>
+<tr data-scope="main" data-language="en"><td data-label="المحتوى الأساسي"><strong>أتلانتيك كومبي أوبرو 100 لتر</strong></td><td data-label="اللغة">English</td><td data-label="الصفحة"><a href="https://taqamisr.com/product/combi-opro-100-water-heater-by-atlantic/" target="_blank" rel="noopener">فتح الصفحة</a></td><td data-label="الحالة"><span class="status">مُحدّث ومنشور</span></td></tr>
+<tr data-scope="main" data-language="ar"><td data-label="المحتوى الأساسي"><strong>ناردي كهربائي فوري 7 و8 كيلووات</strong></td><td data-label="اللغة">العربية</td><td data-label="الصفحة"><a href="https://taqamisr.com/ar/product/%D8%B3%D8%AE%D8%A7%D9%86-%D9%85%D9%8A%D8%A7%D9%87-%D9%83%D9%87%D8%B1%D8%A8%D8%A7%D8%A6%D9%8A-%D9%86%D8%A7%D8%B1%D8%AF%D9%8A-%D9%81%D9%88%D8%B1%D9%8A-%D8%B2%D9%88%D8%AF-%D8%A8%D8%AE%D8%A7%D8%B5%D9%8A/" target="_blank" rel="noopener">فتح الصفحة</a></td><td data-label="الحالة"><span class="status">مُحدّث ومنشور</span></td></tr>
+<tr data-scope="main" data-language="en"><td data-label="المحتوى الأساسي"><strong>ناردي كهربائي فوري 7 و8 كيلووات</strong></td><td data-label="اللغة">English</td><td data-label="الصفحة"><a href="https://taqamisr.com/product/nard-electric-instant-water-heater-safety-feature-allows-it-to-automatically-shuts-off-when-there-isnt-enough-water-2-levels-of-energy-7-kw-8-kw/" target="_blank" rel="noopener">فتح الصفحة</a></td><td data-label="الحالة"><span class="status">مُحدّث ومنشور</span></td></tr>
+<tr data-scope="main" data-language="ar"><td data-label="المحتوى الأساسي"><strong>إلكترون غاز 10 لتر</strong></td><td data-label="اللغة">العربية</td><td data-label="الصفحة"><a href="https://taqamisr.com/ar/product/%D8%B3%D8%AE%D8%A7%D9%86-%D8%A7%D9%84%D9%83%D8%AA%D8%B1%D9%88%D9%86-10-%D9%84%D8%AA%D8%B1-%D9%8A%D8%B9%D9%85%D9%84-%D8%A8%D8%A7%D9%84%D8%BA%D8%A7%D8%B2/" target="_blank" rel="noopener">فتح الصفحة</a></td><td data-label="الحالة"><span class="status">مُحدّث ومنشور</span></td></tr>
+<tr data-scope="main" data-language="en"><td data-label="المحتوى الأساسي"><strong>إلكترون غاز 10 لتر</strong></td><td data-label="اللغة">English</td><td data-label="الصفحة"><a href="https://taqamisr.com/product/electron-gas-water-heater-10-litre/" target="_blank" rel="noopener">فتح الصفحة</a></td><td data-label="الحالة"><span class="status">مُحدّث ومنشور</span></td></tr>
+<tr data-scope="main" data-language="ar"><td data-label="المحتوى الأساسي"><strong>ناردي غاز 16 لتر</strong></td><td data-label="اللغة">العربية</td><td data-label="الصفحة"><a href="https://taqamisr.com/ar/product/%D8%B3%D8%AE%D8%A7%D9%86-%D9%85%D9%8A%D8%A7%D9%87-%D8%BA%D8%A7%D8%B2-%D9%86%D8%A7%D8%B1%D8%AF%D9%8A-16-%D9%84%D8%AA%D8%B1-%D8%A8%D8%AF%D9%88%D9%86-%D9%85%D8%AF%D8%AE%D9%86%D8%A9/" target="_blank" rel="noopener">فتح الصفحة</a></td><td data-label="الحالة"><span class="status">مُحدّث ومنشور</span></td></tr>
+<tr data-scope="main" data-language="en"><td data-label="المحتوى الأساسي"><strong>ناردي غاز 16 لتر</strong></td><td data-label="اللغة">English</td><td data-label="الصفحة"><a href="https://taqamisr.com/product/%D8%B3%D8%AE%D8%A7%D9%86-%D9%85%D9%8A%D8%A7%D9%87-%D8%BA%D8%A7%D8%B2-%D9%86%D8%A7%D8%B1%D8%AF%D9%8A-16-%D9%84%D8%AA%D8%B1-%D8%A8%D8%AF%D9%88%D9%86-%D9%85%D8%AF%D8%AE%D9%86%D8%A9/" target="_blank" rel="noopener">فتح الصفحة</a></td><td data-label="الحالة"><span class="status">مُحدّث ومنشور</span></td></tr></tbody></table></div></div>
+<div class="content-subsection" data-content-scope="additional"><h3>المحتوى الإضافي</h3>
+<p><strong>أدلة شراء وتسعير جديدة:</strong> تساعد القارئ على اختيار نوع السخان وفهم تكلفة التدفئة، مع رسوم توضيحية وروابط تقوده إلى الفئة أو الخدمة المناسبة.</p>
+<div class="table-wrap "><table><thead><tr><th>المقال</th><th>الصفحات</th><th>الحالة</th></tr></thead><tbody><tr data-scope="additional" data-pieces="2"><td data-label="المقال"><strong>سخان غاز أم كهرباء؟</strong></td><td data-label="الصفحات"><span class="link-pair"><a href="https://taqamisr.com/ar/%D8%B3%D8%AE%D8%A7%D9%86-%D8%BA%D8%A7%D8%B2-%D8%A3%D9%85-%D9%83%D9%87%D8%B1%D8%A8%D8%A7%D8%A1/" target="_blank" rel="noopener">العربية</a><a href="https://taqamisr.com/gas-or-electric-water-heater-egypt/" target="_blank" rel="noopener">English</a></span></td><td data-label="الحالة"><span class="status">منشور باللغتين</span></td></tr>
+<tr data-scope="additional" data-pieces="2"><td data-label="المقال"><strong>السخان الكهربائي: فوري أم تخزين؟</strong></td><td data-label="الصفحات"><span class="link-pair"><a href="https://taqamisr.com/ar/%D8%B3%D8%AE%D8%A7%D9%86-%D9%83%D9%87%D8%B1%D8%A8%D8%A7%D8%A1-%D9%81%D9%88%D8%B1%D9%8A-%D8%A3%D9%88-%D8%AA%D8%AE%D8%B2%D9%8A%D9%86%D8%9F/" target="_blank" rel="noopener">العربية</a><a href="https://taqamisr.com/instant-vs-storage-water-heaters/" target="_blank" rel="noopener">English</a></span></td><td data-label="الحالة"><span class="status">منشور باللغتين</span></td></tr>
+<tr data-scope="additional" data-pieces="2"><td data-label="المقال"><strong>تكلفة التدفئة المركزية في مصر</strong></td><td data-label="الصفحات"><span class="link-pair"><a href="https://taqamisr.com/ar/%D8%AA%D9%83%D9%84%D9%81%D8%A9-%D8%A7%D9%84%D8%AA%D8%AF%D9%81%D8%A6%D8%A9-%D8%A7%D9%84%D9%85%D8%B1%D9%83%D8%B2%D9%8A%D8%A9-%D9%81%D9%8A-%D9%85%D8%B5%D8%B1/" target="_blank" rel="noopener">العربية</a><a href="https://taqamisr.com/central-heating-cost-egypt/" target="_blank" rel="noopener">English</a></span></td><td data-label="الحالة"><span class="status">منشور باللغتين</span></td></tr></tbody></table></div>
+<p><strong>تطوير صفحات العلامات التجارية:</strong> حسّنّا المحتوى العربي والإنجليزي للعلامات التالية، ووضّحنا الفروق بين عائلات المنتجات، وربطنا كل علامة بفئاتها المناسبة.</p>
+<div class="table-wrap "><table><thead><tr><th>العلامة التجارية</th><th>المحتوى المنجز</th><th>مثال منشور</th></tr></thead><tbody><tr data-scope="additional" data-pieces="2"><td data-label="العلامة التجارية"><strong>Ariston</strong></td><td data-label="المحتوى المنجز">وصف عربي ووصف إنجليزي</td><td data-label="مثال منشور"><a href="https://taqamisr.com/brand/ariston/" target="_blank" rel="noopener">الصفحة الإنجليزية</a></td></tr>
+<tr data-scope="additional" data-pieces="2"><td data-label="العلامة التجارية"><strong>Nardi</strong></td><td data-label="المحتوى المنجز">وصف عربي ووصف إنجليزي</td><td data-label="مثال منشور"><a href="https://taqamisr.com/brand/nardi/" target="_blank" rel="noopener">الصفحة الإنجليزية</a></td></tr>
+<tr data-scope="additional" data-pieces="2"><td data-label="العلامة التجارية"><strong>Italtherm</strong></td><td data-label="المحتوى المنجز">وصف عربي ووصف إنجليزي</td><td data-label="مثال منشور"><a href="https://taqamisr.com/brand/italtherm/" target="_blank" rel="noopener">الصفحة الإنجليزية</a></td></tr>
+<tr data-scope="additional" data-pieces="2"><td data-label="العلامة التجارية"><strong>Atlantic</strong></td><td data-label="المحتوى المنجز">وصف عربي ووصف إنجليزي</td><td data-label="مثال منشور"><a href="https://taqamisr.com/brand/atlantic/" target="_blank" rel="noopener">الصفحة الإنجليزية</a></td></tr>
+<tr data-scope="additional" data-pieces="2"><td data-label="العلامة التجارية"><strong>Electron</strong></td><td data-label="المحتوى المنجز">وصف عربي ووصف إنجليزي</td><td data-label="مثال منشور"><a href="https://taqamisr.com/brand/electron/" target="_blank" rel="noopener">الصفحة الإنجليزية</a></td></tr>
+<tr data-scope="additional" data-pieces="2"><td data-label="العلامة التجارية"><strong>Techno Gas</strong></td><td data-label="المحتوى المنجز">وصف عربي ووصف إنجليزي</td><td data-label="مثال منشور"><a href="https://taqamisr.com/brand/techno-gas/" target="_blank" rel="noopener">الصفحة الإنجليزية</a></td></tr>
+<tr data-scope="additional" data-pieces="2"><td data-label="العلامة التجارية"><strong>Momenta</strong></td><td data-label="المحتوى المنجز">وصف عربي ووصف إنجليزي</td><td data-label="مثال منشور"><a href="https://taqamisr.com/brand/momenta/" target="_blank" rel="noopener">الصفحة الإنجليزية</a></td></tr>
+<tr data-scope="additional" data-pieces="2"><td data-label="العلامة التجارية"><strong>Thomson</strong></td><td data-label="المحتوى المنجز">وصف عربي ووصف إنجليزي</td><td data-label="مثال منشور"><a href="https://taqamisr.com/brand/thomson/" target="_blank" rel="noopener">الصفحة الإنجليزية</a></td></tr>
+<tr data-scope="additional" data-pieces="2"><td data-label="العلامة التجارية"><strong>Planika</strong></td><td data-label="المحتوى المنجز">وصف عربي ووصف إنجليزي</td><td data-label="مثال منشور"><a href="https://taqamisr.com/brand/planika-fireplaces/" target="_blank" rel="noopener">الصفحة الإنجليزية</a></td></tr>
+<tr data-scope="additional" data-pieces="2"><td data-label="العلامة التجارية"><strong>Grundfos</strong></td><td data-label="المحتوى المنجز">وصف عربي ووصف إنجليزي</td><td data-label="مثال منشور"><a href="https://taqamisr.com/brand/grundfos/" target="_blank" rel="noopener">الصفحة الإنجليزية</a></td></tr></tbody></table></div>
+<p>دعمنا المحتوى بروابط داخلية من الأدلة القائمة إلى المقالات الجديدة وصفحات الخدمات، مع الفصل بين تسخين المياه وتدفئة المساحات حتى يصل القارئ إلى الحل المناسب.</p>
+</div></div><!-- content-report-block:end --></section>
+<section id="extra-work" class="section-divider"><span class="section-label extra">عمل استثنائي إضافي</span><div class="section-head"><div><div class="section-kicker">Google Merchant Center بعد انتقال المتجر</div><h2>استعادة ربط المنتجات وإتاحتها باللغتين.</h2></div></div>
+<p class="lead">أعدنا تشغيل الربط بين المتجر وGoogle Merchant Center في أغسطس، وأضفنا التغطية العربية إلى الإنجليزية للسوق المصري. في فحص 28 أغسطس كانت 104 قوائم معتمدة و6 قيد المراجعة؛ وأصبحت جميع القوائم معتمدة في فحص 5 سبتمبر.</p>
+<div class="grid grid-3"><div class="card metric green"><span class="value rtl-number" dir="rtl">110</span><span class="label">قائمة منتج معتمدة</span><span class="note">الحالة في 5 سبتمبر 2026</span></div><div class="card metric green"><span class="value rtl-number" dir="rtl">61</span><span class="label">قائمة عربية</span><span class="note">ضمن الكتالوج المتصل</span></div><div class="card metric green"><span class="value rtl-number" dir="rtl">49</span><span class="label">قائمة إنجليزية</span><span class="note">ضمن الكتالوج المتصل</span></div></div>
+<div class="screenshot-grid"><figure class="report-shot wide"><a href="assets/merchant-approval-sept5.png" target="_blank" rel="noopener" aria-label="تكبير الصورة"><img loading="lazy" src="assets/merchant-approval-sept5.png" alt="حالة اعتماد المنتجات — 5 سبتمبر 2026"></a><figcaption><strong class="figure-title">حالة اعتماد المنتجات — 5 سبتمبر 2026</strong><span class="figure-comment">لا توجد قوائم مرفوضة أو محدودة أو قيد المراجعة في الفحص الحالي. هذا نجاح في أهلية عرض المنتجات، وليس دليلا بحد ذاته على نمو المبيعات.</span></figcaption></figure><figure class="report-shot wide"><a href="assets/merchant-sources-sept5.png" target="_blank" rel="noopener" aria-label="تكبير الصورة"><img loading="lazy" src="assets/merchant-sources-sept5.png" alt="مصادر المنتجات العربية والإنجليزية"></a><figcaption><strong class="figure-title">مصادر المنتجات العربية والإنجليزية</strong><span class="figure-comment">الكتالوج متصل بمصدرين للسوق المصري؛ أحدهما عربي والآخر إنجليزي. الأعداد تمثل قوائم المنتجات بكل لغة، وليست عددا للموديلات الفريدة.</span></figcaption></figure></div>
+<p><strong>الخطوة التجارية التالية:</strong> سجلت زيارات قوائم المنتجات في أغسطس 186 ظهورا ونقرة واحدة؛ لذا ما زال دور هذه القناة في الزيارات محدودا. ويوصي Merchant Center باستكمال تفاصيل 40 قائمة لسخانات المياه، وهو ما يدعم أولوية تحسين الأوصاف المتبقية.</p></section>
+<section id="summary-close"><div class="highlight"><h2>أولويات المرحلة التالية</h2><ol class="priority-list">
+<li><strong>تسخين المياه والتدفئة المركزية:</strong> تعزيز الصفحات العربية والإنجليزية المرتبطة بالغلايات والمياه الساخنة والتدفئة الأرضية، مع التركيز على العبارات التي لم تصل بعد إلى النتائج الأولى، والحفاظ على الكلمات التي تقدمت.</li>
+<li><strong>أوصاف المنتجات:</strong> استكمال كتابة وتحسين الأوصاف العربية والإنجليزية لجميع المنتجات المتبقية، بدءا بمنتجات تسخين المياه والتدفئة المركزية وتفاصيلها المطلوبة في Merchant Center.</li>
+<li><strong>الصفحات والروابط الداخلية:</strong> تقوية الروابط بين الأدلة وصفحات الفئات والمنتجات، ومراجعة صفحات المضخات التي فقدت نقرات أو ترتيبا، مع فحصها على الهاتف.</li></ol></div>
+<div class="approval-block"><h3>قرار مطلوب من طاقة مصر: اعتماد تحسين صفحة التسخين المركزي</h3><p>أُرسل تصور تحسين <a href="https://taqamisr.com/ar/%D8%AA%D8%B3%D8%AE%D9%8A%D9%86-%D9%85%D8%B1%D9%83%D8%B2%D9%8A-%D9%84%D9%84%D9%85%D9%8A%D8%A7%D9%87/" target="_blank" rel="noopener">صفحة التسخين المركزي للمياه</a> يوم <strong>12 أغسطس</strong>، وتبعته رسالة تذكير يوم <strong>15 أغسطس</strong>. لم تصل الموافقة حتى تاريخ إعداد التقرير، ولذلك لم يبدأ تنفيذ التحسين المقترح.</p><p><strong>المطلوب:</strong> اعتماد التصور أو إرسال الملاحظات النهائية حتى نبدأ التنفيذ. استمرار الانتظار يؤجل تحسين عرض الخدمة ومسار طلبها.</p><p><a href="https://cleanshot.com/share/XQJqslyl" target="_blank" rel="noopener">مراجعة التصور المرسل</a></p></div></section>
+<footer class="footer"><p><strong>أعد هذا التقرير لطاقة مصر.</strong> نتائج البحث والأعمال المنجزة خلال أغسطس 2026. حالة اعتماد Merchant Center موضحة بتاريخ فحصها في سبتمبر.</p></footer></div></main></body></html>

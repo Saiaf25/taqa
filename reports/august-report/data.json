@@ -1,0 +1,984 @@
+{
+  "period": {
+    "from": "2026-08-01",
+    "to": "2026-08-31",
+    "comparisonFrom": "2026-07-01",
+    "comparisonTo": "2026-07-31",
+    "prepared": "2026-09-05"
+  },
+  "traffic": {
+    "august": {
+      "clicks": 2550,
+      "impressions": 203341
+    },
+    "july": {
+      "clicks": 2703,
+      "impressions": 209456
+    },
+    "devices": [
+      [
+        "الهاتف",
+        2021,
+        2224,
+        161263
+      ],
+      [
+        "الكمبيوتر",
+        497,
+        438,
+        40464
+      ],
+      [
+        "الجهاز اللوحي",
+        32,
+        41,
+        1614
+      ]
+    ]
+  },
+  "coverage": {
+    "source": "GSC Looker screenshot 2026-09-05 at 12.59.08 AM",
+    "august": {
+      "total": 5313,
+      "top3": 1741,
+      "top4to10": 2105
+    },
+    "july": {
+      "total": 5694,
+      "top3": 1909,
+      "top4to10": 2174
+    }
+  },
+  "ranks": [
+    {
+      "keyword": "دفاية غاز",
+      "country": "EG",
+      "position": 1,
+      "position_prev": 3,
+      "url": "https://taqamisr.com/Home/%D8%A7%D9%84%D9%85%D9%86%D8%AA%D8%AC%D8%A7%D8%AA",
+      "serp_updated": "2026-08-28T06:45:53Z",
+      "serp_updated_prev": "2026-07-31T00:31:17Z"
+    },
+    {
+      "keyword": "تدفئة مركزية",
+      "country": "EG",
+      "position": 2,
+      "position_prev": 1,
+      "url": "https://taqamisr.com/%D8%A7%D9%84%D8%AA%D8%AF%D9%81%D8%A6%D8%A9-%D8%A7%D9%84%D9%85%D8%B1%D9%83%D8%B2%D9%8A%D8%A9",
+      "serp_updated": "2026-08-28T00:31:26Z",
+      "serp_updated_prev": "2026-07-31T00:31:20Z"
+    },
+    {
+      "keyword": "التدفئة المركزية",
+      "country": "EG",
+      "position": 2,
+      "position_prev": 3,
+      "url": "https://taqamisr.com/%D8%A7%D9%84%D8%AA%D8%AF%D9%81%D8%A6%D8%A9-%D8%A7%D9%84%D9%85%D8%B1%D9%83%D8%B2%D9%8A%D8%A9",
+      "serp_updated": "2026-08-28T00:31:22Z",
+      "serp_updated_prev": "2026-07-31T00:31:21Z"
+    },
+    {
+      "keyword": "taqa misr",
+      "country": "EG",
+      "position": 1,
+      "position_prev": 1,
+      "url": "https://taqamisr.com/",
+      "serp_updated": "2026-08-28T00:31:18Z",
+      "serp_updated_prev": "2026-07-31T00:31:19Z"
+    },
+    {
+      "keyword": "دفايه غاز",
+      "country": "EG",
+      "position": 1,
+      "position_prev": 3,
+      "url": "https://taqamisr.com/Home/%D8%A7%D9%84%D9%85%D9%86%D8%AA%D8%AC%D8%A7%D8%AA",
+      "serp_updated": "2026-08-28T06:45:55Z",
+      "serp_updated_prev": "2026-07-31T00:31:21Z"
+    },
+    {
+      "keyword": "طاقة مصر",
+      "country": "EG",
+      "position": 1,
+      "position_prev": 1,
+      "url": "https://taqamisr.com/",
+      "serp_updated": "2026-08-28T06:45:57Z",
+      "serp_updated_prev": "2026-07-31T00:31:20Z"
+    },
+    {
+      "keyword": "fireplace",
+      "country": "EG",
+      "position": 3,
+      "position_prev": 6,
+      "url": "https://taqamisr.com/fireplaces",
+      "serp_updated": "2026-08-28T00:31:55Z",
+      "serp_updated_prev": "2026-07-31T00:31:18Z"
+    },
+    {
+      "keyword": "دفايات غاز للمنازل",
+      "country": "EG",
+      "position": 2,
+      "position_prev": 2,
+      "url": "https://taqamisr.com/Home/%D8%A7%D9%84%D9%85%D9%86%D8%AA%D8%AC%D8%A7%D8%AA",
+      "serp_updated": "2026-08-28T00:31:47Z",
+      "serp_updated_prev": "2026-07-31T00:31:17Z"
+    },
+    {
+      "keyword": "booster pump",
+      "country": "EG",
+      "position": 4,
+      "position_prev": 1,
+      "url": "https://taqamisr.com/product",
+      "serp_updated": "2026-08-28T00:31:21Z",
+      "serp_updated_prev": "2026-07-31T00:31:17Z"
+    },
+    {
+      "keyword": "غلايات مركزية",
+      "country": "EG",
+      "position": 2,
+      "position_prev": 2,
+      "url": "https://taqamisr.com/%D8%AA%D8%B3%D8%AE%D9%8A%D9%86-%D9%85%D8%B1%D9%83%D8%B2%D9%8A-%D9%84%D9%84%D9%85%D9%8A%D8%A7%D9%87",
+      "serp_updated": "2026-08-28T00:31:21Z",
+      "serp_updated_prev": "2026-07-31T00:31:16Z"
+    },
+    {
+      "keyword": "دفايات غاز",
+      "country": "EG",
+      "position": 2,
+      "position_prev": 3,
+      "url": "https://taqamisr.com/Home/%D8%A7%D9%84%D9%85%D9%86%D8%AA%D8%AC%D8%A7%D8%AA",
+      "serp_updated": "2026-08-28T00:31:22Z",
+      "serp_updated_prev": "2026-07-31T00:31:32Z"
+    },
+    {
+      "keyword": "fireplaces",
+      "country": "EG",
+      "position": 1,
+      "position_prev": 2,
+      "url": "https://taqamisr.com/fireplaces",
+      "serp_updated": "2026-08-28T00:31:31Z",
+      "serp_updated_prev": "2026-07-31T00:31:21Z"
+    },
+    {
+      "keyword": "شركة طاقة مصر",
+      "country": "EG",
+      "position": 1,
+      "position_prev": 1,
+      "url": "https://taqamisr.com/",
+      "serp_updated": "2026-08-28T06:46:01Z",
+      "serp_updated_prev": "2026-07-31T00:31:18Z"
+    },
+    {
+      "keyword": "electric fireplace",
+      "country": "EG",
+      "position": 3,
+      "position_prev": 13,
+      "url": "https://taqamisr.com/Products",
+      "serp_updated": "2026-08-28T00:31:23Z",
+      "serp_updated_prev": "2026-07-31T00:31:14Z"
+    },
+    {
+      "keyword": "fireplace egypt",
+      "country": "EG",
+      "position": 7,
+      "position_prev": 11,
+      "url": "https://taqamisr.com/fireplaces",
+      "serp_updated": "2026-08-28T00:31:22Z",
+      "serp_updated_prev": "2026-07-31T00:31:17Z"
+    },
+    {
+      "keyword": "bio ethanol",
+      "country": "EG",
+      "position": 2,
+      "position_prev": 1,
+      "url": "https://taqamisr.com/product",
+      "serp_updated": "2026-08-28T00:31:18Z",
+      "serp_updated_prev": "2026-07-31T00:31:24Z"
+    },
+    {
+      "keyword": "غلاية تسخين مركزي",
+      "country": "EG",
+      "position": 1,
+      "position_prev": 1,
+      "url": "https://taqamisr.com/%D8%AA%D8%B3%D8%AE%D9%8A%D9%86-%D9%85%D8%B1%D9%83%D8%B2%D9%8A-%D9%84%D9%84%D9%85%D9%8A%D8%A7%D9%87",
+      "serp_updated": "2026-08-28T00:32:05Z",
+      "serp_updated_prev": "2026-07-31T00:31:22Z"
+    },
+    {
+      "keyword": "تصليح مضخات",
+      "country": "EG",
+      "position": 4,
+      "position_prev": 2,
+      "url": "https://taqamisr.com/Home/%D9%83%D9%84",
+      "serp_updated": "2026-08-28T00:31:18Z",
+      "serp_updated_prev": "2026-07-31T00:31:19Z"
+    },
+    {
+      "keyword": "pool heater",
+      "country": "EG",
+      "position": 3,
+      "position_prev": 3,
+      "url": "https://taqamisr.com/",
+      "serp_updated": "2026-08-28T00:31:18Z",
+      "serp_updated_prev": "2026-07-31T00:31:18Z"
+    },
+    {
+      "keyword": "fire place",
+      "country": "EG",
+      "position": 3,
+      "position_prev": 1,
+      "url": "https://taqamisr.com/fireplaces",
+      "serp_updated": "2026-08-28T00:31:20Z",
+      "serp_updated_prev": "2026-07-31T00:31:19Z"
+    },
+    {
+      "keyword": "grundfos pump",
+      "country": "EG",
+      "position": 5,
+      "position_prev": 3,
+      "url": "https://taqamisr.com/Products",
+      "serp_updated": "2026-08-28T00:31:20Z",
+      "serp_updated_prev": "2026-07-31T00:31:16Z"
+    },
+    {
+      "keyword": "دفايات غاز للحدائق",
+      "country": "EG",
+      "position": 3,
+      "position_prev": 2,
+      "url": "https://taqamisr.com/Home/%D8%A7%D9%84%D9%85%D9%86%D8%AA%D8%AC%D8%A7%D8%AA",
+      "serp_updated": "2026-08-28T00:31:23Z",
+      "serp_updated_prev": "2026-07-31T00:31:20Z"
+    },
+    {
+      "keyword": "تدفئه مركزيه",
+      "country": "EG",
+      "position": 4,
+      "position_prev": 1,
+      "url": "https://taqamisr.com/%D8%A7%D9%84%D8%AA%D8%AF%D9%81%D8%A6%D8%A9-%D8%A7%D9%84%D9%85%D8%B1%D9%83%D8%B2%D9%8A%D8%A9",
+      "serp_updated": "2026-08-28T00:32:07Z",
+      "serp_updated_prev": "2026-07-31T00:31:19Z"
+    },
+    {
+      "keyword": "central heater",
+      "country": "EG",
+      "position": 2,
+      "position_prev": 5,
+      "url": "https://taqamisr.com/",
+      "serp_updated": "2026-08-28T00:31:19Z",
+      "serp_updated_prev": "2026-07-31T00:31:25Z"
+    },
+    {
+      "keyword": "مضخات مياه",
+      "country": "EG",
+      "position": 9,
+      "position_prev": 4,
+      "url": "https://taqamisr.com/Home/%D8%A7%D9%84%D9%85%D9%86%D8%AA%D8%AC%D8%A7%D8%AA",
+      "serp_updated": "2026-08-28T00:32:11Z",
+      "serp_updated_prev": "2026-07-31T00:31:24Z"
+    },
+    {
+      "keyword": "fireplace electric",
+      "country": "EG",
+      "position": 2,
+      "position_prev": 2,
+      "url": "https://taqamisr.com/Products",
+      "serp_updated": "2026-08-28T00:31:22Z",
+      "serp_updated_prev": "2026-07-31T00:31:23Z"
+    },
+    {
+      "keyword": "سخان غاز اريستون ايطالي 10 لتر",
+      "country": "EG",
+      "position": 5,
+      "position_prev": 3,
+      "url": "https://taqamisr.com/Home/%D8%A7%D9%84%D9%85%D9%86%D8%AA%D8%AC%D8%A7%D8%AA/%D9%83%D9%84",
+      "serp_updated": "2026-08-28T00:31:20Z",
+      "serp_updated_prev": "2026-07-31T00:31:21Z"
+    },
+    {
+      "keyword": "submersible pumps",
+      "country": "EG",
+      "position": 5,
+      "position_prev": 15,
+      "url": "https://taqamisr.com/Products",
+      "serp_updated": "2026-08-28T00:31:20Z",
+      "serp_updated_prev": "2026-07-31T00:31:18Z"
+    },
+    {
+      "keyword": "water pump",
+      "country": "EG",
+      "position": 11,
+      "position_prev": 5,
+      "url": "https://taqamisr.com/Products",
+      "serp_updated": "2026-08-28T00:31:18Z",
+      "serp_updated_prev": "2026-07-31T00:31:18Z"
+    },
+    {
+      "keyword": "دفاية مركزية",
+      "country": "EG",
+      "position": 3,
+      "position_prev": 20,
+      "url": "https://taqamisr.com/%D8%A7%D9%84%D8%AA%D8%AF%D9%81%D8%A6%D8%A9-%D8%A7%D9%84%D9%85%D8%B1%D9%83%D8%B2%D9%8A%D8%A9",
+      "serp_updated": "2026-08-28T00:31:23Z",
+      "serp_updated_prev": "2026-07-31T00:31:20Z"
+    },
+    {
+      "keyword": "تسخين مياه مركزي",
+      "country": "EG",
+      "position": 2,
+      "position_prev": 3,
+      "url": "https://taqamisr.com/%D8%AA%D8%B3%D8%AE%D9%8A%D9%86-%D9%85%D8%B1%D9%83%D8%B2%D9%8A-%D9%84%D9%84%D9%85%D9%8A%D8%A7%D9%87",
+      "serp_updated": "2026-08-28T00:31:23Z",
+      "serp_updated_prev": "2026-07-31T00:31:17Z"
+    },
+    {
+      "keyword": "electric fireplaces",
+      "country": "EG",
+      "position": 3,
+      "position_prev": 10,
+      "url": "https://taqamisr.com/Products",
+      "serp_updated": "2026-08-28T00:31:20Z",
+      "serp_updated_prev": "2026-07-31T00:31:22Z"
+    },
+    {
+      "keyword": "الطلمبات الغاطسة",
+      "country": "EG",
+      "position": 8,
+      "position_prev": 4,
+      "url": "https://taqamisr.com/Home/%D8%A7%D9%84%D9%85%D9%86%D8%AA%D8%AC%D8%A7%D8%AA",
+      "serp_updated": "2026-08-28T00:31:28Z",
+      "serp_updated_prev": "2026-07-31T00:31:17Z"
+    },
+    {
+      "keyword": "مضخة المياه الغاطسة",
+      "country": "EG",
+      "position": 10,
+      "position_prev": null,
+      "url": "https://taqamisr.com/Home/%D8%A7%D9%84%D9%85%D9%86%D8%AA%D8%AC%D8%A7%D8%AA",
+      "serp_updated": "2026-08-28T00:31:25Z",
+      "serp_updated_prev": "2026-07-31T00:31:25Z"
+    },
+    {
+      "keyword": "central heating",
+      "country": "EG",
+      "position": 3,
+      "position_prev": 3,
+      "url": "https://taqamisr.com/",
+      "serp_updated": "2026-08-28T00:31:19Z",
+      "serp_updated_prev": "2026-07-31T00:31:19Z"
+    },
+    {
+      "keyword": "سخان غاز اريستون 10 لتر",
+      "country": "EG",
+      "position": 19,
+      "position_prev": 22,
+      "url": "https://taqamisr.com/Home/%D8%A7%D9%84%D9%85%D9%86%D8%AA%D8%AC%D8%A7%D8%AA/%D9%83%D9%84",
+      "serp_updated": "2026-08-28T00:31:52Z",
+      "serp_updated_prev": "2026-07-31T00:31:24Z"
+    },
+    {
+      "keyword": "مضخات مياه صغيرة",
+      "country": "EG",
+      "position": 10,
+      "position_prev": 15,
+      "url": "https://taqamisr.com/Home/%D8%A7%D9%84%D9%85%D9%86%D8%AA%D8%AC%D8%A7%D8%AA",
+      "serp_updated": "2026-08-28T00:31:17Z",
+      "serp_updated_prev": "2026-07-31T00:31:19Z"
+    },
+    {
+      "keyword": "سخان غاز ٦ لتر بدون مدخنة",
+      "country": "EG",
+      "position": 14,
+      "position_prev": 12,
+      "url": "https://taqamisr.com/Home/%D8%A7%D9%84%D9%85%D9%86%D8%AA%D8%AC%D8%A7%D8%AA/%D8%B3%D8%AE%D8%A7%D9%86%D8%A7%D8%AA",
+      "serp_updated": "2026-08-28T00:31:58Z",
+      "serp_updated_prev": "2026-07-31T00:31:15Z"
+    },
+    {
+      "keyword": "جراندفوس مصر",
+      "country": "EG",
+      "position": 11,
+      "position_prev": 7,
+      "url": "https://taqamisr.com/Home/%D8%A7%D9%84%D9%85%D9%86%D8%AA%D8%AC%D8%A7%D8%AA",
+      "serp_updated": "2026-08-28T00:31:18Z",
+      "serp_updated_prev": "2026-07-31T00:31:25Z"
+    },
+    {
+      "keyword": "سخان اريستون غاز 10 لتر",
+      "country": "EG",
+      "position": 21,
+      "position_prev": 26,
+      "url": "https://taqamisr.com/Home/%D8%A7%D9%84%D9%85%D9%86%D8%AA%D8%AC%D8%A7%D8%AA/%D9%83%D9%84",
+      "serp_updated": "2026-08-28T00:31:21Z",
+      "serp_updated_prev": "2026-07-31T00:31:21Z"
+    },
+    {
+      "keyword": "طلمبة جراندفوس",
+      "country": "EG",
+      "position": 9,
+      "position_prev": 8,
+      "url": "https://taqamisr.com/Home/%D8%A7%D9%84%D9%85%D9%86%D8%AA%D8%AC%D8%A7%D8%AA",
+      "serp_updated": "2026-08-28T00:31:15Z",
+      "serp_updated_prev": "2026-07-31T00:31:24Z"
+    },
+    {
+      "keyword": "شركة طاقة",
+      "country": "EG",
+      "position": 13,
+      "position_prev": 12,
+      "url": "https://taqamisr.com/",
+      "serp_updated": "2026-08-28T06:45:55Z",
+      "serp_updated_prev": "2026-07-31T00:31:35Z"
+    },
+    {
+      "keyword": "مياه ساخنة مركزية",
+      "country": "EG",
+      "position": 6,
+      "position_prev": 12,
+      "url": "https://taqamisr.com/%D8%AA%D8%B3%D8%AE%D9%8A%D9%86-%D9%85%D8%B1%D9%83%D8%B2%D9%8A-%D9%84%D9%84%D9%85%D9%8A%D8%A7%D9%87",
+      "serp_updated": "2026-08-28T00:31:30Z",
+      "serp_updated_prev": "2026-07-31T00:31:22Z"
+    },
+    {
+      "keyword": "سخان غاز 6 لتر بدون مدخنة",
+      "country": "EG",
+      "position": 15,
+      "position_prev": null,
+      "url": "https://taqamisr.com/Home/%D8%A7%D9%84%D9%85%D9%86%D8%AA%D8%AC%D8%A7%D8%AA/%D8%B3%D8%AE%D8%A7%D9%86%D8%A7%D8%AA",
+      "serp_updated": "2026-08-28T00:31:20Z",
+      "serp_updated_prev": "2026-07-31T00:31:18Z"
+    },
+    {
+      "keyword": "submersible pump",
+      "country": "EG",
+      "position": 19,
+      "position_prev": 19,
+      "url": "https://taqamisr.com/Products",
+      "serp_updated": "2026-08-28T00:31:18Z",
+      "serp_updated_prev": "2026-07-31T00:31:18Z"
+    },
+    {
+      "keyword": "مضخة مياه غاطسة",
+      "country": "EG",
+      "position": 13,
+      "position_prev": 15,
+      "url": "https://taqamisr.com/Home/%D8%A7%D9%84%D9%85%D9%86%D8%AA%D8%AC%D8%A7%D8%AA",
+      "serp_updated": "2026-08-28T00:31:17Z",
+      "serp_updated_prev": "2026-07-31T00:31:23Z"
+    },
+    {
+      "keyword": "سخان غاز بدون مدخنة",
+      "country": "EG",
+      "position": 18,
+      "position_prev": null,
+      "url": "https://taqamisr.com/Home/%D8%A7%D9%84%D9%85%D9%86%D8%AA%D8%AC%D8%A7%D8%AA/%D8%B3%D8%AE%D8%A7%D9%86%D8%A7%D8%AA",
+      "serp_updated": "2026-08-28T00:31:19Z",
+      "serp_updated_prev": "2026-07-31T00:31:23Z"
+    },
+    {
+      "keyword": "radiators central heating",
+      "country": "EG",
+      "position": 9,
+      "position_prev": 7,
+      "url": "https://taqamisr.com/",
+      "serp_updated": "2026-08-28T00:31:22Z",
+      "serp_updated_prev": "2026-07-31T00:31:15Z"
+    },
+    {
+      "keyword": "تدفئة حمامات سباحة",
+      "country": "EG",
+      "position": 14,
+      "position_prev": 13,
+      "url": "https://taqamisr.com/%D8%AA%D8%AF%D9%81%D8%A6%D8%A9-%D8%AD%D9%85%D8%A7%D9%85-%D8%A7%D9%84%D8%B3%D8%A8%D8%A7%D8%AD%D8%A9",
+      "serp_updated": "2026-08-28T00:32:18Z",
+      "serp_updated_prev": "2026-07-31T00:31:18Z"
+    },
+    {
+      "keyword": "radiators central",
+      "country": "EG",
+      "position": 10,
+      "position_prev": 13,
+      "url": "https://taqamisr.com/all",
+      "serp_updated": "2026-08-28T00:32:04Z",
+      "serp_updated_prev": "2026-07-31T00:31:19Z"
+    },
+    {
+      "keyword": "water pump egypt",
+      "country": "EG",
+      "position": 19,
+      "position_prev": 24,
+      "url": "https://taqamisr.com/Products",
+      "serp_updated": "2026-08-28T00:31:26Z",
+      "serp_updated_prev": "2026-07-31T00:31:22Z"
+    },
+    {
+      "keyword": "water pumps",
+      "country": "EG",
+      "position": 10,
+      "position_prev": 5,
+      "url": "https://taqamisr.com/",
+      "serp_updated": "2026-08-28T06:45:54Z",
+      "serp_updated_prev": "2026-07-31T00:31:19Z"
+    },
+    {
+      "keyword": "taqa gas",
+      "country": "EG",
+      "position": 21,
+      "position_prev": 22,
+      "url": "https://taqamisr.com/",
+      "serp_updated": "2026-08-28T00:32:36Z",
+      "serp_updated_prev": "2026-07-31T00:31:20Z"
+    },
+    {
+      "keyword": "طلمبات رفع مياه الصرف الصحي",
+      "country": "EG",
+      "position": 18,
+      "position_prev": 18,
+      "url": "https://taqamisr.com/Home/%D8%A7%D9%84%D9%85%D9%86%D8%AA%D8%AC%D8%A7%D8%AA/%D9%83%D9%84",
+      "serp_updated": "2026-08-28T00:33:33Z",
+      "serp_updated_prev": "2026-07-31T00:31:20Z"
+    },
+    {
+      "keyword": "gas fireplace",
+      "country": "EG",
+      "position": 20,
+      "position_prev": null,
+      "url": "https://taqamisr.com/Products",
+      "serp_updated": "2026-08-28T00:31:21Z",
+      "serp_updated_prev": "2026-07-31T00:31:19Z"
+    },
+    {
+      "keyword": "وكيل طلمبات جراندفوس في مصر",
+      "country": "EG",
+      "position": 22,
+      "position_prev": 10,
+      "url": "https://taqamisr.com/Home/%D8%A3%D8%AE%D8%A8%D8%A7%D8%B1/%D9%83%D9%84",
+      "serp_updated": "2026-08-28T06:45:55Z",
+      "serp_updated_prev": "2026-07-31T00:31:18Z"
+    },
+    {
+      "keyword": "underfloor heating",
+      "country": "EG",
+      "position": 23,
+      "position_prev": 23,
+      "url": "https://taqamisr.com/all",
+      "serp_updated": "2026-08-28T00:31:19Z",
+      "serp_updated_prev": "2026-07-31T00:31:17Z"
+    },
+    {
+      "keyword": "underfloor heating system",
+      "country": "EG",
+      "position": 22,
+      "position_prev": null,
+      "url": "https://taqamisr.com/all",
+      "serp_updated": "2026-08-28T00:31:19Z",
+      "serp_updated_prev": "2026-07-31T00:31:22Z"
+    },
+    {
+      "keyword": "مضخات المياه",
+      "country": "EG",
+      "position": 25,
+      "position_prev": 2,
+      "url": "https://taqamisr.com/Home/%D8%A7%D9%84%D9%85%D9%86%D8%AA%D8%AC%D8%A7%D8%AA",
+      "serp_updated": "2026-08-28T00:31:19Z",
+      "serp_updated_prev": "2026-07-31T00:31:21Z"
+    },
+    {
+      "keyword": "سخان اتلانتك كهرباء",
+      "country": "EG",
+      "position": 28,
+      "position_prev": 28,
+      "url": "https://taqamisr.com/Home/%D8%A7%D9%84%D9%85%D9%86%D8%AA%D8%AC%D8%A7%D8%AA/%D8%B3%D8%AE%D8%A7%D9%86%D8%A7%D8%AA",
+      "serp_updated": "2026-08-28T00:31:21Z",
+      "serp_updated_prev": "2026-07-31T00:31:18Z"
+    },
+    {
+      "keyword": "grundfos egypt",
+      "country": "EG",
+      "position": 8,
+      "position_prev": 17,
+      "url": "https://taqamisr.com/Home/%D8%A7%D9%84%D9%85%D9%86%D8%AA%D8%AC%D8%A7%D8%AA",
+      "serp_updated": "2026-08-28T00:31:20Z",
+      "serp_updated_prev": "2026-07-31T00:31:28Z"
+    },
+    {
+      "keyword": "جراندفوس",
+      "country": "EG",
+      "position": 14,
+      "position_prev": 9,
+      "url": "https://taqamisr.com/Home/%D8%A7%D9%84%D9%85%D9%86%D8%AA%D8%AC%D8%A7%D8%AA",
+      "serp_updated": "2026-08-28T00:31:25Z",
+      "serp_updated_prev": "2026-07-31T00:31:17Z"
+    },
+    {
+      "keyword": "ariston egypt",
+      "country": "EG",
+      "position": null,
+      "position_prev": 23,
+      "url": null,
+      "serp_updated": "2026-08-28T00:31:22Z",
+      "serp_updated_prev": "2026-07-31T00:31:25Z"
+    },
+    {
+      "keyword": "grundfos pumps",
+      "country": "EG",
+      "position": null,
+      "position_prev": 7,
+      "url": null,
+      "serp_updated": "2026-08-28T00:31:23Z",
+      "serp_updated_prev": "2026-07-31T00:31:19Z"
+    },
+    {
+      "keyword": "momenta",
+      "country": "EG",
+      "position": null,
+      "position_prev": null,
+      "url": null,
+      "serp_updated": "2026-08-28T00:31:18Z",
+      "serp_updated_prev": "2026-07-31T00:31:18Z"
+    },
+    {
+      "keyword": "nardi egypt",
+      "country": "EG",
+      "position": null,
+      "position_prev": null,
+      "url": null,
+      "serp_updated": "2026-08-28T00:31:21Z",
+      "serp_updated_prev": "2026-07-31T00:31:17Z"
+    },
+    {
+      "keyword": "suction pump",
+      "country": "EG",
+      "position": null,
+      "position_prev": null,
+      "url": null,
+      "serp_updated": "2026-08-28T00:31:22Z",
+      "serp_updated_prev": "2026-07-31T00:31:20Z"
+    },
+    {
+      "keyword": "underfloor",
+      "country": "EG",
+      "position": null,
+      "position_prev": null,
+      "url": null,
+      "serp_updated": "2026-08-28T00:31:18Z",
+      "serp_updated_prev": "2026-07-31T00:31:18Z"
+    },
+    {
+      "keyword": "تسخين حمامات سباحة",
+      "country": "EG",
+      "position": null,
+      "position_prev": null,
+      "url": null,
+      "serp_updated": "2026-08-28T00:31:28Z",
+      "serp_updated_prev": "2026-07-31T00:31:18Z"
+    },
+    {
+      "keyword": "دفاية حمام",
+      "country": "EG",
+      "position": 2,
+      "position_prev": 2,
+      "url": "https://taqamisr.com/%D8%AF%D9%81%D8%A7%D9%8A%D8%A7%D8%AA-%D8%A7%D9%84%D8%AD%D9%85%D8%A7%D9%85-%D8%A7%D9%84%D9%83%D9%87%D8%B1%D8%A8%D8%A7%D8%A6%D9%8A%D8%A9",
+      "serp_updated": "2026-08-28T00:31:55Z",
+      "serp_updated_prev": "2026-07-31T00:31:17Z"
+    },
+    {
+      "keyword": "سخان غاز اريستون 6 لتر",
+      "country": "EG",
+      "position": null,
+      "position_prev": 22,
+      "url": null,
+      "serp_updated": "2026-08-28T00:31:23Z",
+      "serp_updated_prev": "2026-07-31T00:31:23Z"
+    },
+    {
+      "keyword": "سخان ماء",
+      "country": "EG",
+      "position": null,
+      "position_prev": 24,
+      "url": null,
+      "serp_updated": "2026-08-28T00:31:20Z",
+      "serp_updated_prev": "2026-07-31T00:31:18Z"
+    },
+    {
+      "keyword": "سعر مدخنة سخان غاز 10 لتر",
+      "country": "EG",
+      "position": null,
+      "position_prev": null,
+      "url": null,
+      "serp_updated": "2026-08-28T00:31:19Z",
+      "serp_updated_prev": "2026-07-31T00:31:21Z"
+    },
+    {
+      "keyword": "مدخنة سخان غاز",
+      "country": "EG",
+      "position": null,
+      "position_prev": null,
+      "url": null,
+      "serp_updated": "2026-08-28T00:31:24Z",
+      "serp_updated_prev": "2026-07-31T00:31:25Z"
+    },
+    {
+      "keyword": "مدخنة سخان غاز 10 لتر",
+      "country": "EG",
+      "position": null,
+      "position_prev": null,
+      "url": null,
+      "serp_updated": "2026-08-28T00:31:17Z",
+      "serp_updated_prev": "2026-07-31T00:31:20Z"
+    },
+    {
+      "keyword": "مضخة مياه",
+      "country": "EG",
+      "position": null,
+      "position_prev": 25,
+      "url": null,
+      "serp_updated": "2026-08-28T00:31:19Z",
+      "serp_updated_prev": "2026-07-31T00:31:15Z"
+    },
+    {
+      "keyword": "مكونات سخان الغاز",
+      "country": "EG",
+      "position": null,
+      "position_prev": null,
+      "url": null,
+      "serp_updated": "2026-08-28T00:32:10Z",
+      "serp_updated_prev": "2026-07-31T00:31:18Z"
+    },
+    {
+      "keyword": "مومنتا",
+      "country": "EG",
+      "position": null,
+      "position_prev": null,
+      "url": null,
+      "serp_updated": "2026-08-28T00:31:19Z",
+      "serp_updated_prev": "2026-07-31T00:31:19Z"
+    }
+  ],
+  "fallback": [
+    {
+      "keyword": "غلاية مركزية",
+      "position": 2.6,
+      "position_prev": 3.5
+    },
+    {
+      "keyword": "تدفئة تحت البلاط",
+      "position": 10.9,
+      "position_prev": 12.9
+    },
+    {
+      "keyword": "central water heating",
+      "position": 23.6,
+      "position_prev": 24.2
+    },
+    {
+      "keyword": "radiator",
+      "position": null,
+      "position_prev": 5.8
+    },
+    {
+      "keyword": "غلايات تسخين مركزي",
+      "position": null,
+      "position_prev": null
+    },
+    {
+      "keyword": "غلاية مياه مركزي",
+      "position": null,
+      "position_prev": null
+    },
+    {
+      "keyword": "التسخين المركزي",
+      "position": null,
+      "position_prev": null
+    },
+    {
+      "keyword": "central poilar",
+      "position": null,
+      "position_prev": null
+    }
+  ],
+  "pages": [
+    [
+      "home-water-pump-wont-stop-running-how-to-fix-it/",
+      "مضخة المياه لا تتوقف — EN",
+      703,
+      815,
+      61405
+    ],
+    [
+      "ar/حل-ضعف-ضغط-المياه-الطوابق-العلوية/",
+      "حل ضعف ضغط المياه — AR",
+      231,
+      305,
+      20543
+    ],
+    [
+      "ar/حل-مشكلة-مضخة-الماء-لا-تتوقف/",
+      "مضخة المياه لا تتوقف — AR",
+      212,
+      199,
+      23216
+    ],
+    [
+      "ar/",
+      "الرئيسية — AR",
+      112,
+      111,
+      2881
+    ],
+    [
+      "ar/كيفية-تركيب-مضخة-الماء/",
+      "تركيب مضخة المياه — AR",
+      80,
+      108,
+      13797
+    ],
+    [
+      "",
+      "الرئيسية — EN",
+      79,
+      64,
+      1367
+    ],
+    [
+      "ar/صيانة-وتصليح-مضخة-الماء-المنزلية/",
+      "صيانة مضخة المياه — AR",
+      77,
+      94,
+      10197
+    ],
+    [
+      "ar/brand/جراندفوس/",
+      "جراندفوس — AR",
+      77,
+      95,
+      3226
+    ],
+    [
+      "ar/product-category/مضخات-غاطسة/",
+      "المضخات الغاطسة — AR",
+      39,
+      40,
+      3147
+    ],
+    [
+      "ar/اتصل-بنا/",
+      "اتصل بنا — AR",
+      39,
+      50,
+      1212
+    ]
+  ],
+  "merchant": {
+    "snapshot": "2026-09-05",
+    "total": 110,
+    "approved": 110,
+    "review": 0,
+    "rejected": 0,
+    "limited": 0,
+    "arabic": 61,
+    "english": 49,
+    "august": {
+      "clicks": 1,
+      "impressions": 186
+    },
+    "aug28": {
+      "approved": 104,
+      "review": 6
+    },
+    "descriptionOpportunity": 40
+  },
+  "links": {
+    "august": {
+      "live": 1307,
+      "all_time": 59555,
+      "live_refdomains": 273,
+      "all_time_refdomains": 1948
+    },
+    "july": {
+      "live": 1678,
+      "all_time": 59555,
+      "live_refdomains": 253,
+      "all_time_refdomains": 1948
+    }
+  },
+  "main": [
+    [
+      "أتلانتيك كومبي أوبرو 100 لتر",
+      "ar/product/سخان-مياه-كومبي-اوبرو-100-من-اتلانتيك/",
+      "product/combi-opro-100-water-heater-by-atlantic/"
+    ],
+    [
+      "ناردي كهربائي فوري 7 و8 كيلووات",
+      "ar/product/سخان-مياه-كهربائي-ناردي-فوري-زود-بخاصي/",
+      "product/nard-electric-instant-water-heater-safety-feature-allows-it-to-automatically-shuts-off-when-there-isnt-enough-water-2-levels-of-energy-7-kw-8-kw/"
+    ],
+    [
+      "إلكترون غاز 10 لتر",
+      "ar/product/سخان-الكترون-10-لتر-يعمل-بالغاز/",
+      "product/electron-gas-water-heater-10-litre/"
+    ],
+    [
+      "ناردي غاز 16 لتر",
+      "ar/product/سخان-مياه-غاز-ناردي-16-لتر-بدون-مدخنة/",
+      "product/سخان-مياه-غاز-ناردي-16-لتر-بدون-مدخنة/"
+    ]
+  ],
+  "articles": [
+    [
+      "سخان غاز أم كهرباء؟",
+      "ar/سخان-غاز-أم-كهرباء/",
+      "gas-or-electric-water-heater-egypt/"
+    ],
+    [
+      "السخان الكهربائي: فوري أم تخزين؟",
+      "ar/سخان-كهرباء-فوري-أو-تخزين؟/",
+      "instant-vs-storage-water-heaters/"
+    ],
+    [
+      "تكلفة التدفئة المركزية في مصر",
+      "ar/تكلفة-التدفئة-المركزية-في-مصر/",
+      "central-heating-cost-egypt/"
+    ]
+  ],
+  "brands": [
+    [
+      "Ariston",
+      "ariston"
+    ],
+    [
+      "Nardi",
+      "nardi"
+    ],
+    [
+      "Italtherm",
+      "italtherm"
+    ],
+    [
+      "Atlantic",
+      "atlantic"
+    ],
+    [
+      "Electron",
+      "electron"
+    ],
+    [
+      "Techno Gas",
+      "techno-gas"
+    ],
+    [
+      "Momenta",
+      "momenta"
+    ],
+    [
+      "Thomson",
+      "thomson"
+    ],
+    [
+      "Planika",
+      "planika-fireplaces"
+    ],
+    [
+      "Grundfos",
+      "grundfos"
+    ]
+  ]
+}
