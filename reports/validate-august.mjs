@@ -59,6 +59,10 @@ export function validateAugust(html, target) {
   assert.equal(movers,22);
   for(const k of ["غلايات مركزية","غلاية مركزية","غلاية تسخين مركزي","central water heating","radiator","central poilar"])assert.ok(seen.has(k),"Missing priority: "+k);
   const figures=[...html.matchAll(/<figure class="report-shot[\s\S]*?<\/figure>/g)];
+  const closing=html.split('<section id="summary-close">')[1].split("</section>")[0];
+  const firstPriority=closing.match(/<li[^>]*>([\s\S]*?)<\/li>/)?.[1]||"";
+  for(const s of ["إعادة بناء جميع صفحات الحلول والخدمات","كل صفحة هبوط لكل حل وخدمة","العائق الحالي","موافقة طاقة مصر","12 أغسطس","15 أغسطس","القرار المطلوب","https://cleanshot.com/share/XQJqslyl"]) assert.ok(firstPriority.includes(s),"First priority must integrate landing-page scope and approval blocker: "+s);
+  assert.ok(!closing.includes('class="approval-block"'),"Approval blocker must not be a separate block");
   assert.equal(figures.length,3);
   for(const [fig] of figures)assert.ok((fig.match(/class="figure-comment">([^<]+)/)?.[1].length||0)>35);
   for(const [,asset] of html.matchAll(/(?:src|url\()="?([^") ]+\.(?:png|woff2))/g)) assert.ok(existsSync(join(dirname(target),asset)),"Missing asset: "+asset);

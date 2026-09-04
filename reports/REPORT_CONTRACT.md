@@ -53,6 +53,8 @@ This file is the canonical contract for every monthly Taqa Misr SEO report.
 
 ## Next-focus priorities
 
+- First priority: rebuild every landing page for every solution and service on the site, in Arabic and English, beginning with water heating and central heating. Put the pending client approval, August 12 proposal, August 15 follow-up, proposal link, and required decision inside that first priority. Do not detach the blocker into a later standalone block. Distinguish the submitted water-heating page proposal from the broader requested rebuild; never imply proposals for all pages have already been submitted.
+
 - Make the closing priorities specific to the account strategy; do not use generic instructions such as converting visibility into clicks or moving all positions 4–10 into the top three.
 - Lead with the water-heating and central-heating keyword clusters in Arabic and English, distinguishing terms close to the top three from terms that need ranking recovery.
 - Make completion of the remaining Arabic and English product descriptions a standing priority, starting with products related to water heating and central heating.
