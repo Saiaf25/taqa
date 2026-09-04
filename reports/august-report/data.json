@@ -884,7 +884,18 @@
       "approved": 104,
       "review": 6
     },
-    "descriptionOpportunity": 40
+    "descriptionOpportunity": 40,
+    "overview": {
+      "source": "User-provided Merchant Center overview screenshot 2026-09-05 01:49:40",
+      "clicks": 531,
+      "from": "2026-08-07",
+      "to": "2026-09-03",
+      "scope": "Combined store and product performance on Google",
+      "storeQuality": "Great",
+      "screenshot": "assets/merchant-overview-2026-09-05-hq.png",
+      "width": 2680,
+      "height": 1646
+    }
   },
   "links": {
     "august": {

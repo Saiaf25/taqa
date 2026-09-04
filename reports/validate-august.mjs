@@ -59,12 +59,17 @@ export function validateAugust(html, target) {
   assert.equal(movers,22);
   for(const k of ["غلايات مركزية","غلاية مركزية","غلاية تسخين مركزي","central water heating","radiator","central poilar"])assert.ok(seen.has(k),"Missing priority: "+k);
   const figures=[...html.matchAll(/<figure class="report-shot[\s\S]*?<\/figure>/g)];
-  assert.equal(figures.length,4);
+  assert.equal(figures.length,3);
   for(const [fig] of figures)assert.ok((fig.match(/class="figure-comment">([^<]+)/)?.[1].length||0)>35);
   for(const [,asset] of html.matchAll(/(?:src|url\()="?([^") ]+\.(?:png|woff2))/g)) assert.ok(existsSync(join(dirname(target),asset)),"Missing asset: "+asset);
   for(const weight of ["Regular","Bold","Black"])assert.deepEqual(readFileSync(join(dirname(target),"assets/thmanyahseriftext-"+weight+".woff2")),readFileSync(join(dirname(target),"../july-report/assets/thmanyahseriftext-"+weight+".woff2")));
   const merchant=html.split('<section id="extra-work"')[1].split("</section>")[0];
-  for(const s of ["104","6 قيد المراجعة","110","61","49","186 ظهورا ونقرة واحدة","40 قائمة","5 سبتمبر"])assert.ok(merchant.includes(s));
+  for(const s of ["531","110","Great","7 أغسطس","3 سبتمبر","5 سبتمبر","المتجر والمنتجات","merchant-overview-2026-09-05-hq.png"])assert.ok(merchant.includes(s),"Merchant overview missing: "+s);
+  for(const s of ["186 ظهورا ونقرة واحدة","ما زال دور هذه القناة في الزيارات محدودا","merchant-approval-sept5.png","merchant-sources-sept5.png"])assert.ok(!merchant.includes(s),"Outdated Merchant presentation: "+s);
+  assert.deepEqual([data.merchant.overview.clicks,data.merchant.overview.from,data.merchant.overview.to,data.merchant.overview.storeQuality],[531,"2026-08-07","2026-09-03","Great"]);
+  const overviewPng=readFileSync(join(dirname(target),"assets/merchant-overview-2026-09-05-hq.png"));
+  assert.equal(overviewPng.subarray(1,4).toString(),"PNG");
+  assert.deepEqual([overviewPng.readUInt32BE(16),overviewPng.readUInt32BE(20)],[2680,1646],"Preserve full-resolution Merchant screenshot");
   assert.equal(data.merchant.approved,data.merchant.arabic+data.merchant.english);
   console.log("PASS "+target+"\nAugust dates, sources, 22 movers, priority coverage, RTL, fonts, 8 main / 26 additional pages, screenshots and Merchant snapshot verified.");
 }
