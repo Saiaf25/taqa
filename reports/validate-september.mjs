@@ -20,7 +20,7 @@ export function validateSeptember(html, target) {
     'المحتوى الأساسي',
     'المحتوى الإضافي',
     'عمل استثنائي إضافي',
-    'data-growth-centerpiece',
+    'data-article-centerpiece',
     '.growth-centerpiece{text-align:center',
   ]) must(text);
 
@@ -28,6 +28,7 @@ export function validateSeptember(html, target) {
     'استعلامات', 'الموضع', 'dir="ltr"', 'direction: ltr', '/Users/', 'wp-admin',
     'مصادر ومنهجية', 'كل المحتوى المنجز خلال', '116 منتجا', '71 سجل',
     'تراجع 4.9', 'internal', 'debug', 'collection mechanics',
+    'لم تنشر النسخ الإنجليزية', '4 حاسبات عربية جديدة',
   ]) forbid(text);
   assert.ok(!/[٠-٩]/u.test(html), "Arabic-Indic digits are forbidden");
 
@@ -40,14 +41,17 @@ export function validateSeptember(html, target) {
   assert.equal(data.newPages.length, 6);
   assert.equal(data.newPages.reduce((n, p) => n + p.clicks, 0), 127);
   assert.equal(data.newPages.reduce((n, p) => n + p.impressions, 0), 5618);
+  assert.equal(data.newPages.slice(0, 2).reduce((n, p) => n + p.clicks, 0), 107);
+  assert.equal(data.newPages.slice(0, 2).reduce((n, p) => n + p.impressions, 0), 4636);
 
   const technical = html.split('<section id="technical-readings">')[1].split('</section>')[0];
-  const centerpiece = technical.indexOf('data-growth-centerpiece');
-  const pageTable = technical.indexOf('الصفحة الجديدة');
+  const centerpiece = technical.indexOf('data-article-centerpiece');
   const distribution = technical.indexOf('توزيع الكلمات المفتاحية البحثية');
-  assert.ok(centerpiece >= 0 && centerpiece < pageTable && pageTable < distribution, "New-page growth must lead technical visibility");
-  for (const value of ["127", "5,618", "5,320", "1,529", "2,456", "1,335"]) assert.ok(technical.includes(value), `Technical evidence missing ${value}`);
-  assert.equal((technical.match(/<tr><td data-label="الصفحة">/g) ?? []).length, 6);
+  assert.ok(centerpiece >= 0 && centerpiece < distribution, "The two articles must lead technical visibility");
+  for (const value of ["107", "4,636", "5.1", "6.1", "5,320", "1,529", "2,456", "1,335"]) assert.ok(technical.includes(value), `Technical evidence missing ${value}`);
+  assert.equal((technical.match(/data-primary-article/g) ?? []).length, 2);
+  assert.ok(technical.includes('أفضل 10 سخانات غاز في مصر'));
+  assert.ok(technical.includes('أفضل 8 سخانات كهرباء في مصر'));
 
   const positions = html.split('<div data-report-block="positions">')[1].split('</section>')[0];
   for (const contaminant of ["النقرات", "الظهور", "CTR", "حجم البحث"]) forbidWithin(positions, contaminant);
@@ -71,10 +75,11 @@ export function validateSeptember(html, target) {
   }
 
   const content = html.split('<div data-report-block="content">')[1].split('<!-- content-report-block:end -->')[0];
-  assert.equal((content.match(/data-scope="main" data-language="ar"/g) ?? []).length, 2);
+  assert.equal((content.match(/data-scope="main" data-language="ar"/g) ?? []).length, 6);
   assert.equal((content.match(/data-scope="main" data-language="en"/g) ?? []).length, 0);
-  assert.ok(content.includes('لم تنشر النسخ الإنجليزية خلال الشهر'));
-  assert.ok(content.includes('4 حاسبات عربية جديدة'));
+  assert.equal((content.match(/data-content-type="مقال"/g) ?? []).length, 2);
+  assert.equal((content.match(/data-content-type="حاسبة"/g) ?? []).length, 4);
+  assert.equal((content.match(/data-scope="additional"/g) ?? []).length, 1);
   assert.ok(content.includes('24 صفحة فئات محسنة'));
   assert.ok(content.includes('13 وصفا جديدا'));
 
@@ -93,7 +98,7 @@ export function validateSeptember(html, target) {
     assert.deepEqual(readFileSync(current), readFileSync(approved), `Font drift: ${weight}`);
   }
 
-  console.log(`PASS ${target}\nSeptember period, new-page centerpiece, GSC metrics, Ahrefs source rules, content accounting, RTL, fonts and priorities verified.`);
+  console.log(`PASS ${target}\nSeptember period, two-article centerpiece, calculator core classification, GSC metrics, Ahrefs source rules, RTL, fonts and priorities verified.`);
 }
 
 function forbidWithin(block, text) {

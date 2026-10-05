@@ -31,9 +31,9 @@ This file is the canonical contract for every monthly Taqa Misr SEO report.
 
 ## Content accounting
 
-- The monthly main scope is counted as 4 Arabic pieces plus 4 English pieces: 8 main pieces in total.
-- Every remaining content or product page is listed separately as additional work.
-- Never collapse the main scope into four bilingual initiatives in the client report.
+- No fixed monthly article count or mandatory bilingual article quota is confirmed. Report only the scope agreed and published for the month.
+- Classify work as core or additional only from the user's instruction or an explicit month plan. Never infer that classification from content type, language, or a previous month's pattern.
+- A calculator can be core content. Do not classify tools or calculators as additional merely because they are not conventional articles.
 - Do not credit a page again in a later monthly report after it has already been counted in an earlier report.
 - For July 2026, the two central-water-heater articles and their English translations are main content; Italtherm products already credited previously must not appear.
 - Present main and additional content inside one content section under two adjacent subheadings: `المحتوى الأساسي` and `المحتوى الإضافي`. Keep store operations in the later exceptional-work section.
@@ -83,8 +83,8 @@ The validator must pass before the report is presented as complete.
 
 ## New-page growth narrative
 
-- When newly published or recently launched pages show material, verified growth, make that cohort the report's central narrative rather than burying it in a generic page table.
-- Keep the approved section order by placing the centered new-page growth evidence at the start of technical search visibility, directly after the executive summary.
+- When the user names specific pages as the central result, make those pages the visual and narrative centerpiece rather than substituting a broader cohort.
+- Keep the approved section order by placing the centered named-page evidence at the start of technical search visibility, directly after the executive summary.
 - Compare new pages only across dates when each page was live. Do not treat pre-publication days as zero performance or imply a full-month comparison for a partial-month launch.
 - Use Google Search Console for new-page clicks, impressions, CTR, average position, and query evidence. Keep those values separate from Ahrefs keyword rankings.
 - Show the total site movement as context even when the new-page cohort grows. Lead with verified wins without hiding material declines.
@@ -92,12 +92,13 @@ The validator must pass before the report is presented as complete.
 ## September 2026 locked evidence and adaptations
 
 - Report period: 1–30 September versus 1–31 August; prepared 5 October 2026.
-- Center the report on six Arabic pages published between 18 and 29 September: two buyer guides and four calculators. They recorded 127 clicks and 5,618 impressions within their respective live windows through 30 September.
+- Center the report on the two Arabic buyer guides published on 21 and 29 September. Together they recorded 107 clicks and 4,636 impressions through 30 September, with average GSC rankings of 5.1 and 6.1.
 - Treat the Arabic electric-water-heater guide published on 26 August as a maturing recent page: 29 clicks and 6,629 impressions in September versus 2 clicks and 228 impressions in August.
 - Current finalized GSC totals: September 2,408 clicks / 194,768 impressions; August 2,550 / 203,341. Report the decline proportionately beside the page-level growth.
 - Use one finalized GSC query dataset for September distribution: 5,320 observed search terms, 1,529 in positions 1–3, 2,456 in positions 4–10, and 1,335 after position 10. The same live pull gives August 5,313 / 1,741 / 2,223 / 1,349 for comparison; do not alter the archived August report.
 - Ahrefs Rank Tracker uses the last available Egypt desktop crawl on 25 September compared with 28 August. Publish only verified Ahrefs improvements; recheck Ahrefs declines in complete August/September GSC periods or omit them.
-- September core publishing consists of two Arabic buyer guides. Their English counterparts were not published during September and must not be credited.
-- Additional content consists of four Arabic calculators and 24 localized category descriptions: 13 new descriptions and 11 improved descriptions. Do not imply English calculator pages exist.
+- September core content consists of the two Arabic buyer guides and four Arabic calculators. Do not classify the calculators as additional work.
+- Additional content consists of 24 localized category descriptions: 13 new descriptions and 11 improved descriptions.
+- Do not present English counterparts as missing obligations or imply a fixed article count for September.
 - Additional store work includes complete SEO titles/descriptions for 32 localized category pages, 30 verified catalog update records, bilingual Shop metadata, and canonical consolidation from the two All Products archives to the Shop pages.
 - Validation command: `node reports/validate-report.mjs reports/september-report/index.html`.
