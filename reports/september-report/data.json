@@ -1,0 +1,295 @@
+{
+  "period": {
+    "from": "2026-09-01",
+    "to": "2026-09-30",
+    "comparedFrom": "2026-08-01",
+    "comparedTo": "2026-08-31",
+    "prepared": "2026-10-05"
+  },
+  "site": {
+    "september": {
+      "clicks": 2408,
+      "impressions": 194768,
+      "ctr": 1.2363,
+      "position": 7.1706
+    },
+    "august": {
+      "clicks": 2550,
+      "impressions": 203341,
+      "ctr": 1.2541,
+      "position": 7.5162
+    }
+  },
+  "coverage": {
+    "september": {
+      "total": 5320,
+      "top3": 1529,
+      "top4to10": 2456,
+      "top11plus": 1335
+    },
+    "august": {
+      "total": 5313,
+      "top3": 1741,
+      "top4to10": 2223,
+      "top11plus": 1349
+    }
+  },
+  "newPages": [
+    {
+      "title": "أفضل 10 سخانات غاز في مصر",
+      "date": "21 سبتمبر",
+      "clicks": 100,
+      "impressions": 4090,
+      "position": 5.1,
+      "url": "https://taqamisr.com/ar/%D8%A3%D9%81%D8%B6%D9%84-%D8%B3%D8%AE%D8%A7%D9%86-%D8%BA%D8%A7%D8%B2-%D9%81%D9%8A-%D9%85%D8%B5%D8%B1/"
+    },
+    {
+      "title": "أفضل 8 سخانات كهرباء في مصر",
+      "date": "29 سبتمبر",
+      "clicks": 7,
+      "impressions": 546,
+      "position": 6.1,
+      "url": "https://taqamisr.com/ar/%D8%A3%D9%81%D8%B6%D9%84-%D8%B3%D8%AE%D8%A7%D9%86-%D9%83%D9%87%D8%B1%D8%A8%D8%A7%D8%A1-%D9%81%D9%8A-%D9%85%D8%B5%D8%B1/"
+    },
+    {
+      "title": "حاسبة استهلاك الكهرباء",
+      "date": "18 سبتمبر",
+      "clicks": 10,
+      "impressions": 435,
+      "position": 6.1,
+      "url": "https://taqamisr.com/ar/%D8%AD%D8%A7%D8%B3%D8%A8%D8%A9-%D8%A7%D8%B3%D8%AA%D9%87%D9%84%D8%A7%D9%83-%D8%A7%D9%84%D9%83%D9%87%D8%B1%D8%A8%D8%A7%D8%A1/"
+    },
+    {
+      "title": "حاسبة حجم سخان المياه",
+      "date": "18 سبتمبر",
+      "clicks": 4,
+      "impressions": 231,
+      "position": 6.8,
+      "url": "https://taqamisr.com/ar/%D8%AD%D8%A7%D8%B3%D8%A8%D8%A9-%D8%AD%D8%AC%D9%85-%D8%B3%D8%AE%D8%A7%D9%86-%D8%A7%D9%84%D9%85%D9%8A%D8%A7%D9%87/"
+    },
+    {
+      "title": "حاسبة قدرة مضخة المياه",
+      "date": "18 سبتمبر",
+      "clicks": 6,
+      "impressions": 302,
+      "position": 6.4,
+      "url": "https://taqamisr.com/ar/%D8%AD%D8%A7%D8%B3%D8%A8%D8%A9-%D9%85%D8%B6%D8%AE%D8%A9-%D8%A7%D9%84%D9%85%D9%8A%D8%A7%D9%87/"
+    },
+    {
+      "title": "حاسبة الحمل الحراري",
+      "date": "18 سبتمبر",
+      "clicks": 0,
+      "impressions": 14,
+      "position": 4,
+      "url": "https://taqamisr.com/ar/%D8%AD%D8%A7%D8%B3%D8%A8%D8%A9-%D9%82%D8%AF%D8%B1%D8%A9-%D8%A7%D9%84%D8%AA%D8%AF%D9%81%D8%A6%D8%A9/"
+    }
+  ],
+  "devices": [
+    {
+      "device": "الهاتف",
+      "augClicks": 2021,
+      "sepClicks": 1963,
+      "augImpressions": 161263,
+      "sepImpressions": 161584,
+      "sepPosition": 6.5
+    },
+    {
+      "device": "الكمبيوتر",
+      "augClicks": 497,
+      "sepClicks": 409,
+      "augImpressions": 40464,
+      "sepImpressions": 31752,
+      "sepPosition": 10.7
+    },
+    {
+      "device": "الجهاز اللوحي",
+      "augClicks": 32,
+      "sepClicks": 36,
+      "augImpressions": 1614,
+      "sepImpressions": 1432,
+      "sepPosition": 6
+    }
+  ],
+  "ahrefs": {
+    "date": "2026-09-25",
+    "compared": "2026-08-28",
+    "gains": [
+      {
+        "keyword": "سخان غاز اريستون ايطالي 10 لتر",
+        "from": 5,
+        "to": 1,
+        "page": "سخان أريستون غاز 10 لتر",
+        "url": "https://taqamisr.com/ar/product/%D8%B3%D8%AE%D8%A7%D9%86-%D9%85%D9%8A%D8%A7%D9%87-%D8%A3%D8%B1%D9%8A%D8%B3%D8%AA%D9%88%D9%86-%D8%A7%D9%84%D8%A5%D9%8A%D8%B7%D8%A7%D9%84%D9%8A%D8%A9-%D8%B3%D8%B9%D8%A9-10-%D9%84%D8%AA%D8%B1-%D9%8A/"
+      },
+      {
+        "keyword": "تدفئه مركزيه",
+        "from": 4,
+        "to": 2,
+        "page": "التدفئة المركزية",
+        "url": "https://taqamisr.com/ar/%D8%A7%D9%84%D8%AA%D8%AF%D9%81%D8%A6%D8%A9-%D8%A7%D9%84%D9%85%D8%B1%D9%83%D8%B2%D9%8A%D8%A9/"
+      },
+      {
+        "keyword": "التدفئة المركزية",
+        "from": 2,
+        "to": 1,
+        "page": "التدفئة المركزية",
+        "url": "https://taqamisr.com/ar/%D8%A7%D9%84%D8%AA%D8%AF%D9%81%D8%A6%D8%A9-%D8%A7%D9%84%D9%85%D8%B1%D9%83%D8%B2%D9%8A%D8%A9/"
+      },
+      {
+        "keyword": "غلايات مركزية",
+        "from": 2,
+        "to": 1,
+        "page": "التسخين المركزي للمياه",
+        "url": "https://taqamisr.com/ar/%D8%AA%D8%B3%D8%AE%D9%8A%D9%86-%D9%85%D8%B1%D9%83%D8%B2%D9%8A-%D9%84%D9%84%D9%85%D9%8A%D8%A7%D9%87/"
+      },
+      {
+        "keyword": "nardi egypt",
+        "from": null,
+        "to": 2,
+        "page": "Nardi",
+        "url": "https://taqamisr.com/brand/nardi/"
+      },
+      {
+        "keyword": "momenta",
+        "from": null,
+        "to": 1,
+        "page": "Momenta",
+        "url": "https://taqamisr.com/brand/momenta/"
+      }
+    ]
+  },
+  "priority": [
+    {
+      "keyword": "غلايات مركزية",
+      "page": "التسخين المركزي للمياه",
+      "source": "Ahrefs",
+      "from": 2,
+      "to": 1
+    },
+    {
+      "keyword": "تدفئة مركزية",
+      "page": "التدفئة المركزية",
+      "source": "Google Search Console",
+      "from": 4.7,
+      "to": 3.9
+    },
+    {
+      "keyword": "central heating",
+      "page": "Central Space Heating",
+      "source": "Google Search Console",
+      "from": 10.4,
+      "to": 9.5
+    },
+    {
+      "keyword": "غلاية تسخين مركزي",
+      "page": "التسخين المركزي للمياه",
+      "source": "Google Search Console",
+      "from": 2,
+      "to": 1.9
+    },
+    {
+      "keyword": "radiators central heating",
+      "page": "Central Space Heating",
+      "source": "Google Search Console",
+      "from": 13.4,
+      "to": 11.9
+    },
+    {
+      "keyword": "underfloor heating",
+      "page": "Underfloor Heating",
+      "source": "Google Search Console",
+      "from": 9.3,
+      "to": 9
+    },
+    {
+      "keyword": "مضخات المياه",
+      "page": "فئة مضخات المياه",
+      "source": "Google Search Console",
+      "from": 20.5,
+      "to": 10.3
+    },
+    {
+      "keyword": "غلاية مركزية",
+      "page": "التسخين المركزي للمياه",
+      "source": "Google Search Console",
+      "from": 2.6,
+      "to": 3.1
+    },
+    {
+      "keyword": "central water heating",
+      "page": "Central Water Heating",
+      "source": "Google Search Console",
+      "from": 23.6,
+      "to": 28.6
+    },
+    {
+      "keyword": "water pump",
+      "page": "Water Pumps",
+      "source": "Google Search Console",
+      "from": 10.3,
+      "to": 11.8
+    },
+    {
+      "keyword": "booster pump",
+      "page": "Booster Pumps",
+      "source": "Google Search Console",
+      "from": 6,
+      "to": 7.5
+    },
+    {
+      "keyword": "radiator",
+      "page": "Electric Towel Radiators",
+      "source": "Google Search Console",
+      "from": null,
+      "to": null
+    }
+  ],
+  "content": {
+    "main": [
+      {
+        "title": "أفضل 10 سخانات غاز في مصر",
+        "language": "العربية",
+        "date": "21 سبتمبر",
+        "url": "https://taqamisr.com/ar/%D8%A3%D9%81%D8%B6%D9%84-%D8%B3%D8%AE%D8%A7%D9%86-%D8%BA%D8%A7%D8%B2-%D9%81%D9%8A-%D9%85%D8%B5%D8%B1/"
+      },
+      {
+        "title": "أفضل 8 سخانات كهرباء في مصر",
+        "language": "العربية",
+        "date": "29 سبتمبر",
+        "url": "https://taqamisr.com/ar/%D8%A3%D9%81%D8%B6%D9%84-%D8%B3%D8%AE%D8%A7%D9%86-%D9%83%D9%87%D8%B1%D8%A8%D8%A7%D8%A1-%D9%81%D9%8A-%D9%85%D8%B5%D8%B1/"
+      }
+    ],
+    "additional": [
+      {
+        "title": "4 حاسبات عربية جديدة",
+        "detail": "الكهرباء، حجم سخان المياه، قدرة مضخة المياه، والحمل الحراري"
+      },
+      {
+        "title": "24 صفحة فئات محسنة",
+        "detail": "13 وصفا جديدا وتحديث 11 وصفا قائما بالعربية والإنجليزية"
+      }
+    ]
+  },
+  "store": [
+    {
+      "value": 32,
+      "label": "صفحة فئة",
+      "note": "عناوين SEO وأوصاف بحث مكتملة"
+    },
+    {
+      "value": 30,
+      "label": "سجل متجر",
+      "note": "تحديثات موثقة للسعر والتوفر والتسليم"
+    },
+    {
+      "value": 2,
+      "label": "صفحتا المتجر",
+      "note": "بيانات بحث جديدة بالعربية والإنجليزية"
+    },
+    {
+      "value": 2,
+      "label": "روابط أساسية",
+      "note": "توحيد All Products مع صفحتي المتجر"
+    }
+  ]
+}
