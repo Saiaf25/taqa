@@ -1,10 +1,12 @@
 {
   "period": {
     "from": "2026-09-01",
-    "to": "2026-09-30",
+    "to": "2026-10-15",
+    "metricsTo": "2026-10-14",
+    "septemberTo": "2026-09-30",
     "comparedFrom": "2026-08-01",
     "comparedTo": "2026-08-31",
-    "prepared": "2026-10-05"
+    "prepared": "2026-10-15"
   },
   "site": {
     "september": {
@@ -33,6 +35,60 @@
       "top4to10": 2223,
       "top11plus": 1349
     }
+  },
+  "extension": {
+    "october": {
+      "from": "2026-10-01",
+      "to": "2026-10-14",
+      "clicks": 1677,
+      "impressions": 113633,
+      "ctr": 1.4758,
+      "position": 6.4047,
+      "queryCoverage": {
+        "total": 4124,
+        "top3": 1145,
+        "top4to10": 2070,
+        "top11plus": 909
+      }
+    },
+    "articles": [
+      {
+        "title": "أفضل 10 سخانات غاز في مصر",
+        "date": "21 سبتمبر–14 أكتوبر",
+        "clicks": 427,
+        "impressions": 18274,
+        "position": 5.4,
+        "url": "https://taqamisr.com/ar/%D8%A3%D9%81%D8%B6%D9%84-%D8%B3%D8%AE%D8%A7%D9%86-%D8%BA%D8%A7%D8%B2-%D9%81%D9%8A-%D9%85%D8%B5%D8%B1/"
+      },
+      {
+        "title": "أفضل 8 سخانات كهرباء في مصر",
+        "date": "29 سبتمبر–14 أكتوبر",
+        "clicks": 144,
+        "impressions": 11094,
+        "position": 5.9,
+        "url": "https://taqamisr.com/ar/%D8%A3%D9%81%D8%B6%D9%84-%D8%B3%D8%AE%D8%A7%D9%86-%D9%83%D9%87%D8%B1%D8%A8%D8%A7%D8%A1-%D9%81%D9%8A-%D9%85%D8%B5%D8%B1/"
+      }
+    ],
+    "devices": [
+      {
+        "device": "الهاتف",
+        "clicks": 1411,
+        "impressions": 98398,
+        "position": 6
+      },
+      {
+        "device": "الكمبيوتر",
+        "clicks": 253,
+        "impressions": 14331,
+        "position": 9.2
+      },
+      {
+        "device": "الجهاز اللوحي",
+        "clicks": 13,
+        "impressions": 904,
+        "position": 6.1
+      }
+    ]
   },
   "newPages": [
     {

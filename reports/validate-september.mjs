@@ -11,44 +11,53 @@ export function validateSeptember(html, target) {
   for (const text of [
     '<html lang="ar" dir="rtl">',
     'data-report-period="2026-09"',
+    'data-report-through="2026-10-15"',
     'font-family: "Thmanyah Serif Text"',
     'كلمات مفتاحية بحثية',
     'الترتيب في جوجل',
     'Ahrefs أولا',
     'Google Search Console',
-    'تاريخ الإعداد: 5 أكتوبر 2026',
+    'تاريخ الإعداد: 15 أكتوبر 2026',
     'المحتوى الأساسي',
     'المحتوى الإضافي',
     'عمل استثنائي إضافي',
     'data-article-centerpiece',
+    'data-october-extension',
+    'data-commercial-status',
+    'data-final-status',
     '.growth-centerpiece{text-align:center',
+    'تم إرسال فاتورة سبتمبر 2026',
+    'الدفع المسبق',
+    'التأخر الحالي في سداد المستحقات غير مقبول',
+    'سنوقف العمل بعد هذا التقرير',
   ]) must(text);
 
   for (const text of [
     'استعلامات', 'الموضع', 'dir="ltr"', 'direction: ltr', '/Users/', 'wp-admin',
     'مصادر ومنهجية', 'كل المحتوى المنجز خلال', '116 منتجا', '71 سجل',
     'تراجع 4.9', 'internal', 'debug', 'collection mechanics',
-    'لم تنشر النسخ الإنجليزية', '4 حاسبات عربية جديدة',
+    'لم تنشر النسخ الإنجليزية', '4 حاسبات عربية جديدة', 'أولويات المرحلة التالية',
   ]) forbid(text);
   assert.ok(!/[٠-٩]/u.test(html), "Arabic-Indic digits are forbidden");
 
   const sections = [...html.matchAll(/<section id="([^"]+)"/g)].map(m => m[1]);
   assert.deepEqual(sections, ["summary", "technical-readings", "search-performance", "keywords", "content-work", "extra-work", "summary-close"]);
 
-  assert.deepEqual(data.period, { from: "2026-09-01", to: "2026-09-30", comparedFrom: "2026-08-01", comparedTo: "2026-08-31", prepared: "2026-10-05" });
+  assert.deepEqual(data.period, { from: "2026-09-01", to: "2026-10-15", metricsTo: "2026-10-14", septemberTo: "2026-09-30", comparedFrom: "2026-08-01", comparedTo: "2026-08-31", prepared: "2026-10-15" });
   assert.deepEqual(data.site.september, { clicks: 2408, impressions: 194768, ctr: 1.2363, position: 7.1706 });
   assert.deepEqual(data.coverage.september, { total: 5320, top3: 1529, top4to10: 2456, top11plus: 1335 });
   assert.equal(data.newPages.length, 6);
   assert.equal(data.newPages.reduce((n, p) => n + p.clicks, 0), 127);
   assert.equal(data.newPages.reduce((n, p) => n + p.impressions, 0), 5618);
-  assert.equal(data.newPages.slice(0, 2).reduce((n, p) => n + p.clicks, 0), 107);
-  assert.equal(data.newPages.slice(0, 2).reduce((n, p) => n + p.impressions, 0), 4636);
+  assert.deepEqual(data.extension.october, { from: "2026-10-01", to: "2026-10-14", clicks: 1677, impressions: 113633, ctr: 1.4758, position: 6.4047, queryCoverage: { total: 4124, top3: 1145, top4to10: 2070, top11plus: 909 } });
+  assert.equal(data.extension.articles.reduce((n, p) => n + p.clicks, 0), 571);
+  assert.equal(data.extension.articles.reduce((n, p) => n + p.impressions, 0), 29368);
 
   const technical = html.split('<section id="technical-readings">')[1].split('</section>')[0];
   const centerpiece = technical.indexOf('data-article-centerpiece');
   const distribution = technical.indexOf('توزيع الكلمات المفتاحية البحثية');
   assert.ok(centerpiece >= 0 && centerpiece < distribution, "The two articles must lead technical visibility");
-  for (const value of ["107", "4,636", "5.1", "6.1", "5,320", "1,529", "2,456", "1,335"]) assert.ok(technical.includes(value), `Technical evidence missing ${value}`);
+  for (const value of ["571", "29,368", "5.4", "5.9", "5,320", "1,529", "2,456", "1,335"]) assert.ok(technical.includes(value), `Technical evidence missing ${value}`);
   assert.equal((technical.match(/data-primary-article/g) ?? []).length, 2);
   assert.ok(technical.includes('أفضل 10 سخانات غاز في مصر'));
   assert.ok(technical.includes('أفضل 8 سخانات كهرباء في مصر'));
@@ -88,8 +97,7 @@ export function validateSeptember(html, target) {
   assert.equal((store.match(/<article class="card metric green">/g) ?? []).length, 4);
 
   const closing = html.split('<section id="summary-close">')[1].split('</section>')[0];
-  const firstPriority = closing.match(/<li>([\s\S]*?)<\/li>/)?.[1] ?? "";
-  for (const text of ['اعتماد خطة إعادة بناء صفحات الحلول والخدمات', 'تسخين المياه', 'التدفئة المركزية', 'بالعربية والإنجليزية', '12 أغسطس', '15 أغسطس', 'موافقة طاقة مصر', 'https://cleanshot.com/share/XQJqslyl']) assert.ok(firstPriority.includes(text), `First priority missing: ${text}`);
+  for (const text of ['هذا هو التقرير الأخير قبل تعليق العمل', 'تم إرسال فاتورة سبتمبر 2026', 'التأخر الحالي في سداد المستحقات غير مقبول', 'سنوقف أعمال تحسين محركات البحث والمحتوى والمتجر', 'الدفع المسبق', 'سداد المستحقات القائمة']) assert.ok(closing.includes(text), `Final status missing: ${text}`);
 
   for (const weight of ["Regular", "Bold", "Black"]) {
     const current = join(folder, `assets/thmanyahseriftext-${weight}.woff2`);
@@ -98,7 +106,7 @@ export function validateSeptember(html, target) {
     assert.deepEqual(readFileSync(current), readFileSync(approved), `Font drift: ${weight}`);
   }
 
-  console.log(`PASS ${target}\nSeptember period, two-article centerpiece, calculator core classification, GSC metrics, Ahrefs source rules, RTL, fonts and priorities verified.`);
+  console.log(`PASS ${target}\nExtended through 15 October; two-article performance, calculator core classification, payment suspension notice, September invoice status, GSC metrics, Ahrefs source rules, RTL and fonts verified.`);
 }
 
 function forbidWithin(block, text) {

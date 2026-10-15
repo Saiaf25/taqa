@@ -102,3 +102,15 @@ The validator must pass before the report is presented as complete.
 - Do not present English counterparts as missing obligations or imply a fixed article count for September.
 - Additional store work includes complete SEO titles/descriptions for 32 localized category pages, 30 verified catalog update records, bilingual Shop metadata, and canonical consolidation from the two All Products archives to the Shop pages.
 - Validation command: `node reports/validate-report.mjs reports/september-report/index.html`.
+
+## Extension through 15 October 2026 and service suspension
+
+- Extend the September report's client-facing coverage through 15 October 2026 without treating partial October as a full monthly comparison.
+- Keep the complete September-versus-August comparison intact. Add a separate 1–14 October performance extension because 15 October Search Console data is incomplete.
+- Update the two-article centerpiece with canonical-page GSC results through 14 October: gas-heater guide 427 clicks / 18,274 impressions / average position 5.4; electric-heater guide 144 clicks / 11,094 impressions / average position 5.9. Combined: 571 clicks and 29,368 impressions.
+- October 1–14 site totals are 1,677 clicks, 113,633 impressions, 1.48% CTR and average position 6.4. State that 15 October data is partial rather than presenting it as final.
+- Show the commercial status in the executive summary and closing section. This is the final report before work is suspended.
+- State that the September 2026 invoice has been sent.
+- State that the current payment delay is unacceptable for continued service.
+- State that SEO, content and store work will stop after this report and resume only after Taqa Misr adopts advance payment and settles existing dues.
+- Replace forward-looking execution priorities with the suspension and resumption conditions. Do not imply that work will continue while the payment condition remains unresolved.
