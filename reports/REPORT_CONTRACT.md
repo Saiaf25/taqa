@@ -103,12 +103,17 @@ The validator must pass before the report is presented as complete.
 - Additional store work includes complete SEO titles/descriptions for 32 localized category pages, 30 verified catalog update records, bilingual Shop metadata, and canonical consolidation from the two All Products archives to the Shop pages.
 - Validation command: `node reports/validate-report.mjs reports/september-report/index.html`.
 
-## Extension through 15 October 2026 and service suspension
+## Equal-duration report through 14 October 2026 and service suspension
 
-- Extend the September report's client-facing coverage through 15 October 2026 without treating partial October as a full monthly comparison.
-- Keep the complete September-versus-August comparison intact. Add a separate 1–14 October performance extension because 15 October Search Console data is incomplete.
-- Update the two-article centerpiece with canonical-page GSC results through 14 October: gas-heater guide 427 clicks / 18,274 impressions / average position 5.4; electric-heater guide 144 clicks / 11,094 impressions / average position 5.9. Combined: 571 clicks and 29,368 impressions.
-- October 1–14 site totals are 1,677 clicks, 113,633 impressions, 1.48% CTR and average position 6.4. State that 15 October data is partial rather than presenting it as final.
+- The report performance window is 1 September–14 October 2026, exactly 44 days. Every site total, device comparison, query-distribution bucket, page comparison and narrative conclusion must use that complete period.
+- The comparison window is the immediately preceding equal 44-day period, 19 July–31 August 2026. Do not retain September-only KPI cards or append a separate October extension.
+- Current-period GSC totals: 4,085 clicks, 308,401 impressions, 1.32% CTR and average position 6.9. Previous-period totals: 3,731 clicks, 295,424 impressions, 1.26% CTR and average position 7.5.
+- Current query distribution: 7,249 observed search terms, 2,176 in positions 1–3, 3,355 in positions 4–10 and 1,718 after position 10. Previous distribution: 6,785 / 2,322 / 2,776 / 1,687.
+- Device comparison must also use the same 44-day windows. Do not label device data as September versus August.
+- Keep the two-article centerpiece with canonical-page GSC results for the full current period: gas-heater guide 427 clicks / 18,274 impressions / average position 5.4; electric-heater guide 144 clicks / 11,094 impressions / average position 5.9.
+- Include the four calculator outcomes for the full current period: 42 clicks and 2,471 impressions combined. Keep calculators in core content.
+- Represent the full work inventory, not only the two articles: two buyer guides covering 18 products; four calculators; calculator plugin/template/schema/tracking/links/images; 24 localized category descriptions with 156 contextual links and 12 generated images; SEO metadata across 32 localized category pages; 30 catalog updates; 18 Ariston price records; bilingual Shop metadata; and two canonical consolidations.
+- Ahrefs uses the closest available endpoint snapshots, 28 August and 9 October. Publish only improving rows from Ahrefs; use complete-period GSC for priority rows when Ahrefs declines or is unavailable.
 - Show the commercial status in the executive summary and closing section. This is the final report before work is suspended.
 - State that the September 2026 invoice has been sent.
 - State that the current payment delay is unacceptable for continued service.
